@@ -4,8 +4,11 @@
 This a java wrapper for the [Genius API](https://docs.genius.com). <br>
 This library can be used with Java 11 or newer.
 
-## Installation
-Add the following Repository and Dependency to your pom.xml
+## Download
+
+[![Release](https://repo.coding-stube.de/api/badge/latest/releases/dev/spoocy/genius/GeniusAPI?color=0F81C2&name=release&prefix=v)](https://repo.coding-stube.de/#/releases/dev/spoocy/genius/GeniusAPI)
+
+Be sure to replace the **VERSION** key below with the version shown above!
 ```xml
 <repository>
     <id>spoocyDev-releases</id>
@@ -18,15 +21,17 @@ Add the following Repository and Dependency to your pom.xml
 <dependency>
     <groupId>dev.spoocy.genius</groupId>
     <artifactId>GeniusAPI</artifactId>
-    <version>1.0.0</version>
+    <version>VERSION</version>
 </dependency>
 ```
 
 ## Authentication
+
 > [!IMPORTANT]
 > You will need to create a Genius API Client. You can do so at https://genius.com/api-clients <br>
 
 See https://docs.genius.com/#/authentication-h1 for more information about Authentication.
+
 ___
 
 ### Authenticating to the Genius API by using your Client access token:
@@ -96,6 +101,7 @@ client.setAuthorizationCode("code_received_from_the_authorization_url");
 Implementation Example: [AuthorizationCodeExample](src/test/java/AuthorizationCodeExample.java)
 
 ## Usage
+
 Getting a Lyrics of a song.
 ```java
 String url = "https://genius.com/Kendrick-lamar-humble-lyrics";
@@ -176,6 +182,7 @@ client.searchSong()
 ```
 
 ## Examples
+
 The following examples are minimal implementations but show how the library works.
   - Making Requests using a Client Access Token: [link](src/test/java/AccessTokenExample.java)
   - Making Requests using an Access Token: [link](src/test/java/AuthorizationCodeExample.java)
