@@ -6,7 +6,7 @@
 
     <groupId>dev.spoocy.genius</groupId>
     <artifactId>GeniusAPI</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -17,9 +17,9 @@
     <repositories>
 
         <repository>
-          <id>spoocyDev-snapshots</id>
-          <name>Coding Stube Repository</name>
-          <url>https://repo.coding-stube.de/snapshots</url>
+            <id>spoocyDev-releases</id>
+            <name>Coding Stube Repository</name>
+            <url>https://repo.coding-stube.de/releases</url>
         </repository>
 
         <repository>
