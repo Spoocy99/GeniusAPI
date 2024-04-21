@@ -4,10 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- * @author Spoocy99
- * Created on 16.02.2024
- * Discord: spoocy99
- * GitHub: Spoocy99
+ * @author Spoocy99 | GitHub: Spoocy99
  */
 
 @Getter

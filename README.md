@@ -1,7 +1,7 @@
 
 
 # Java Genius API Wrapper
-This a java wrapper for the [Genius API](https://docs.genius.com). <br>
+This is a java wrapper for the [Genius API](https://docs.genius.com). <br>
 This library can be used with Java 11 or newer.
 
 ## Download

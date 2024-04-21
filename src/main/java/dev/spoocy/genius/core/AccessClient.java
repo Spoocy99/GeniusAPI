@@ -10,10 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * @author Spoocy99
- * Created on 18.02.2024
- * Discord: spoocy99
- * GitHub: Spoocy99
+ * @author Spoocy99 | GitHub: Spoocy99
  */
 
 public class AccessClient extends Client {
