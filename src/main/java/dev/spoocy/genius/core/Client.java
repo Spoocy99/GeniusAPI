@@ -32,7 +32,11 @@ public abstract class Client implements GeniusClient {
         }
 
         try {
-            Document document = Jsoup.connect(url).userAgent("Mozilla").get();
+            Document document = Jsoup
+                    .connect(url)
+                    .userAgent(getUserAgent())
+                    .get();
+
             document.select("br").append("\\n");
             document.select("p").prepend("\\n\\n");
 
