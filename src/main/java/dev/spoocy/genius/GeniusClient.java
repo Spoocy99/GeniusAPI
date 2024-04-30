@@ -23,6 +23,49 @@ import java.util.concurrent.ExecutionException;
 public interface GeniusClient extends Closeable {
 
     /**
+     * Get the Client ID that is used to authenticate to the API.
+     * <p>
+     * This was provided in the {@link GeniusClientBuilder} when building the client.
+     * @see GeniusClientBuilder#setClientId(String)
+     *
+     * @return The Client ID.
+     */
+    String getClientId();
+
+    /**
+     * Get the Client Secret that is used to authenticate to the API.
+     * <p>
+     * This was provided in the {@link GeniusClientBuilder} when building the client.
+     * @see GeniusClientBuilder#setClientSecret(String)
+     *
+     * @return The Client Secret.
+     */
+    String getClientSecret();
+
+    /**
+     * Get the url the client will redirect to after the user has authenticated.
+     * <p>
+     * Only needed when using {@link GeniusClientBuilder.AuthType#AUTHORIZATION_CODE}
+     * to authenticate.
+     * <p>
+     * This was provided in the {@link GeniusClientBuilder} when building the client.
+     * @see GeniusClientBuilder#setCallbackUrl(String)
+     *
+     * @return The Client ID.
+     */
+    String getCallbackUrl();
+
+    /**
+     * Get the user agent that is used in the header when making requests to the API.
+     * <p>
+     * This was provided in the {@link GeniusClientBuilder} when building the client.
+     * @see GeniusClientBuilder#setUserAgent(String)
+     *
+     * @return The User Agent.
+     */
+    String getUserAgent();
+
+    /**
      * Get the {@link Lyrics} of a song from a Genius URL.
      * <p>
      * URL should look like this: {@code https://genius.com/Sia-chandelier-lyrics} <br>
@@ -60,7 +103,7 @@ public interface GeniusClient extends Closeable {
      * Builds the Authorization URL.
      * <p>
      * Only needed when using {@link GeniusClientBuilder.AuthType#AUTHORIZATION_CODE}
-     * when building the {@link GeniusClient}.
+     * to authenticate.
      *
      * @see GeniusClientBuilder#setAuthType(GeniusClientBuilder.AuthType)
      *

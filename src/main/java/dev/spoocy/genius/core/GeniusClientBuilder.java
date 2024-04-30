@@ -12,10 +12,8 @@ public class GeniusClientBuilder {
 
     private String clientId;
     private String clientSecret;
-
     private String userAgent;
     private String callbackUrl;
-
     private AuthType authType;
 
     public GeniusClientBuilder setClientId(String clientId) {
@@ -28,7 +26,7 @@ public class GeniusClientBuilder {
         return this;
     }
 
-        public GeniusClientBuilder setCallbackUrl(String callbackUrl) {
+    public GeniusClientBuilder setCallbackUrl(String callbackUrl) {
         this.callbackUrl = callbackUrl;
         return this;
     }
@@ -47,6 +45,10 @@ public class GeniusClientBuilder {
 
         if(authType == null) {
             throw new IllegalArgumentException("AuthType must be provided in the GenuisClientBuilder.");
+        }
+
+        if(this.callbackUrl == null && this.authType == AuthType.AUTHORIZATION_CODE) {
+            throw new IllegalArgumentException("Callback URL must be provided when authenticating using an authorization code.");
         }
 
         if(this.userAgent == null) {

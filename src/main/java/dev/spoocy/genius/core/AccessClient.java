@@ -15,9 +15,10 @@ import java.io.InputStream;
 
 public class AccessClient extends Client {
 
-    private String CLIENT_ID;
-    private String CLIENT_SECRET;
-    private String USER_AGENT;
+    private final String CLIENT_ID;
+    private final String CLIENT_SECRET;
+    private final String USER_AGENT;
+    private final String CALLBACK_URI;
 
     private OkHttpClient httpClient;
 
@@ -26,6 +27,7 @@ public class AccessClient extends Client {
         this.CLIENT_ID = builder.getClientId();
         this.CLIENT_SECRET = builder.getClientSecret();
         this.USER_AGENT = builder.getUserAgent();
+        this.CALLBACK_URI = builder.getCallbackUrl();
 
         if(CLIENT_ID == null || CLIENT_SECRET == null) {
             this.status = ClientStatus.CLOSED;
@@ -54,8 +56,29 @@ public class AccessClient extends Client {
     }
 
     @Override
+    public String getClientId() {
+        return this.CLIENT_ID;
+    }
+
+    @Override
+    public String getClientSecret() {
+        return this.CLIENT_SECRET;
+    }
+
+    @Override
+    public String getCallbackUrl() {
+        return this.CALLBACK_URI;
+    }
+
+    @Override
+    public String getUserAgent() {
+        return this.USER_AGENT;
+    }
+
+    @Override
     public String buildAuthorizationUrl(@NotNull String secretState) {
         checkReady(false);
+        // not needed
         return "null";
     }
 

@@ -19,14 +19,21 @@ import java.util.concurrent.ExecutionException;
 
 public class AuthClient extends Client {
 
+    private final String CLIENT_ID;
+    private final String CLIENT_SECRET;
+    private final String USER_AGENT;
+    private final String CALLBACK_URI;
+
     private final OAuth20Service service;
     private OAuth2AccessToken accessToken;
     private String authorizationCode;
 
     public AuthClient(GeniusClientBuilder builder) {
         this.status = ClientStatus.STARTING;
-        String CLIENT_ID = builder.getClientId();
-        String CLIENT_SECRET = builder.getClientSecret();
+        CLIENT_ID = builder.getClientId();
+        CLIENT_SECRET = builder.getClientSecret();
+        USER_AGENT = builder.getUserAgent();
+        CALLBACK_URI = builder.getCallbackUrl();
 
         if(CLIENT_ID == null || CLIENT_SECRET == null) {
             this.status = ClientStatus.CLOSED;
@@ -36,8 +43,8 @@ public class AuthClient extends Client {
         ServiceBuilder authBuilder = new ServiceBuilder(CLIENT_ID)
                 .apiSecret(CLIENT_SECRET);
 
-        if(builder.getCallbackUrl() != null) authBuilder.callback(builder.getCallbackUrl());
-        if(builder.getUserAgent() != null) authBuilder.userAgent(builder.getUserAgent());
+        authBuilder.callback(CALLBACK_URI);
+        authBuilder.userAgent(USER_AGENT);
 
         this.service = authBuilder.build(new GeniusEndpoint());
         this.status = ClientStatus.WAITING;
@@ -53,6 +60,26 @@ public class AuthClient extends Client {
         Response response = service.execute(request);
 
         return response.getStream();
+    }
+
+    @Override
+    public String getClientId() {
+        return this.CLIENT_ID;
+    }
+
+    @Override
+    public String getClientSecret() {
+        return this.CLIENT_SECRET;
+    }
+
+    @Override
+    public String getCallbackUrl() {
+        return this.CALLBACK_URI;
+    }
+
+    @Override
+    public String getUserAgent() {
+        return this.USER_AGENT;
     }
 
     @Override
