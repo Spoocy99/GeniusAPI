@@ -1,5 +1,6 @@
 package dev.spoocy.genius.data;
 
+import dev.spoocy.common.config.Config;
 import dev.spoocy.common.config.Document;
 import lombok.Getter;
 
@@ -21,7 +22,7 @@ public class User {
     private String roleForDisplay;
     private String url;
 
-    public User(Document data) {
+    public User(Config data) {
         this.apiPath = data.getString("api_path", "null");
         this.avatar = new Avatar(data.getSection("avatar"));
         this.headerImageUrl = data.getString("header_image_url", "null");

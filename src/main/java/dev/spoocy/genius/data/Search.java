@@ -1,6 +1,6 @@
 package dev.spoocy.genius.data;
 
-import dev.spoocy.common.config.Document;
+import dev.spoocy.common.config.Config;
 import dev.spoocy.common.config.SectionArray;
 import lombok.Getter;
 
@@ -16,15 +16,19 @@ public class Search {
 
     private final List<SearchSong> results;
 
-    public Search(Document data) {
+    public Search(Config data) {
         this.results = new ArrayList<>();
-        SectionArray<? extends Document> hits = data.getSectionArray("hits");
+        SectionArray<? extends Config> hits = data.getSectionArray("hits");
 
         for(int i = 0; i < hits.length(); i++) {
-            Document hit = hits.get(i);
-            Document result = hit.getSection("result");
+            Config hit = hits.get(i);
+            Config result = hit.getSection("result");
             this.results.add(new SearchSong(result));
         }
+    }
+
+    public boolean hasResults() {
+        return !this.results.isEmpty();
     }
 
     @Override

@@ -1,6 +1,6 @@
 package dev.spoocy.genius.data;
 
-import dev.spoocy.common.config.Document;
+import dev.spoocy.common.config.Config;
 import dev.spoocy.common.config.SectionArray;
 import lombok.Getter;
 
@@ -42,7 +42,7 @@ public class Song {
     private Artist[] producerArtists;
     private Media[] media;
 
-    public Song(Document data) {
+    public Song(Config data) {
         this.annotationCount = data.getInt("annotation_count", 0);
         this.apiPath = data.getString("api_path", "null");
         this.appleMusicId = data.getString("apple_music_id", "null");
@@ -77,25 +77,25 @@ public class Song {
 
     }
 
-    private Artist[] getProducerArtists(SectionArray<? extends Document> array) {
+    private Artist[] getProducerArtists(SectionArray<? extends Config> array) {
         Artist[] artists = new Artist[array.length()];
         for(int i = 0; i < array.length(); i++) {
-            Document data = array.get(i);
+            Config data = array.get(i);
             artists[i] = new Artist(data);
         }
         return artists;
     }
 
-    private Media[] getMedia(SectionArray<? extends Document> array) {
+    private Media[] getMedia(SectionArray<? extends Config> array) {
         Media[] media = new Media[array.length()];
         for(int i = 0; i < array.length(); i++) {
-            Document data = array.get(i);
+            Config data = array.get(i);
             media[i] = new Media(data);
         }
         return media;
     }
 
-    private Description getDescription(Document data) {
+    private Description getDescription(Config data) {
         return new Description(
                 data.getString("plain", ""),
                 data.getString("html", "")

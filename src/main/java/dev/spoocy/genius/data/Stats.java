@@ -1,6 +1,6 @@
 package dev.spoocy.genius.data;
 
-import dev.spoocy.common.config.Document;
+import dev.spoocy.common.config.Config;
 import lombok.Getter;
 
 /**
@@ -19,7 +19,7 @@ public class Stats {
     private final boolean hot;
     private final int pageviews;
 
-    public Stats(Document data) {
+    public Stats(Config data) {
         this.acceptedAnnotations = data.getInt("accepted_annotations", 0);
         this.contributors = data.getInt("contributors", 0);
         this.iqEarners = data.getInt("iq_earners", 0);

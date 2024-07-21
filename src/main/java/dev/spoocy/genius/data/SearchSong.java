@@ -1,6 +1,6 @@
 package dev.spoocy.genius.data;
 
-import dev.spoocy.common.config.Document;
+import dev.spoocy.common.config.Config;
 import lombok.Getter;
 
 /**
@@ -30,7 +30,7 @@ public class SearchSong {
 
     private Artist artist;
 
-    public SearchSong(Document data) {
+    public SearchSong(Config data) {
         this.annotationCount = data.getInt("annotation_count", 0);
         this.apiPath = data.getString("api_path", "null");
         this.artistNames = data.getString("artist_names", "null");

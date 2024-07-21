@@ -1,6 +1,6 @@
 package dev.spoocy.genius.data;
 
-import dev.spoocy.common.config.Document;
+import dev.spoocy.common.config.Config;
 import lombok.Getter;
 
 import java.util.Arrays;
@@ -30,7 +30,7 @@ public class Artist {
     private long iq;
     private User user;
 
-    public Artist(Document data) {
+    public Artist(Config data) {
         this.alternateNames = data.getStringList("alternate_names").toArray(new String[0]);
         this.apiPath = data.getString("api_path", "null");
         this.description = getDescription(data.getSection("description"));
@@ -51,7 +51,7 @@ public class Artist {
 
     }
 
-    private Description getDescription(Document data) {
+    private Description getDescription(Config data) {
         return new Description(
                 data.getString("plain", ""),
                 data.getString("html", "")

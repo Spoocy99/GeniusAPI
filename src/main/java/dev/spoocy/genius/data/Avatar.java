@@ -1,5 +1,6 @@
 package dev.spoocy.genius.data;
 
+import dev.spoocy.common.config.Config;
 import dev.spoocy.common.config.Document;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,29 +17,29 @@ public class Avatar {
     private AvatarType small;
     private AvatarType medium;
 
-    public Avatar(Document data) {
-        Document tiny = data.getSection("tiny");
+    public Avatar(Config data) {
+        Config tiny = data.getSection("tiny");
         this.tiny = new AvatarType(
                 tiny.getString("url", "null"),
                 tiny.getSection("bounding_box").getInt("width", 0),
                 tiny.getSection("bounding_box").getInt("height", 0)
         );
 
-        Document thumb = data.getSection("thumb");
+        Config thumb = data.getSection("thumb");
         this.thumb = new AvatarType(
                 thumb.getString("url", "null"),
                 thumb.getSection("bounding_box").getInt("width", 0),
                 thumb.getSection("bounding_box").getInt("height", 0)
         );
 
-        Document small = data.getSection("small");
+        Config small = data.getSection("small");
         this.small = new AvatarType(
                 small.getString("url", "null"),
                 small.getSection("bounding_box").getInt("width", 0),
                 small.getSection("bounding_box").getInt("height", 0)
         );
 
-        Document medium = data.getSection("medium");
+        Config medium = data.getSection("medium");
         this.medium = new AvatarType(
                 medium.getString("url", "null"),
                 medium.getSection("bounding_box").getInt("width", 0),

@@ -1,5 +1,6 @@
 package dev.spoocy.genius.data;
 
+import dev.spoocy.common.config.Config;
 import dev.spoocy.common.config.Document;
 import lombok.Getter;
 
@@ -19,7 +20,7 @@ public class Album {
     private String url;
     private Artist artist;
 
-    public Album(Document data) {
+    public Album(Config data) {
         this.apiPath = data.getString("api_path", "null");
         this.coverArtUrl = data.getString("cover_art_url", "null");
         this.fullTitle = data.getString("full_title", "nul");
