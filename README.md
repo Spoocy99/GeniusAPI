@@ -105,11 +105,15 @@ Implementation Example: [AuthorizationCodeExample](src/test/java/AuthorizationCo
 Getting a Lyrics of a song.
 ```java
 String url = "https://genius.com/Kendrick-lamar-humble-lyrics";
-
-// Get the lyrics of a song by URL
-Lyrics lyrics = client.getLyrics(url);
-
-System.out.println(lyrics.getAsPlain());
+client.lyrics()                          // Get the lyrics of a song
+    .setSongUrl(url)                     // Set the URL of the song
+    .setSongName("Eine gute Frau")       // OR set the name of the song (if url is set, this will be ignored)
+    .doOnError(e -> {
+        System.out.println("Error while getting lyrics: " + e.getMessage());
+    })
+        .subscribe(lyrics -> {
+            System.out.println(lyrics.getAsPlain());
+        });
 ```
 ___
 
@@ -179,6 +183,20 @@ client.searchSong()
          // You can only get Description if you provided the format, otherwise it will be null
         System.out.println(String.format("Description: %s", song.getDescription().getPlain()));
     });
+```
+
+## Calling Results
+
+Calling results in sync:
+```java
+Search result = client.search().setQuery("Kendrick Lamar").execute();
+```
+
+Calling results in async:
+```java
+client.search().setQuery("Kendrick Lamar").subscribe(search -> {
+    System.out.println(search.getResults().get(0).getTitle());
+});
 ```
 
 ## Examples

@@ -73,8 +73,15 @@ public class AuthorizationCodeExample {
 
 
         String url = "https://genius.com/Kendrick-lamar-humble-lyrics";
-        Lyrics lyrics = client.getLyrics(url);          // Get the lyrics of a song by URL
-        System.out.println(lyrics.getAsPlain());
+        client.lyrics()                                          // Get the lyrics of a song
+                .setSongUrl(url)                                 // Set the url of the song
+                .setSongName("Kendrick Lamar humble")            // OR set the name of the song (if url is set, this will be ignored)
+                .doOnError(e -> {
+                    System.out.println("Error while getting lyrics: " + e.getMessage());
+                })
+                .subscribe(lyrics -> {
+                    System.out.println(lyrics.getAsPlain());
+                });
     }
 
 
