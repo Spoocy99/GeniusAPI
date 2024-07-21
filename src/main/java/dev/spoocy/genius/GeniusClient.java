@@ -1,6 +1,7 @@
 package dev.spoocy.genius;
 
 import dev.spoocy.genius.core.GeniusClientBuilder;
+import dev.spoocy.genius.core.request.LyricsRequestBuilder;
 import dev.spoocy.genius.data.Artist;
 import dev.spoocy.genius.data.Lyrics;
 import dev.spoocy.genius.data.Search;
@@ -66,17 +67,11 @@ public interface GeniusClient extends Closeable {
     String getUserAgent();
 
     /**
-     * Get the {@link Lyrics} of a song from a Genius URL.
-     * <p>
-     * URL should look like this: {@code https://genius.com/Sia-chandelier-lyrics} <br>
-     * URLs like this might not work: {@code https://genius.com/songs/378195}
+     * Searches for the {@link Lyrics} of a song.
      *
-     * @param url The URL of the song.
-     *
-     * @return The lyrics of the song.
+     * @return A {@link LyricsRequestBuilder} to build the request.
      */
-    @Nullable
-    Lyrics getLyrics(@NotNull String url);
+    LyricsRequestBuilder lyrics();
 
     /**
      * Searches for a {@link Song}.
@@ -148,6 +143,5 @@ public interface GeniusClient extends Closeable {
 
     String API_BASE = "https://api.genius.com/";
     String GENIUS_BASE = "https://genius.com/";
-    String LYRICS_CONTAINER = "Lyrics__Container-sc-1ynbvzw-1 kUgSbL";
 
 }

@@ -13,14 +13,20 @@ import java.util.List;
 
 public class Lyrics {
 
-    String plain;
-    List<LyricsPart> parts;
+    private final String title;
+    private final String plain;
+    private final List<LyricsPart> parts;
 
-    public Lyrics(@NotNull String plain) {
+    public Lyrics(@NotNull String title, @NotNull String plain) {
+        this.title = title;
         this.plain = plain;
-
         this.parts = new ArrayList<>();
+
         splitToParts();
+    }
+
+    public String getTitle() {
+        return title;
     }
 
     public String getAsPlain() {
@@ -66,6 +72,7 @@ public class Lyrics {
     @Override
     public String toString() {
         return "Lyrics{" +
+                "title='" + title + ", " +
                 "plain='" + plain + ", " +
                 "parts=" + parts +
                 '}';
