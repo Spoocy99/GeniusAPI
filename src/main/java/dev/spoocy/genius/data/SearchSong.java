@@ -1,7 +1,8 @@
 package dev.spoocy.genius.data;
 
-import dev.spoocy.common.config.Config;
+import dev.spoocy.utils.config.Config;
 import lombok.Getter;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * @author Spoocy99 | GitHub: Spoocy99
@@ -30,7 +31,7 @@ public class SearchSong {
 
     private Artist artist;
 
-    public SearchSong(Config data) {
+    public SearchSong(@NotNull Config data) {
         this.annotationCount = data.getInt("annotation_count", 0);
         this.apiPath = data.getString("api_path", "null");
         this.artistNames = data.getString("artist_names", "null");

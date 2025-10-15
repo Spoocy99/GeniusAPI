@@ -6,6 +6,7 @@ import com.github.scribejava.core.model.OAuthRequest;
 import com.github.scribejava.core.model.Response;
 import com.github.scribejava.core.model.Verb;
 import com.github.scribejava.core.oauth.OAuth20Service;
+import dev.spoocy.genius.GeniusClient;
 import dev.spoocy.genius.core.http.GeniusEndpoint;
 import org.jetbrains.annotations.NotNull;
 
@@ -28,7 +29,7 @@ public class AuthClient extends Client {
     private OAuth2AccessToken accessToken;
     private String authorizationCode;
 
-    public AuthClient(GeniusClientBuilder builder) {
+    public AuthClient(@NotNull GeniusClientBuilder builder) {
         this.status = ClientStatus.STARTING;
         CLIENT_ID = builder.getClientId();
         CLIENT_SECRET = builder.getClientSecret();
@@ -54,7 +55,9 @@ public class AuthClient extends Client {
     public InputStream execute(@NotNull String apiEndpoint) throws IOException, ExecutionException, InterruptedException {
         checkReady(true);
 
-        final OAuthRequest request = new OAuthRequest(Verb.GET, this.API_BASE + apiEndpoint);
+        String uri = GeniusClient.API_BASE + apiEndpoint;
+
+        final OAuthRequest request = new OAuthRequest(Verb.GET, uri);
         service.signRequest(accessToken, request);
 
         Response response = service.execute(request);
@@ -93,7 +96,7 @@ public class AuthClient extends Client {
         checkReady(false);
 
         this.authorizationCode = code;
-        setAccessToken();
+        updateAccessToken();
     }
 
     @Override
@@ -104,7 +107,7 @@ public class AuthClient extends Client {
         try { this.service.close(); } catch (IOException ignored) { }
     }
 
-    private void setAccessToken() {
+    private void updateAccessToken() {
 
         if(this.authorizationCode == null) {
             throw new IllegalArgumentException("Authorization code is missing. Please authenticate the client by providing the authorization code.");

@@ -25,14 +25,30 @@ public class Lyrics {
         splitToParts();
     }
 
+    /**
+     * Title of the song.
+     *
+     * @return The title of the lyrics.
+     */
     public String getTitle() {
         return title;
     }
 
+    /**
+     * Plain text of the lyrics.
+     *
+     * @return The plain text of the lyrics.
+     */
     public String getAsPlain() {
         return this.plain;
     }
 
+    /**
+     * Tries to extract different parts of the lyrics.
+     * (e.g. Verse, Chorus, etc.)
+     *
+     * @return The lyrics split into parts.
+     */
     public List<LyricsPart> getAsParts() {
         if(this.parts.isEmpty()) {
             splitToParts();

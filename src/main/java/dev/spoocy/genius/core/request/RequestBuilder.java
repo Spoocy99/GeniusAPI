@@ -1,9 +1,10 @@
 package dev.spoocy.genius.core.request;
 
-import dev.spoocy.common.config.Config;
-import dev.spoocy.common.config.documents.JsonConfig;
 import dev.spoocy.genius.GeniusClient;
 import dev.spoocy.genius.exception.GeniusException;
+import dev.spoocy.utils.common.exceptions.WrappedException;
+import dev.spoocy.utils.config.Config;
+import dev.spoocy.utils.config.documents.JsonConfig;
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONObject;
 import reactor.core.CoreSubscriber;
@@ -33,29 +34,41 @@ public abstract class RequestBuilder<T> extends Mono<T> {
 
     protected abstract String buildEndpointUrl();
 
-    protected abstract T buildObject(Config data);
+    protected abstract T buildObject(@NotNull Config data);
 
     public T execute() throws GeniusException {
         try {
-            InputStream data = getClient().execute(buildEndpointUrl());
-            return buildObject(buildData(data));
+
+            String endpoint = buildEndpointUrl();
+            InputStream data = getClient().execute(endpoint);
+
+            if(data == null) {
+                throw new GeniusException("No data received from Genius API.");
+            }
+
+            Config config;
+
+            try {
+                config = buildData(data);
+            } catch (Exception e) {
+                throw new GeniusException("Could not parse data from Genius API for endpoint: " + endpoint, e);
+            }
+
+            return buildObject(config);
         } catch (Exception e) {
-            throw new GeniusException("Error while executing request.", e);
+            WrappedException.rethrow(e);
         }
+
+        return null;
     }
 
     public void subscribe(@NotNull CoreSubscriber<? super T> coreSubscriber) {
-        try {
-            InputStream data = getClient().execute(buildEndpointUrl());
-            Mono.just(buildObject(buildData(data)))
-                    .doOnError(coreSubscriber::onError)
-                    .subscribe(coreSubscriber);
-        } catch (Exception e) {
-            coreSubscriber.onError(e);
-        }
+        Mono.just(execute())
+                .doOnError(coreSubscriber::onError)
+                .subscribe(coreSubscriber);
     }
 
-    private Config buildData(InputStream data) {
+    private Config buildData(@NotNull InputStream data) {
         InputStreamReader reader = new InputStreamReader(data);
         BufferedReader br = new BufferedReader(reader);
 
@@ -73,7 +86,12 @@ public abstract class RequestBuilder<T> extends Mono<T> {
             throw new GeniusException("Could not read response from Genius API.", e);
         }
 
-        JSONObject json = new JSONObject(response.toString());
+        JSONObject json;
+        try {
+            json = new JSONObject(response.toString());
+        } catch (Throwable e) {
+            throw new GeniusException("Wrong API Response: " + response, e);
+        }
 
         if(!json.has("meta")) {
             throw new GeniusException("No Body found. Please report this to the developer.");
@@ -88,7 +106,7 @@ public abstract class RequestBuilder<T> extends Mono<T> {
         JSONObject song = getDataObject(json);
 
         try {
-            return Config.readObject(JsonConfig.class, song);
+            return new JsonConfig(song);
         } catch (Throwable e) {
             throw new GeniusException("Could not parse JSON data.", e);
         }

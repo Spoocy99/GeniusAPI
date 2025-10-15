@@ -1,9 +1,9 @@
 package dev.spoocy.genius.data;
 
-import dev.spoocy.common.config.Config;
-import dev.spoocy.common.config.Document;
+import dev.spoocy.utils.config.Config;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * @author Spoocy99 | GitHub: Spoocy99
@@ -17,7 +17,7 @@ public class Avatar {
     private AvatarType small;
     private AvatarType medium;
 
-    public Avatar(Config data) {
+    public Avatar(@NotNull Config data) {
         Config tiny = data.getSection("tiny");
         this.tiny = new AvatarType(
                 tiny.getString("url", "null"),

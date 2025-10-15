@@ -1,8 +1,9 @@
 package dev.spoocy.genius.core.request;
 
-import dev.spoocy.common.config.Config;
 import dev.spoocy.genius.GeniusClient;
 import dev.spoocy.genius.data.Search;
+import dev.spoocy.utils.config.Config;
+import org.jetbrains.annotations.NotNull;
 import org.json.JSONObject;
 
 /**
@@ -33,7 +34,7 @@ public class SearchRequestBuilder extends RequestBuilder<Search> {
     }
 
     @Override
-    protected Search buildObject(Config data) {
+    protected Search buildObject(@NotNull Config data) {
         return new Search(data);
     }
 

@@ -1,8 +1,9 @@
 package dev.spoocy.genius.data;
 
-import dev.spoocy.common.config.Config;
-import dev.spoocy.common.config.SectionArray;
+import dev.spoocy.utils.config.Config;
+import dev.spoocy.utils.config.SectionArray;
 import lombok.Getter;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * @author Spoocy99 | GitHub: Spoocy99
@@ -42,7 +43,7 @@ public class Song {
     private Artist[] producerArtists;
     private Media[] media;
 
-    public Song(Config data) {
+    public Song(@NotNull Config data) {
         this.annotationCount = data.getInt("annotation_count", 0);
         this.apiPath = data.getString("api_path", "null");
         this.appleMusicId = data.getString("apple_music_id", "null");

@@ -1,10 +1,10 @@
 package dev.spoocy.genius.core.request;
 
-import dev.spoocy.common.config.Config;
-import dev.spoocy.common.config.Document;
 import dev.spoocy.genius.GeniusClient;
 import dev.spoocy.genius.data.Song;
 import dev.spoocy.genius.core.TextFormat;
+import dev.spoocy.utils.config.Config;
+import org.jetbrains.annotations.NotNull;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -46,7 +46,7 @@ public class SongRequestBuilder extends RequestBuilder<Song> {
     }
 
     @Override
-    protected Song buildObject(Config data) {
+    protected Song buildObject(@NotNull Config data) {
         return new Song(data);
     }
 

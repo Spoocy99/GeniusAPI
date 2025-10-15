@@ -6,7 +6,7 @@
 
     <groupId>dev.spoocy.genius</groupId>
     <artifactId>GeniusAPI</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -32,15 +32,21 @@
     <dependencies>
 
         <dependency>
-            <groupId>dev.spoocy.utils</groupId>
-            <artifactId>common-utils</artifactId>
-            <version>1.0.4</version>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>26.0.2</version>
         </dependency>
 
         <dependency>
-            <groupId>org.jetbrains</groupId>
-            <artifactId>annotations</artifactId>
-            <version>24.1.0</version>
+            <groupId>dev.spoocy.utils</groupId>
+            <artifactId>common-utils</artifactId>
+            <version>1.0.8</version>
+        </dependency>
+
+        <dependency>
+            <groupId>dev.spoocy.utils</groupId>
+            <artifactId>config-utils</artifactId>
+            <version>1.0.8</version>
         </dependency>
 
         <dependency>
@@ -78,6 +84,28 @@
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
             <version>1.16.1</version>
+        </dependency>
+
+        <!-- Tests -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>5.16.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>5.16.0</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>

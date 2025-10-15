@@ -1,7 +1,8 @@
 package dev.spoocy.genius.data;
 
-import dev.spoocy.common.config.Config;
+import dev.spoocy.utils.config.Config;
 import lombok.Getter;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * @author Spoocy99 | GitHub: Spoocy99
@@ -19,7 +20,7 @@ public class Stats {
     private final boolean hot;
     private final int pageviews;
 
-    public Stats(Config data) {
+    public Stats(@NotNull Config data) {
         this.acceptedAnnotations = data.getInt("accepted_annotations", 0);
         this.contributors = data.getInt("contributors", 0);
         this.iqEarners = data.getInt("iq_earners", 0);

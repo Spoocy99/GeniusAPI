@@ -1,14 +1,14 @@
 package dev.spoocy.genius.core.request;
 
-import dev.spoocy.common.config.Config;
-import dev.spoocy.common.config.Document;
 import dev.spoocy.genius.GeniusClient;
 import dev.spoocy.genius.data.Lyrics;
 import dev.spoocy.genius.data.Search;
 import dev.spoocy.genius.exception.GeniusException;
+import dev.spoocy.utils.config.Config;
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.safety.Safelist;
 import reactor.core.CoreSubscriber;
@@ -22,8 +22,9 @@ import java.io.IOException;
 
 public class LyricsRequestBuilder extends RequestBuilder<Lyrics> {
 
-    private final String LYRICS_CONTAINER = "Lyrics__Container-sc-1ynbvzw-1 kUgSbL";
-    private final String TITLE_CONTAINER = "SongHeaderdesktop__HiddenMask-sc-1effuo1-11 iMpFIj";
+    private static final String LYRICS_CONTAINER = "Lyrics__Container-sc-cbcfa1dc-1 dfzvqs";
+    private static final String LYRICS_CONTAINER_HEADER = "LyricsHeader__Container-sc-5b7f377c-1 bMHdTY";
+    private static final String TITLE_CONTAINER = "SongHeader-desktop__HiddenMask-sc-e33a5cab-13 ccUdQo";
 
     private String url;
     private String query;
@@ -54,7 +55,7 @@ public class LyricsRequestBuilder extends RequestBuilder<Lyrics> {
     }
 
     @Override
-    protected Lyrics buildObject(Config data) {
+    protected Lyrics buildObject(@NotNull Config data) {
         return null;
     }
 
@@ -76,7 +77,7 @@ public class LyricsRequestBuilder extends RequestBuilder<Lyrics> {
 
     private Lyrics getLyrics() {
         try {
-            org.jsoup.nodes.Document document = Jsoup
+            Document document = Jsoup
                     .connect(buildEndpointUrl())
                     .userAgent(getClient().getUserAgent())
                     .get();
@@ -90,7 +91,10 @@ public class LyricsRequestBuilder extends RequestBuilder<Lyrics> {
                 throw new GeniusException("Could not find Lyrics Container. Check the URL and report this to the developer.");
             }
 
-            String lyrics = Jsoup.clean(lyricsElement.html(), "", Safelist.none(), new org.jsoup.nodes.Document.OutputSettings().prettyPrint(false)).replace("\\n", "\n");
+            // Remove the header "Lyrics" from the lyrics container if it exists
+            lyricsElement.getElementsByClass(LYRICS_CONTAINER_HEADER).forEach(Element::remove);
+
+            String lyrics = Jsoup.clean(lyricsElement.html(), "", Safelist.none(), new Document.OutputSettings().prettyPrint(false)).replace("\\n", "\n");
             String title = !isNullOrEmpty(cachedTitle) ? cachedTitle : document.getElementsByClass(TITLE_CONTAINER).get(0).text();
 
             return new Lyrics(title, lyrics);

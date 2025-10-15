@@ -1,7 +1,8 @@
 package dev.spoocy.genius.data;
 
-import dev.spoocy.common.config.Config;
+import dev.spoocy.utils.config.Config;
 import lombok.Getter;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * @author Spoocy99 | GitHub: Spoocy99
@@ -18,7 +19,7 @@ public class Media {
     private String nativeUri;
     private String attribution;
 
-    public Media(Config data) {
+    public Media(@NotNull Config data) {
         this.provider = data.getString("provider", "null");
         this.type = data.getString("type", "null");
         this.url = data.getString("url", "null");

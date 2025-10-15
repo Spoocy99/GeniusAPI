@@ -1,8 +1,8 @@
 package dev.spoocy.genius.data;
 
-import dev.spoocy.common.config.Config;
-import dev.spoocy.common.config.Document;
+import dev.spoocy.utils.config.Config;
 import lombok.Getter;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * @author Spoocy99 | GitHub: Spoocy99
@@ -22,7 +22,7 @@ public class User {
     private String roleForDisplay;
     private String url;
 
-    public User(Config data) {
+    public User(@NotNull Config data) {
         this.apiPath = data.getString("api_path", "null");
         this.avatar = new Avatar(data.getSection("avatar"));
         this.headerImageUrl = data.getString("header_image_url", "null");

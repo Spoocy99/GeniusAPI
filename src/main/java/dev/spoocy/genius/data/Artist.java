@@ -1,7 +1,8 @@
 package dev.spoocy.genius.data;
 
-import dev.spoocy.common.config.Config;
+import dev.spoocy.utils.config.Config;
 import lombok.Getter;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
 
@@ -30,7 +31,7 @@ public class Artist {
     private long iq;
     private User user;
 
-    public Artist(Config data) {
+    public Artist(@NotNull Config data) {
         this.alternateNames = data.getStringList("alternate_names").toArray(new String[0]);
         this.apiPath = data.getString("api_path", "null");
         this.description = getDescription(data.getSection("description"));

@@ -1,5 +1,6 @@
 package dev.spoocy.genius.core;
 
+import dev.spoocy.genius.GeniusClient;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -22,8 +23,7 @@ public class AccessClient extends Client {
 
     private OkHttpClient httpClient;
 
-    public AccessClient(GeniusClientBuilder builder) {
-        this.status = ClientStatus.STARTING;
+    public AccessClient(@NotNull GeniusClientBuilder builder) {
         this.CLIENT_ID = builder.getClientId();
         this.CLIENT_SECRET = builder.getClientSecret();
         this.USER_AGENT = builder.getUserAgent();
@@ -41,8 +41,9 @@ public class AccessClient extends Client {
     @Override
     public InputStream execute(@NotNull String apiEndpoint) throws IOException {
         checkReady(true);
+        String uri = GeniusClient.API_BASE + apiEndpoint;
         Request request = new Request.Builder()
-                .url(API_BASE + apiEndpoint)
+                .url(uri)
                 .get()
                 .build();
 

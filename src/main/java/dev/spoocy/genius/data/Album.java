@@ -1,8 +1,8 @@
 package dev.spoocy.genius.data;
 
-import dev.spoocy.common.config.Config;
-import dev.spoocy.common.config.Document;
+import dev.spoocy.utils.config.Config;
 import lombok.Getter;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * @author Spoocy99 | GitHub: Spoocy99
@@ -20,7 +20,7 @@ public class Album {
     private String url;
     private Artist artist;
 
-    public Album(Config data) {
+    public Album(@NotNull Config data) {
         this.apiPath = data.getString("api_path", "null");
         this.coverArtUrl = data.getString("cover_art_url", "null");
         this.fullTitle = data.getString("full_title", "nul");

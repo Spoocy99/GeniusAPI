@@ -1,9 +1,10 @@
 package dev.spoocy.genius.core.request;
 
-import dev.spoocy.common.config.Config;
 import dev.spoocy.genius.data.Artist;
 import dev.spoocy.genius.GeniusClient;
 import dev.spoocy.genius.core.TextFormat;
+import dev.spoocy.utils.config.Config;
+import org.jetbrains.annotations.NotNull;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -44,7 +45,7 @@ public class ArtistRequestBuilder extends RequestBuilder<Artist> {
     }
 
     @Override
-    protected Artist buildObject(Config data) {
+    protected Artist buildObject(@NotNull Config data) {
         return new Artist(data);
     }
 

@@ -1,37 +1,24 @@
 import dev.spoocy.genius.GeniusClient;
 import dev.spoocy.genius.core.GeniusClientBuilder;
-import dev.spoocy.genius.data.Lyrics;
 import dev.spoocy.genius.data.SearchSong;
 import dev.spoocy.genius.core.TextFormat;
-
-import java.nio.charset.StandardCharsets;
-import java.util.Scanner;
 
 /**
  * @author Spoocy99 | GitHub: Spoocy99
  */
 
-public class AuthorizationCodeExample {
+public class AccessTokenExample {
 
     public static void main(String[] args) {
-        String SECRET_STATE = "100";
-
         GeniusClient client = new GeniusClientBuilder()
                 .setClientId("your_client_id")                                      // Set the Client ID
                 .setClientSecret("your_client_secret")                              // Set the Client Secret
-                .setAuthType(GeniusClientBuilder.AuthType.AUTHORIZATION_CODE)      // Set the Auth Type
+                .setAuthType(GeniusClientBuilder.AuthType.CLIENT_ACCESS_TOKEN)      // Set the Auth Type
                 .setCallbackUrl("https://localhost")                                // Set the Callback URL
-                .setUserAgent("Mozilla/5.0")                                        // Set the User Agent
+                .setUserAgent("Genius-client-test/1.0")                             // Set the User Agent, certain User Agents might be blocked by Genius
                 .build();
 
-        System.out.println("Authenticate here and paste code: " + client.buildAuthorizationUrl(SECRET_STATE));  // Print the URL to authenticate
-
-        final String code;
-        try (Scanner in = new Scanner(System.in, StandardCharsets.UTF_8)) {
-            code = in.nextLine();
-            System.out.println();
-        }
-        client.setAuthorizationCode(code);      // Set the Authorization Code, otherwise no requests can be made
+        client.setAuthorizationCode("your_access_token_from_genius");        // Set the Access Token, otherwise no requests can be made
 
         client.searchSong()                     // Search for a specific song by ID
                 .setId("378195")                // Set the ID of the song
@@ -69,8 +56,6 @@ public class AuthorizationCodeExample {
                     System.out.println(String.format("Artist: %s", firstResult.getArtist().getName()));
                     System.out.println(String.format("URL: %s", firstResult.getUrl()));
                 });
-
-
 
         String url = "https://genius.com/Kendrick-lamar-humble-lyrics";
         client.lyrics()                                          // Get the lyrics of a song
