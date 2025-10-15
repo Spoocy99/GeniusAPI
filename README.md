@@ -202,5 +202,5 @@ client.search().setQuery("Kendrick Lamar").subscribe(search -> {
 ## Examples
 
 The following examples are minimal implementations but show how the library works.
-  - Making Requests using a Client Access Token: [link](src/test/java/AccessTokenExample.java)
-  - Making Requests using an Access Token: [link](src/test/java/AuthorizationCodeExample.java)
+  - Making Requests using a Client Access Token: [link](src/examples/java/AccessTokenExample.java)
+  - Making Requests using an Access Token: [link](src/examples/java/AuthorizationCodeExample.java)
