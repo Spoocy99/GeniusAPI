@@ -30,13 +30,8 @@ public class LyricsRequestBuilder extends RequestBuilder<Lyrics> {
     private String query;
     private String cachedTitle;
 
-    public LyricsRequestBuilder(GeniusClient client) {
+    public LyricsRequestBuilder(@NotNull GeniusClient client) {
         super(client);
-    }
-
-    @Override
-    protected JSONObject getDataObject(JSONObject response) {
-        return null;
     }
 
     @Override
@@ -56,6 +51,13 @@ public class LyricsRequestBuilder extends RequestBuilder<Lyrics> {
 
     @Override
     protected Lyrics buildObject(@NotNull Config data) {
+        // Not used as execute() is overridden
+        return null;
+    }
+
+    @Override
+    protected JSONObject getDataObject(@NotNull JSONObject response) {
+        // Not used as execute() is overridden
         return null;
     }
 

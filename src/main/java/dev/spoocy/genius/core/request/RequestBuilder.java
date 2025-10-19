@@ -30,11 +30,11 @@ public abstract class RequestBuilder<T> extends Mono<T> {
         return client;
     }
 
-    protected abstract JSONObject getDataObject(JSONObject response);
-
     protected abstract String buildEndpointUrl();
 
     protected abstract T buildObject(@NotNull Config data);
+
+    protected abstract JSONObject getDataObject(@NotNull JSONObject response);
 
     public T execute() throws GeniusException {
         try {
@@ -103,9 +103,8 @@ public abstract class RequestBuilder<T> extends Mono<T> {
             throw new GeniusException("Error while getting Song " + status + ": " + json.getJSONObject("meta").getString("message"));
         }
 
-        JSONObject song = getDataObject(json);
-
         try {
+            JSONObject song = getDataObject(json);
             return new JsonConfig(song);
         } catch (Throwable e) {
             throw new GeniusException("Could not parse JSON data.", e);

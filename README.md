@@ -2,11 +2,11 @@
 
 # Java Genius API Wrapper
 This is a java wrapper for the [Genius API](https://docs.genius.com). <br>
-This library can be used with Java 11 or newer.
+This library requires Java 11 or newer.
 
 ## Download
 
-[![Release](https://repo.coding-stube.de/api/badge/latest/releases/dev/spoocy/genius/GeniusAPI?color=0F81C2&name=release&prefix=v)](https://repo.coding-stube.de/#/releases/dev/spoocy/genius/GeniusAPI)
+[![Version](https://repo.coding-stube.de/api/badge/latest/releases/dev/spoocy/genius/GeniusAPI?color=0F81C2&name=Version&prefix=v)](https://repo.coding-stube.de/#/releases/dev/spoocy/genius/GeniusAPI)
 
 Be sure to replace the **VERSION** key below with the version shown above!
 ```xml

@@ -15,13 +15,8 @@ public class SearchRequestBuilder extends RequestBuilder<Search> {
     private static final String BASE_URL = "search?q=";
     private String query;
 
-    public SearchRequestBuilder(GeniusClient client) {
+    public SearchRequestBuilder(@NotNull GeniusClient client) {
         super(client);
-    }
-
-    @Override
-    protected JSONObject getDataObject(JSONObject response) {
-        return response.getJSONObject("response");
     }
 
     @Override
@@ -38,7 +33,12 @@ public class SearchRequestBuilder extends RequestBuilder<Search> {
         return new Search(data);
     }
 
-    public SearchRequestBuilder setQuery(String query) {
+    @Override
+    protected JSONObject getDataObject(@NotNull JSONObject response) {
+        return response.getJSONObject("response");
+    }
+
+    public SearchRequestBuilder setQuery(@NotNull String query) {
         this.query = query;
         return this;
     }

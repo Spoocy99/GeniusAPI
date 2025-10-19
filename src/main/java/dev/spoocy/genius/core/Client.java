@@ -16,7 +16,7 @@ public abstract class Client implements GeniusClient {
     protected ClientStatus status;
 
     @Override
-    public @Nullable LyricsRequestBuilder lyrics() {
+    public LyricsRequestBuilder lyrics() {
         checkReady(true);
         return new LyricsRequestBuilder(this);
     }

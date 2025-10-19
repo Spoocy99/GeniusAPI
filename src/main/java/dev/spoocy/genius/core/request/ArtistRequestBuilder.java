@@ -20,14 +20,9 @@ public class ArtistRequestBuilder extends RequestBuilder<Artist> {
     private String id;
     private final List<TextFormat> formats;
 
-    public ArtistRequestBuilder(GeniusClient client) {
+    public ArtistRequestBuilder(@NotNull GeniusClient client) {
         super(client);
         this.formats = new ArrayList<>();
-    }
-
-    @Override
-    protected JSONObject getDataObject(JSONObject response) {
-        return response.getJSONObject("response").getJSONObject("artist");
     }
 
     @Override
@@ -49,12 +44,17 @@ public class ArtistRequestBuilder extends RequestBuilder<Artist> {
         return new Artist(data);
     }
 
-    public ArtistRequestBuilder setId(String id) {
+    @Override
+    protected JSONObject getDataObject(@NotNull JSONObject response) {
+        return response.getJSONObject("response").getJSONObject("artist");
+    }
+
+    public ArtistRequestBuilder setId(@NotNull String id) {
         this.id = id;
         return this;
     }
 
-    public ArtistRequestBuilder addFormat(TextFormat format) {
+    public ArtistRequestBuilder addFormat(@NotNull TextFormat format) {
         if(!this.formats.contains(format)) {
             this.formats.add(format);
         }

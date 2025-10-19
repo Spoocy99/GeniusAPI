@@ -21,14 +21,9 @@ public class SongRequestBuilder extends RequestBuilder<Song> {
     private String id;
     private final List<TextFormat> formats;
 
-    public SongRequestBuilder(GeniusClient client) {
+    public SongRequestBuilder(@NotNull GeniusClient client) {
         super(client);
         this.formats = new ArrayList<>();
-    }
-
-    @Override
-    protected JSONObject getDataObject(JSONObject response) {
-        return response.getJSONObject("response").getJSONObject("song");
     }
 
     @Override
@@ -50,12 +45,17 @@ public class SongRequestBuilder extends RequestBuilder<Song> {
         return new Song(data);
     }
 
-    public SongRequestBuilder setId(String id) {
+    @Override
+    protected JSONObject getDataObject(@NotNull JSONObject response) {
+        return response.getJSONObject("response").getJSONObject("song");
+    }
+
+    public SongRequestBuilder setId(@NotNull String id) {
         this.id = id;
         return this;
     }
 
-    public SongRequestBuilder addFormat(TextFormat format) {
+    public SongRequestBuilder addFormat(@NotNull TextFormat format) {
         if(!this.formats.contains(format)) {
             this.formats.add(format);
         }
