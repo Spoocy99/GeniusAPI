@@ -1,6 +1,7 @@
 package dev.spoocy.genius.core.request;
 
 import dev.spoocy.genius.GeniusClient;
+import dev.spoocy.genius.core.lyrics.LyricsScraper;
 import dev.spoocy.genius.data.Lyrics;
 import dev.spoocy.genius.data.Search;
 import dev.spoocy.genius.exception.GeniusException;
@@ -11,6 +12,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.safety.Safelist;
+import org.jsoup.select.Elements;
 import reactor.core.CoreSubscriber;
 import reactor.core.publisher.Mono;
 
@@ -21,10 +23,6 @@ import java.io.IOException;
  */
 
 public class LyricsRequestBuilder extends RequestBuilder<Lyrics> {
-
-    private static final String LYRICS_CONTAINER = "Lyrics__Container-sc-cbcfa1dc-1 dfzvqs";
-    private static final String LYRICS_CONTAINER_HEADER = "LyricsHeader__Container-sc-5b7f377c-1 bMHdTY";
-    private static final String TITLE_CONTAINER = "SongHeader-desktop__HiddenMask-sc-e33a5cab-13 ccUdQo";
 
     private String url;
     private String query;
@@ -87,17 +85,24 @@ public class LyricsRequestBuilder extends RequestBuilder<Lyrics> {
             document.select("br").append("\\n");
             document.select("p").prepend("\\n\\n");
 
-            Element lyricsElement = document.getElementsByClass(LYRICS_CONTAINER).get(0);
+            Elements lyricsElements = document.getElementsByClass(LyricsScraper.getLyricsContainer());
+
+            if (lyricsElements.isEmpty()) {
+                throw new GeniusException("Could not find Lyrics Container. This happens when Genius changes their website. Report this to the developer and/or try to set the container ids directly via the LyricsScraper.");
+            }
+
+            Element lyricsElement = lyricsElements.get(0);
 
             if (!lyricsElement.hasText()) {
-                throw new GeniusException("Could not find Lyrics Container. Check the URL and report this to the developer.");
+                throw new GeniusException("Lyrics Container does not contain lyrics. This happens when Genius changes their website. Report this to the developer and/or try to set the container ids directly via the LyricsScraper.");
             }
 
             // Remove the header "Lyrics" from the lyrics container if it exists
-            lyricsElement.getElementsByClass(LYRICS_CONTAINER_HEADER).forEach(Element::remove);
+            lyricsElement.getElementsByClass(LyricsScraper.getLyricsContainerHeader())
+                    .forEach(Element::remove);
 
             String lyrics = Jsoup.clean(lyricsElement.html(), "", Safelist.none(), new Document.OutputSettings().prettyPrint(false)).replace("\\n", "\n");
-            String title = !isNullOrEmpty(cachedTitle) ? cachedTitle : document.getElementsByClass(TITLE_CONTAINER).get(0).text();
+            String title = !isNullOrEmpty(cachedTitle) ? cachedTitle : document.getElementsByClass(LyricsScraper.getTitleContainer()).get(0).text();
 
             return new Lyrics(title, lyrics);
         } catch (IOException e) {

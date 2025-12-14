@@ -105,9 +105,9 @@ Implementation Example: [AuthorizationCodeExample](src/test/java/AuthorizationCo
 Getting a Lyrics of a song.
 ```java
 String url = "https://genius.com/Kendrick-lamar-humble-lyrics";
-client.lyrics()                          // Get the lyrics of a song
-    .setSongUrl(url)                     // Set the URL of the song
-    .setSongName("Eine gute Frau")       // OR set the name of the song (if url is set, this will be ignored)
+client.lyrics()                             // Get the lyrics of a song
+    .setSongUrl(url)                        // Set the URL of the song
+    .setSongName("Kendrick Lamar Humble")   // OR set the name of the song (if url is set, this will be ignored)
     .doOnError(e -> {
         System.out.println("Error while getting lyrics: " + e.getMessage());
     })
@@ -204,3 +204,21 @@ client.search().setQuery("Kendrick Lamar").subscribe(search -> {
 The following examples are minimal implementations but show how the library works.
   - Making Requests using a Client Access Token: [link](src/examples/java/AccessTokenExample.java)
   - Making Requests using an Access Token: [link](src/examples/java/AuthorizationCodeExample.java)
+
+
+----
+
+## Lyrics Errors
+- `GeniusException`: Could not find Lyrics Container. This happens when Genius changes their website. Report this to the developer and/or try to set the container ids directly via the LyricsScraper.
+- `GeniusException`: Could not find Lyrics Container. This happens when Genius changes their website. Report this to the developer and/or try to set the container ids directly via the LyricsScraper.
+
+This means that the library could not find the lyrics container on the website because Genius changed their names. 
+You can wait for an update or try to set the container ids directly via the LyricsScraper like this:
+    
+```java
+LyricsScraper.setLyricsContainer("...");        // This is the container that contains all lyrics elements
+LyricsScraper.setLyricsContainerHeader("...");  // This is the header used for filtering the lyrics
+LyricsScraper.setTitleContainer("...");         // This is the container that contains the title of the song
+```
+
+You will have to inspect the Genius website in order to find the new container ids.

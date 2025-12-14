@@ -6,7 +6,7 @@
 
     <groupId>dev.spoocy.genius</groupId>
     <artifactId>GeniusAPI</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -40,13 +40,13 @@
         <dependency>
             <groupId>dev.spoocy.utils</groupId>
             <artifactId>common-utils</artifactId>
-            <version>1.0.8</version>
+            <version>1.0.9</version>
         </dependency>
 
         <dependency>
             <groupId>dev.spoocy.utils</groupId>
             <artifactId>config-utils</artifactId>
-            <version>1.0.8</version>
+            <version>1.0.9</version>
         </dependency>
 
         <dependency>
