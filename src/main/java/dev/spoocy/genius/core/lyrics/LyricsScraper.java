@@ -1,5 +1,7 @@
 package dev.spoocy.genius.core.lyrics;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * @author Spoocy99 | GitHub: Spoocy99
  */
@@ -34,7 +36,7 @@ public class LyricsScraper {
      * @param className
      *          the class name to set
      */
-    public static void setLyricsContainer(String className) {
+    public static void setLyricsContainer(@NotNull String className) {
         LYRICS_CONTAINER = className;
     }
 
@@ -58,7 +60,7 @@ public class LyricsScraper {
      * @param className
      *          the class name to set
      */
-    public static void setLyricsContainerHeader(String className) {
+    public static void setLyricsContainerHeader(@NotNull String className) {
         LYRICS_CONTAINER_HEADER = className;
     }
 
@@ -79,11 +81,10 @@ public class LyricsScraper {
      * <p>
      * This should only be used if the library cannot find the lyrics' title.
      *
-     *
      * @param className
      *          the class name to set
      */
-    public static void setTitleContainer(String className) {
+    public static void setTitleContainer(@NotNull String className) {
         TITLE_CONTAINER = className;
     }
 
