@@ -84,52 +84,68 @@ public class AccountObject extends UserObject implements Account {
     }
 
 
-
     @Override
     public @Nullable String getAboutMe(@NotNull TextFormat format) {
         String d = this.aboutMe.get(format);
-        if(d == null) {
+        if (d == null) {
             throw new IllegalArgumentException("AboutMe does not contain format: " + format.getKey());
         }
         return d;
     }
 
     @Override
-    public @Nullable String getEmail() { return this.email; }
+    public @Nullable String getEmail() {
+        return this.email;
+    }
 
     @Override
-    public @Nullable Integer getFollowedUsersCount() { return this.followedUsersCount; }
+    public @Nullable Integer getFollowedUsersCount() {
+        return this.followedUsersCount;
+    }
 
     @Override
-    public @Nullable String getIqForDisplay() { return this.iqForDisplay; }
+    public @Nullable String getIqForDisplay() {
+        return this.iqForDisplay;
+    }
 
     @Override
-    public @Nullable Integer getUnreadGroupsInboxCount() { return this.unreadGroupsInboxCount; }
+    public @Nullable Integer getUnreadGroupsInboxCount() {
+        return this.unreadGroupsInboxCount;
+    }
 
     @Override
-    public @Nullable Integer getUnreadMainActivityInboxCount() { return this.unreadMainActivityInboxCount; }
+    public @Nullable Integer getUnreadMainActivityInboxCount() {
+        return this.unreadMainActivityInboxCount;
+    }
 
     @Override
-    public @Nullable Integer getUnreadNewsfeedInboxCount() { return this.unreadNewsfeedInboxCount; }
+    public @Nullable Integer getUnreadNewsfeedInboxCount() {
+        return this.unreadNewsfeedInboxCount;
+    }
 
     @Override
-    public @Nullable Integer getUnreadMessagesCount() { return this.unreadMessagesCount; }
+    public @Nullable Integer getUnreadMessagesCount() {
+        return this.unreadMessagesCount;
+    }
 
     @Override
-    public @Nullable Artist getArtist() { return this.artist; }
+    public @Nullable Artist getArtist() {
+        return this.artist;
+    }
 
     public static final class Parser extends AbstractModelParser<Account> {
 
         public static final Parser INSTANCE = new Parser();
 
-        private Parser() {}
+        private Parser() {
+        }
 
         @Override
         public Account parseResponse(String json) {
             return this.parse(
-                new JSONObject(json)
-                        .getJSONObject("response")
-                        .getJSONObject("user")
+                    new JSONObject(json)
+                            .getJSONObject("response")
+                            .getJSONObject("user")
             );
         }
 
@@ -139,7 +155,7 @@ public class AccountObject extends UserObject implements Account {
             UserObject base = (UserObject) UserObject.Parser.INSTANCE.parse(data);
 
             Artist artist = null;
-            if(data.isSet("artist")) {
+            if (data.isSet("artist")) {
                 artist = ArtistObject.Parser.INSTANCE.parse(data.getSection("artist"));
             }
 

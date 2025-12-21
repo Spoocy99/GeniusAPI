@@ -12,6 +12,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.json.JSONParserConfiguration;
 import org.reactivestreams.Publisher;
 import org.reactivestreams.Subscriber;
 import reactor.core.CoreSubscriber;
@@ -124,10 +125,9 @@ public abstract class AbstractRequest<T> extends Mono<T> implements IRequest<T> 
         return this.contentType;
     }
 
-    private static final Set<String> KEEP_DATA_TYPES = java.util.Set.of(
-            "collaborative", "device_ids", "ids", "insert_before", "offset",
-            "play", "position", "position_ms", "public", "range_length",
-            "range_start", "tracks", "uris"
+    private static final Set<String> KEEP_DATA_TYPES = Set.of(
+            "id", "created_by_id", "song_id",
+            "web_page_id", "per_page", "page"
     );
 
     /**
@@ -147,22 +147,15 @@ public abstract class AbstractRequest<T> extends Mono<T> implements IRequest<T> 
             if (KEEP_DATA_TYPES.contains(name)) {
 
                 try {
-                    // Try to parse the value as JSON (to handle arrays, booleans, numbers, etc.)
-                    Object parsedValue = new JSONObject("{\"value\":" + value + "}")
-                            .get("value");
+                    // Try to parse the value as JSON
+                    Object parsedValue = new JSONObject(value, new JSONParserConfiguration());
                     jsonObject.append(name, parsedValue);
                     continue;
 
-                } catch (JSONException e) {
-                    // String-parsing failed so fall back
-                    jsonObject.append(name, value);
-                }
-                continue;
+                } catch (JSONException ignored) {}
 
             }
 
-            // For string parameters (like name, description), always keep as string
-            // This prevents numeric strings like "2025" from being converted to numbers
             jsonObject.append(name, value);
         }
 

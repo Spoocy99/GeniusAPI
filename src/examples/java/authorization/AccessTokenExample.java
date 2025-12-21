@@ -1,3 +1,5 @@
+package authorization;
+
 import dev.spoocy.genius.GeniusClient;
 import dev.spoocy.genius.core.TextFormat;
 

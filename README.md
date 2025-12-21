@@ -1,7 +1,7 @@
 # Java Genius API Wrapper
 This is a java wrapper for the [Genius API](https://docs.genius.com). <br>
 
-## Features
+Feature overview:
 * Supports: Songs & Artists, Annotations & Referents, Web Pages, Search
 * Lyrics searching
 * Uses [Reactor](https://projectreactor.io/)
@@ -34,6 +34,19 @@ Be sure to replace the **VERSION** key below with the version shown above!
 - Make sure you know how [Reactor](https://projectreactor.io/) works!
 - You will need to **authenticate** using one of the methods below before making any requests to the Genius API.
 
+* [Authentication](#Authentication)
+* [Usage](#Usage)
+  * [Annotations](#Getting-an-annotation)
+  * [Referents](#Getting-Referents)
+  * [Songs](#Getting-a-Song)
+  * [Artists](#Getting-an-Artist)
+  * [Artist's Songs](#Getting-an-Artists-songs)
+  * [Web Pages](#Getting-a-web-page)
+  * [Account](#Getting-the-current-account)
+  * [Search](#Performing-a-search)
+  * [Lyrics](#Searching-for-Lyrics)
+* [Lyrics Errors](#Lyrics-Errors)
+
 ## Authentication
 
 Please see [Genius's Authentication Documentation](https://docs.genius.com/#/authentication-h1) for more information about Authentication.
@@ -44,8 +57,6 @@ Please see [Genius's Authentication Documentation](https://docs.genius.com/#/aut
 There are two types of access tokens you can use to authenticate to the Genius API:
 * **Client Access Token**: Use this if your application doesn't include user-specific behavior (read-only endpoints that don't require scopes).
 * **User Access Token (OAuth Authorization Code flow)**: Use this if you need to make requests on behalf of individual users (requires scopes).
-
----
 
 ### Authenticating using a Client Access Token
 
@@ -59,10 +70,6 @@ GeniusClient client = GeniusClient.builder()
         .accessToken("your_client_access_token")    // Your application's Client Access Token
         .build();
 ```
-
-You can find a basic implementation here: [AccessTokenExample.java](src/examples/java/AccessTokenExample.java).
-
----
 
 ### Authenticating using the Authorization Code (OAuth) flow
 
@@ -103,13 +110,33 @@ GeniusAccessToken token = client.accessToken(
 client.setAccessToken(token);               // Set the Authorization Code, otherwise no requests can be made
 ```
 
-You can find a basic implementation here: [AuthorizationCodeExample.java](src/examples/java/AuthorizationCodeExample.java).
-
 ## Usage
 
 Requests return [Mono](https://projectreactor.io/docs/core/release/api/reactor/core/publisher/Mono.html) instances from Reactor to wait for results.
 
-Getting a Song by id:
+The following show very basic examples of how to use the various endpoints.
+
+### Getting an annotation:
+```java
+client.getAnnotation(3037171L, TextFormat.PLAIN, TextFormat.HTML)   // annotation id
+        .doOnError(e -> System.out.println("Error: " + e.getMessage()))
+        .subscribe(data -> System.out.println("Body: " + data.getAnnotation().getBody(TextFormat.PLAIN)));
+```
+Request Builder: ```client.annotation()```
+
+### Getting Referents:
+```java
+client.getReferentsBySongId(378195L, 5, 1, TextFormat.PLAIN)        // with song id
+        .doOnError(e -> System.out.println("Error: " + e.getMessage()))
+        .subscribe(data -> System.out.println("Amount: " + data.getReferents().size()));
+
+client.getReferentsByWebPage(10347L, 5, 1, TextFormat.PLAIN)        // with web page id
+        .doOnError(e -> System.out.println("Error: " + e.getMessage()))
+        .subscribe(data -> System.out.println("Amount: " + data.getReferents().size()));
+```
+Request Builder: ```client.referents()```
+
+### Getting a Song:
 ```java
 client.getSong(
         378195L,                                    // song id
@@ -124,8 +151,9 @@ client.getSong(
             System.out.printf("Description: %s%n", song.getDescription(TextFormat.PLAIN));
         });
 ```
+Request Builder: ```client.song()```
 
-Getting an Artist by id:
+### Getting an Artist:
 ```java
 client.getArtist(
         16775L,             // artist id
@@ -140,8 +168,33 @@ client.getArtist(
             System.out.printf("Description: %s%n", artist.getDescription(TextFormat.PLAIN.HTML));
         });
 ```
+Request Builder: ```client.artist()
 
-Performing a search:
+### Getting an Artist's songs
+```java
+client.getArtistSongs(16775L, Sort.POPULARITY, 5, 1)
+        .doOnError(e -> System.out.println("Error: " + e.getMessage()))
+        .subscribe(data -> System.out.println("Amount: " + data.getSongs().size()));
+```
+Request Builder: ```client.artistSongs()```
+
+### Getting a web page:
+```java
+client.getWebPage("https://docs.genius.com", null, null)
+        .doOnError(e -> System.out.println("Error: " + e.getMessage()))
+        .subscribe(data -> System.out.println("Web Page ID: " + data.getId()));
+```
+Request Builder: ```client.webPagesLookup()```
+
+### Getting the current account:
+```java
+client.getAccount(TextFormat.PLAIN)
+        .doOnError(e -> System.out.println("Error: " + e.getMessage()))
+        .subscribe(data -> System.out.println("Account Name: " + data.getName()));
+```
+Request Builder: ```client.webPagesLookup()```
+
+### Performing a search:
 ```java
 client.search("Kendrick Lamar")
       .doOnError(e -> System.out.println("Error while searching: " + e.getMessage()))
@@ -156,8 +209,9 @@ client.search("Kendrick Lamar")
           System.out.printf("Artist: %s%n", first.getResult().getArtistNames());
       });
 ```
+Request Builder: ```client.search()```
 
-Searching for Lyrics:
+### Searching for Lyrics:
 ```java
 client.getLyricsByQuery("Kendrik Lamar Humble").
         doOnError(e -> System.out.println("Error while getting lyrics: " + e.getMessage()))
@@ -176,10 +230,18 @@ client.lyrics()
         .build()
         .doOnError(e -> System.out.println("Error while getting lyrics: " + e.getMessage()))
         .subscribe(lyrics -> System.out.println(lyrics.getPlain()));
-
-
 ```
+Request Builder: ```client.lyrics()```
 
+## Examples
+
+* Authentication
+  * Access Token: [link](src/examples/java/authorization/AccessTokenExample.java)
+  * Authorization Code: [link](src/examples/java/authorization/AuthorizationCodeExample.java)
+* Requests
+  * Account: [link](src/examples/java/requests/GetAccountExample.java)
+
+---
 ## Lyrics Errors
 - `GeniusException`: Could not find Lyrics Container. This happens when Genius changes their website. Report this to the developer and/or try to set the container ids directly via the LyricsScraper.
 

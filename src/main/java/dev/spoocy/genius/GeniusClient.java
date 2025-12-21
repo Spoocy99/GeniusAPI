@@ -396,8 +396,7 @@ public interface GeniusClient {
     GetReferentsRequest.Builder referents();
 
     /**
-     * Creates a new {@link GetReferentsRequest.Builder} that will
-     * be used to build a {@link GetReferentsRequest} to
+     * Builds a {@link GetReferentsRequest} that will
      * retrieve {@link Referents} for a song or web page.
      * <p>
      * This request can optionally have the following parameters:
@@ -422,7 +421,7 @@ public interface GeniusClient {
      */
     @Contract("_, _, _, _ -> new")
     @NotNull
-    GetReferentsRequest.Builder getReferentsBySongId(
+    GetReferentsRequest getReferentsBySongId(
             long song_id,
             int perPage,
             int page,

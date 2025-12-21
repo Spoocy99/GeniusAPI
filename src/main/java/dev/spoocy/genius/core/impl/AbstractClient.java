@@ -151,7 +151,7 @@ public abstract class AbstractClient implements GeniusClient {
     }
 
     @Override
-    public @NotNull GetReferentsRequest.Builder getReferentsBySongId(
+    public @NotNull GetReferentsRequest getReferentsBySongId(
             long song_id,
             int perPage,
             int page,
@@ -161,7 +161,8 @@ public abstract class AbstractClient implements GeniusClient {
                 .song_id(song_id)
                 .per_page(perPage)
                 .page(page)
-                .formats(format);
+                .formats(format)
+                .build();
     }
 
     @Override
