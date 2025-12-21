@@ -61,9 +61,9 @@ public class GetReferentsRequest extends GeniusApiRequest<Referents> implements 
          *
          * @return Builder instance
          */
-        public Builder created_by_id(final String id) {
-            Args.notNullOrEmpty(id, "createdById");
-            return this.pathParameter("created_by_id", id);
+        public Builder created_by_id(final long id) {
+            Args.notNegative(id, "created_by_id");
+            return this.queryParameter("created_by_id", String.valueOf(id));
         }
 
         /**
@@ -79,7 +79,7 @@ public class GetReferentsRequest extends GeniusApiRequest<Referents> implements 
          */
         public Builder song_id(long id) {
             Args.notNegative(id, "song_id");
-            return this.pathParameter("song_id", String.valueOf(id));
+            return this.queryParameter("song_id", String.valueOf(id));
         }
 
         /**
@@ -95,7 +95,7 @@ public class GetReferentsRequest extends GeniusApiRequest<Referents> implements 
          */
         public Builder web_page_id(final long id) {
             Args.notNegative(id, "web_page_id");
-            return this.pathParameter("web_page_id", String.valueOf(id));
+            return this.queryParameter("web_page_id", String.valueOf(id));
         }
 
         /**

@@ -401,7 +401,6 @@ public interface GeniusClient {
      * <p>
      * This request can optionally have the following parameters:
      * <ul>
-     *     <li>created_by_id</li>
      *     <li>text_format</li>
      *     <li>per_page</li>
      *     <li>page</li>
@@ -429,13 +428,44 @@ public interface GeniusClient {
     );
 
     /**
+     * Builds a {@link GetReferentsRequest} that will
+     * retrieve {@link Referents} for a song or web page.
+     * <p>
+     * This request can optionally have the following parameters:
+     * <ul>
+     *     <li>text_format</li>
+     *     <li>per_page</li>
+     *     <li>page</li>
+     * </ul>
+     *
+     * <p>
+     * Endpoint: {@code GET /referents}
+     *
+     * @param created_by The ID of the user who created the referents.
+     * @param perPage    The number of referents to retrieve per page.
+     * @param page       The page number to retrieve.
+     * @param format     The text formats for the referents.
+     *
+     * @return The Get Referents Request.
+     *
+     * @see #referents()
+     */
+    @Contract("_, _, _, _ -> new")
+    @NotNull
+    GetReferentsRequest getReferentsByCreatedBy(
+            long created_by,
+            int perPage,
+            int page,
+            @NotNull TextFormat... format
+    );
+
+    /**
      * Creates a new {@link GetReferentsRequest.Builder} that will
      * be used to build a {@link GetReferentsRequest} to
      * retrieve {@link Referents} for a song or web page.
      * <p>
      * This request can optionally have the following parameters:
      * <ul>
-     *     <li>created_by_id</li>
      *     <li>text_format</li>
      *     <li>per_page</li>
      *     <li>page</li>

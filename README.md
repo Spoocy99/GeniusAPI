@@ -137,6 +137,11 @@ client.getReferentsBySongId(378195L, 5, 1, TextFormat.PLAIN)        // with song
         .doOnError(e -> System.out.println("Error: " + e.getMessage()))
         .subscribe(data -> System.out.println("Amount: " + data.getReferents().size()));
 
+client.getReferentsByCreatedBy(16775L, 5, 1, TextFormat.PLAIN)      // with creator id
+        .doOnError(e -> System.out.println("Error: " + e.getMessage()))
+        .subscribe(data -> System.out.println("Amount: " + data.getReferents().size()));
+
+
 client.getReferentsByWebPage(10347L, 5, 1, TextFormat.PLAIN)        // with web page id
         .doOnError(e -> System.out.println("Error: " + e.getMessage()))
         .subscribe(data -> System.out.println("Amount: " + data.getReferents().size()));

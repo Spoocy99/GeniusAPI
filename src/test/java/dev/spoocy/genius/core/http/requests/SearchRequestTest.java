@@ -15,12 +15,11 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
-public class SearchRequestTest {
+public class SearchRequestTest implements ITest<Search> {
 
-    private String mockJsonRequest() throws IOException {
-        var is = this.getClass().getClassLoader().getResourceAsStream("get_search.json");
-        assertNotNull(is, "Test resource not found: get_search.json");
-        return new String(is.readAllBytes(), StandardCharsets.UTF_8);
+    @Override
+    public String getMockDataFile() {
+        return "get_search.json";
     }
 
     @Test
@@ -32,21 +31,18 @@ public class SearchRequestTest {
 
     @Test
     void testRequest() throws Exception {
-        String json = mockJsonRequest();
-        IHttpManager http = Mockito.mock(IHttpManager.class);
-        when(http.get(any(URI.class), any())).thenReturn(json);
-
-        var request = new SearchRequest.Builder("token")
+        var request = new SearchRequest.Builder(GENIUS_CLIENT)
                 .query("Kendrick")
                 .contentType(ContentType.APPLICATION_JSON)
-                .httpManager(http)
+                .httpManager(mockHttpManager())
                 .build();
 
         Search s = request.block();
         testDataIntegrity(s);
     }
 
-    private void testDataIntegrity(Search s) {
+    @Override
+    public void testDataIntegrity(Search s) {
         assertNotNull(s);
         assertFalse(s.getHits().isEmpty());
         assertEquals("song", s.getHits().get(0).getType());

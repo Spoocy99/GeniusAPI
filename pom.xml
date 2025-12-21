@@ -46,13 +46,13 @@
         <dependency>
             <groupId>dev.spoocy.utils</groupId>
             <artifactId>common-utils</artifactId>
-            <version>1.0.10</version>
+            <version>1.0.11</version>
         </dependency>
 
         <dependency>
             <groupId>dev.spoocy.utils</groupId>
             <artifactId>config-utils</artifactId>
-            <version>1.0.10</version>
+            <version>1.0.11</version>
         </dependency>
 
         <dependency>

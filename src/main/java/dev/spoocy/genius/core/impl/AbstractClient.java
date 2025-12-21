@@ -166,6 +166,21 @@ public abstract class AbstractClient implements GeniusClient {
     }
 
     @Override
+    public @NotNull GetReferentsRequest getReferentsByCreatedBy(
+            long created_by,
+            int perPage,
+            int page,
+            @NotNull TextFormat... format
+    ) {
+        return referents()
+                .created_by_id(created_by)
+                .per_page(perPage)
+                .page(page)
+                .formats(format)
+                .build();
+    }
+
+    @Override
     public @NotNull GetArtistSongsRequest getArtistSongs(long id, @NotNull Sort sort, int perPage, int page) {
         return artistSongs()
                 .id(id)
