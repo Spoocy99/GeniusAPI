@@ -865,7 +865,7 @@ public interface GeniusClient {
     @Genius.Undocumented
     @Contract("_, _, _ -> new")
     @NotNull
-    SectionsSearchRequest searchUSer(@NotNull String query, int perPage, int page);
+    SectionsSearchRequest searchUser(@NotNull String query, int perPage, int page);
 
     /**
      * Endpoint: {@code GET /api/search/multi}

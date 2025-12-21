@@ -297,7 +297,7 @@ public abstract class AbstractClient implements GeniusClient {
     }
 
     @Override
-    public @NotNull SectionsSearchRequest searchUSer(@NotNull String query, int perPage, int page) {
+    public @NotNull SectionsSearchRequest searchUser(@NotNull String query, int perPage, int page) {
         return usearch()
                 .type(SearchType.USER)
                 .query(query)
