@@ -16,7 +16,7 @@ import java.net.URI;
  * your application to access Genius on their behalf. They’ll
  * be asked to sign in (or, if necessary, create an account) first.
  * <p>
- * Then the user is redirected to https://YOUR_REDIRECT_URI/?code=CODE&state=SOME_STATE_VALUE.
+ * Then the user is redirected to {@code https://YOUR_REDIRECT_URI/?code=CODE&state=SOME_STATE_VALUE}.
  *
  * @author Spoocy99 | GitHub: Spoocy99
  */

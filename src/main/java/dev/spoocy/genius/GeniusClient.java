@@ -175,7 +175,6 @@ public interface GeniusClient {
      * access token via the OAuth2 authorization code flow. These tokens are required for
      * endpoints that are restricted by a required {@link dev.spoocy.genius.core.auth.Scope}.
      * <p>
-     * <p>
      * Refer to the official Genius API documentation for more information on
      * authentication and access tokens: <a href="https://docs.genius.com/#authentication">Genius API Authentication</a>
      *
