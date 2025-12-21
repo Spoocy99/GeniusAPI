@@ -1,5 +1,5 @@
 # Java Genius API Wrapper
-This is a java wrapper for the [Genius API](https://docs.genius.com). <br>
+This is a java wrapper for the [Genius API](https://docs.genius.com).
 
 Feature overview:
 * Supports: Songs & Artists, Annotations & Referents, Web Pages, Search
@@ -7,6 +7,8 @@ Feature overview:
 * Uses [Reactor](https://projectreactor.io/)
 * Basic authentication (Client Access Token & Access Token)
 * Compiled for `Java 11`
+
+---
 
 ## Download
 
@@ -34,6 +36,7 @@ Be sure to replace the **VERSION** key below with the version shown above!
 - Make sure you know how [Reactor](https://projectreactor.io/) works!
 - You will need to **authenticate** using one of the methods below before making any requests to the Genius API.
 
+* [Download](#Download)
 * [Authentication](#Authentication)
 * [Usage](#Usage)
   * [Annotations](#Getting-an-annotation)
@@ -46,6 +49,8 @@ Be sure to replace the **VERSION** key below with the version shown above!
   * [Search](#Performing-a-search)
   * [Lyrics](#Searching-for-Lyrics)
 * [Lyrics Errors](#Lyrics-Errors)
+
+---
 
 ## Authentication
 
@@ -109,6 +114,8 @@ GeniusAccessToken token = client.accessToken(
 
 client.setAccessToken(token);               // Set the Authorization Code, otherwise no requests can be made
 ```
+
+---
 
 ## Usage
 
@@ -192,7 +199,6 @@ client.getAccount(TextFormat.PLAIN)
         .doOnError(e -> System.out.println("Error: " + e.getMessage()))
         .subscribe(data -> System.out.println("Account Name: " + data.getName()));
 ```
-Request Builder: ```client.webPagesLookup()```
 
 ### Performing a search:
 ```java
