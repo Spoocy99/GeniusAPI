@@ -244,6 +244,8 @@ client.lyrics()
 ```
 Request Builder: ```client.lyrics()```
 
+---
+
 ## Examples
 
 * Authentication
