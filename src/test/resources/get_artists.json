@@ -1,0 +1,1488 @@
+{
+    "meta": {
+        "status": 200
+    },
+    "response": {
+        "artist": {
+            "alternate_names": [
+                "Sia Kate Isobelle Furler",
+                "Sia Furler",
+                "Sia K. I. Furler"
+            ],
+            "api_path": "/artists/16775",
+            "description": {
+                "dom": {
+                    "tag": "root",
+                    "children": [
+                        {
+                            "tag": "p",
+                            "children": [
+                                "Sia Kate Isobelle Furler (born December 18, 1975), popularly known as Sia, is an Australian pop singer and songwriter. She is also part of the supergroup, ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://genius.com/artists/Lsd",
+                                        "rel": "noopener"
+                                    },
+                                    "data": {
+                                        "api_path": "/artists/1462360"
+                                    },
+                                    "children": [
+                                        "LSD"
+                                    ]
+                                },
+                                " alongside British singer, ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://genius.com/artists/Labrinth",
+                                        "rel": "noopener"
+                                    },
+                                    "data": {
+                                        "api_path": "/artists/720"
+                                    },
+                                    "children": [
+                                        "Labrinth"
+                                    ]
+                                },
+                                " and American DJ, ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://genius.com/artists/Diplo",
+                                        "rel": "noopener"
+                                    },
+                                    "data": {
+                                        "api_path": "/artists/12908"
+                                    },
+                                    "children": [
+                                        "Diplo"
+                                    ]
+                                },
+                                ". Before her solo debut, Sia also lent vocals to British acid-jazz duo, ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://genius.com/artists/Zero-7",
+                                        "rel": "noopener"
+                                    },
+                                    "data": {
+                                        "api_path": "/artists/2570"
+                                    },
+                                    "children": [
+                                        "Zero 7"
+                                    ]
+                                },
+                                "."
+                            ]
+                        },
+                        "",
+                        {
+                            "tag": "p",
+                            "children": [
+                                "Her album ",
+                                {
+                                    "tag": "em",
+                                    "children": [
+                                        {
+                                            "tag": "a",
+                                            "attributes": {
+                                                "href": "https://genius.com/albums/Sia/1000-forms-of-fear",
+                                                "rel": "noopener"
+                                            },
+                                            "data": {
+                                                "api_path": "/albums/104614"
+                                            },
+                                            "children": [
+                                                "1000 Forms of Fear"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                " was released in 2014 and is her most successful album to date, with the top 10 single “",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://genius.com/Sia-chandelier-lyrics",
+                                        "rel": "noopener"
+                                    },
+                                    "data": {
+                                        "api_path": "/songs/378195"
+                                    },
+                                    "children": [
+                                        "Chandelier"
+                                    ]
+                                },
+                                ".”"
+                            ]
+                        },
+                        "",
+                        {
+                            "tag": "p",
+                            "children": [
+                                "After performing for nearly 15 years at nightclubs as well as releasing five studio albums, Sia took a hiatus from performing in 2010 when she began writing for other artists. Some of her most successful collaborations are “",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://genius.com/David-guetta-titanium-lyrics",
+                                        "rel": "noopener"
+                                    },
+                                    "data": {
+                                        "api_path": "/songs/64869"
+                                    },
+                                    "children": [
+                                        "Titanium"
+                                    ]
+                                },
+                                "” with ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://genius.com/artists/David-guetta",
+                                        "rel": "noopener"
+                                    },
+                                    "data": {
+                                        "api_path": "/artists/2578"
+                                    },
+                                    "children": [
+                                        "David Guetta"
+                                    ]
+                                },
+                                ", “",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://genius.com/Rihanna-diamonds-lyrics",
+                                        "rel": "noopener"
+                                    },
+                                    "data": {
+                                        "api_path": "/songs/89794"
+                                    },
+                                    "children": [
+                                        "Diamonds"
+                                    ]
+                                },
+                                "” with ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://genius.com/artists/Rihanna",
+                                        "rel": "noopener"
+                                    },
+                                    "data": {
+                                        "api_path": "/artists/89"
+                                    },
+                                    "children": [
+                                        "Rihanna"
+                                    ]
+                                },
+                                " and “",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://genius.com/Flo-rida-wild-ones-lyrics",
+                                        "rel": "noopener"
+                                    },
+                                    "data": {
+                                        "api_path": "/songs/68266"
+                                    },
+                                    "children": [
+                                        "Wild Ones"
+                                    ]
+                                },
+                                "” with ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://genius.com/artists/Flo-rida",
+                                        "rel": "noopener"
+                                    },
+                                    "data": {
+                                        "api_path": "/artists/1081"
+                                    },
+                                    "children": [
+                                        "Flo Rida"
+                                    ]
+                                },
+                                "."
+                            ]
+                        },
+                        "",
+                        {
+                            "tag": "p",
+                            "children": [
+                                "Sia famously started hiding her face during her recent promotional cycles and public events. She has stated that because when she started to become a little bit famous, it felt destabilizing for her in some ways. In order for her to maintain a certain amount of privacy, she focused on writing for other artists and started covering up her face with the famous wig."
+                            ]
+                        },
+                        "",
+                        {
+                            "tag": "p",
+                            "children": [
+                                "Sia has the most music videos with over a billion views on YouTube of all-female artists, with 5 videos having reached at least one billion views."
+                            ]
+                        },
+                        "",
+                        {
+                            "tag": "p",
+                            "children": [
+                                "She has received a wide range of awards, including a total of 8 Grammy nominations. Sia also has had 8 of her songs go double platinum in record sales."
+                            ]
+                        },
+                        "",
+                        {
+                            "tag": "p",
+                            "children": [
+                                "Despite this, her excursion into film was a far cry from her illustrious music career. In 2021, Sia would release a film entitled ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://www.imdb.com/title/tt7541720/",
+                                        "rel": "noopener nofollow"
+                                    },
+                                    "children": [
+                                        {
+                                            "tag": "em",
+                                            "children": [
+                                                "Music"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                ". Starring ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://www.imdb.com/name/nm4675650/?ref_=tt_cl_t1",
+                                        "rel": "noopener nofollow"
+                                    },
+                                    "children": [
+                                        "Maddie Ziegler"
+                                    ]
+                                },
+                                " in the title role of an autistic teen, the movie was ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://www.usatoday.com/story/entertainment/movies/2021/02/10/critics-slam-sia-film-music-nonsensical-and-cringe-inducing/6712473002/",
+                                        "rel": "noopener nofollow"
+                                    },
+                                    "children": [
+                                        "slammed"
+                                    ]
+                                },
+                                " by critics and Sia fans alike for its ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://intheirownleague.com/2021/02/20/why-music-2021-is-harmful-for-neurodivergent-representation-and-alternatives-to-consider/",
+                                        "rel": "noopener nofollow"
+                                    },
+                                    "children": [
+                                        "poor"
+                                    ]
+                                },
+                                " representation of autism and almost ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://www.indiewire.com/2021/02/sia-film-music-maddie-ziegler-autistic-community-1234617040/",
+                                        "rel": "noopener nofollow"
+                                    },
+                                    "children": [
+                                        "ableist"
+                                    ]
+                                },
+                                " sentiments. Following some ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://variety.com/2020/music/news/sia-debate-twitter-disabled-film-autism-music-1234837013/",
+                                        "rel": "noopener nofollow"
+                                    },
+                                    "children": [
+                                        "stormy"
+                                    ]
+                                },
+                                " tweets in response to criticism, Sia would ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://www.usatoday.com/story/entertainment/movies/2021/02/04/sia-adds-disclaimer-golden-globe-nominated-music-amid-backlash-autism-community/4386251001/",
+                                        "rel": "noopener nofollow"
+                                    },
+                                    "children": [
+                                        "delete"
+                                    ]
+                                },
+                                " her Twitter account. The film ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://www.rottentomatoes.com/m/music",
+                                        "rel": "noopener nofollow"
+                                    },
+                                    "children": [
+                                        "maintains"
+                                    ]
+                                },
+                                " an 8% on ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "https://rottontomatoes.com/",
+                                        "rel": "noopener nofollow"
+                                    },
+                                    "children": [
+                                        "Rotten Tomatoes"
+                                    ]
+                                },
+                                "."
+                            ]
+                        }
+                    ]
+                }
+            },
+            "facebook_name": "siamusic",
+            "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+            "id": 16775,
+            "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+            "instagram_name": "siamusic",
+            "is_meme_verified": false,
+            "is_verified": true,
+            "name": "Sia",
+            "translation_artist": false,
+            "twitter_name": "Sia",
+            "url": "https://genius.com/artists/Sia",
+            "current_user_metadata": {
+                "permissions": [
+                    "view_activity_stream",
+                    "view_discography"
+                ],
+                "excluded_permissions": [
+                    "edit",
+                    "edit_images",
+                    "edit_names",
+                    "edit_anything",
+                    "merge",
+                    "sort_artist_songs",
+                    "follow",
+                    "view_contribution_opportunities",
+                    "edit_translation_artist",
+                    "split",
+                    "see_short_id"
+                ],
+                "interactions": {
+                    "following": false
+                }
+            },
+            "followers_count": 1435,
+            "iq": 9520,
+            "description_annotation": {
+                "_type": "referent",
+                "annotator_id": 173194,
+                "annotator_login": "ReadOnlyUser",
+                "api_path": "/referents/6941080",
+                "classification": "accepted",
+                "fragment": "Sia",
+                "id": 6941080,
+                "is_description": true,
+                "path": "/6941080/Sia/Sia",
+                "range": {
+                    "content": "Sia"
+                },
+                "song_id": null,
+                "url": "https://genius.com/6941080/Sia/Sia",
+                "verified_annotator_ids": [],
+                "annotatable": {
+                    "api_path": "/artists/16775",
+                    "context": null,
+                    "id": 16775,
+                    "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                    "link_title": "Sia",
+                    "title": "Sia",
+                    "type": "Artist",
+                    "url": "https://genius.com/artists/Sia"
+                },
+                "annotations": [
+                    {
+                        "api_path": "/annotations/6941080",
+                        "body": {
+                            "dom": {
+                                "tag": "root",
+                                "children": [
+                                    {
+                                        "tag": "p",
+                                        "children": [
+                                            "Sia Kate Isobelle Furler (born December 18, 1975), popularly known as Sia, is an Australian pop singer and songwriter. She is also part of the supergroup, ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://genius.com/artists/Lsd",
+                                                    "rel": "noopener"
+                                                },
+                                                "data": {
+                                                    "api_path": "/artists/1462360"
+                                                },
+                                                "children": [
+                                                    "LSD"
+                                                ]
+                                            },
+                                            " alongside British singer, ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://genius.com/artists/Labrinth",
+                                                    "rel": "noopener"
+                                                },
+                                                "data": {
+                                                    "api_path": "/artists/720"
+                                                },
+                                                "children": [
+                                                    "Labrinth"
+                                                ]
+                                            },
+                                            " and American DJ, ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://genius.com/artists/Diplo",
+                                                    "rel": "noopener"
+                                                },
+                                                "data": {
+                                                    "api_path": "/artists/12908"
+                                                },
+                                                "children": [
+                                                    "Diplo"
+                                                ]
+                                            },
+                                            ". Before her solo debut, Sia also lent vocals to British acid-jazz duo, ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://genius.com/artists/Zero-7",
+                                                    "rel": "noopener"
+                                                },
+                                                "data": {
+                                                    "api_path": "/artists/2570"
+                                                },
+                                                "children": [
+                                                    "Zero 7"
+                                                ]
+                                            },
+                                            "."
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "tag": "p",
+                                        "children": [
+                                            "Her album ",
+                                            {
+                                                "tag": "em",
+                                                "children": [
+                                                    {
+                                                        "tag": "a",
+                                                        "attributes": {
+                                                            "href": "https://genius.com/albums/Sia/1000-forms-of-fear",
+                                                            "rel": "noopener"
+                                                        },
+                                                        "data": {
+                                                            "api_path": "/albums/104614"
+                                                        },
+                                                        "children": [
+                                                            "1000 Forms of Fear"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            " was released in 2014 and is her most successful album to date, with the top 10 single “",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://genius.com/Sia-chandelier-lyrics",
+                                                    "rel": "noopener"
+                                                },
+                                                "data": {
+                                                    "api_path": "/songs/378195"
+                                                },
+                                                "children": [
+                                                    "Chandelier"
+                                                ]
+                                            },
+                                            ".”"
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "tag": "p",
+                                        "children": [
+                                            "After performing for nearly 15 years at nightclubs as well as releasing five studio albums, Sia took a hiatus from performing in 2010 when she began writing for other artists. Some of her most successful collaborations are “",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://genius.com/David-guetta-titanium-lyrics",
+                                                    "rel": "noopener"
+                                                },
+                                                "data": {
+                                                    "api_path": "/songs/64869"
+                                                },
+                                                "children": [
+                                                    "Titanium"
+                                                ]
+                                            },
+                                            "” with ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://genius.com/artists/David-guetta",
+                                                    "rel": "noopener"
+                                                },
+                                                "data": {
+                                                    "api_path": "/artists/2578"
+                                                },
+                                                "children": [
+                                                    "David Guetta"
+                                                ]
+                                            },
+                                            ", “",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://genius.com/Rihanna-diamonds-lyrics",
+                                                    "rel": "noopener"
+                                                },
+                                                "data": {
+                                                    "api_path": "/songs/89794"
+                                                },
+                                                "children": [
+                                                    "Diamonds"
+                                                ]
+                                            },
+                                            "” with ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://genius.com/artists/Rihanna",
+                                                    "rel": "noopener"
+                                                },
+                                                "data": {
+                                                    "api_path": "/artists/89"
+                                                },
+                                                "children": [
+                                                    "Rihanna"
+                                                ]
+                                            },
+                                            " and “",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://genius.com/Flo-rida-wild-ones-lyrics",
+                                                    "rel": "noopener"
+                                                },
+                                                "data": {
+                                                    "api_path": "/songs/68266"
+                                                },
+                                                "children": [
+                                                    "Wild Ones"
+                                                ]
+                                            },
+                                            "” with ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://genius.com/artists/Flo-rida",
+                                                    "rel": "noopener"
+                                                },
+                                                "data": {
+                                                    "api_path": "/artists/1081"
+                                                },
+                                                "children": [
+                                                    "Flo Rida"
+                                                ]
+                                            },
+                                            "."
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "tag": "p",
+                                        "children": [
+                                            "Sia famously started hiding her face during her recent promotional cycles and public events. She has stated that because when she started to become a little bit famous, it felt destabilizing for her in some ways. In order for her to maintain a certain amount of privacy, she focused on writing for other artists and started covering up her face with the famous wig."
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "tag": "p",
+                                        "children": [
+                                            "Sia has the most music videos with over a billion views on YouTube of all-female artists, with 5 videos having reached at least one billion views."
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "tag": "p",
+                                        "children": [
+                                            "She has received a wide range of awards, including a total of 8 Grammy nominations. Sia also has had 8 of her songs go double platinum in record sales."
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "tag": "p",
+                                        "children": [
+                                            "Despite this, her excursion into film was a far cry from her illustrious music career. In 2021, Sia would release a film entitled ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://www.imdb.com/title/tt7541720/",
+                                                    "rel": "noopener nofollow"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "tag": "em",
+                                                        "children": [
+                                                            "Music"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            ". Starring ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://www.imdb.com/name/nm4675650/?ref_=tt_cl_t1",
+                                                    "rel": "noopener nofollow"
+                                                },
+                                                "children": [
+                                                    "Maddie Ziegler"
+                                                ]
+                                            },
+                                            " in the title role of an autistic teen, the movie was ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://www.usatoday.com/story/entertainment/movies/2021/02/10/critics-slam-sia-film-music-nonsensical-and-cringe-inducing/6712473002/",
+                                                    "rel": "noopener nofollow"
+                                                },
+                                                "children": [
+                                                    "slammed"
+                                                ]
+                                            },
+                                            " by critics and Sia fans alike for its ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://intheirownleague.com/2021/02/20/why-music-2021-is-harmful-for-neurodivergent-representation-and-alternatives-to-consider/",
+                                                    "rel": "noopener nofollow"
+                                                },
+                                                "children": [
+                                                    "poor"
+                                                ]
+                                            },
+                                            " representation of autism and almost ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://www.indiewire.com/2021/02/sia-film-music-maddie-ziegler-autistic-community-1234617040/",
+                                                    "rel": "noopener nofollow"
+                                                },
+                                                "children": [
+                                                    "ableist"
+                                                ]
+                                            },
+                                            " sentiments. Following some ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://variety.com/2020/music/news/sia-debate-twitter-disabled-film-autism-music-1234837013/",
+                                                    "rel": "noopener nofollow"
+                                                },
+                                                "children": [
+                                                    "stormy"
+                                                ]
+                                            },
+                                            " tweets in response to criticism, Sia would ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://www.usatoday.com/story/entertainment/movies/2021/02/04/sia-adds-disclaimer-golden-globe-nominated-music-amid-backlash-autism-community/4386251001/",
+                                                    "rel": "noopener nofollow"
+                                                },
+                                                "children": [
+                                                    "delete"
+                                                ]
+                                            },
+                                            " her Twitter account. The film ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://www.rottentomatoes.com/m/music",
+                                                    "rel": "noopener nofollow"
+                                                },
+                                                "children": [
+                                                    "maintains"
+                                                ]
+                                            },
+                                            " an 8% on ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "https://rottontomatoes.com/",
+                                                    "rel": "noopener nofollow"
+                                                },
+                                                "children": [
+                                                    "Rotten Tomatoes"
+                                                ]
+                                            },
+                                            "."
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "comment_count": 3,
+                        "community": true,
+                        "custom_preview": null,
+                        "has_voters": true,
+                        "id": 6941080,
+                        "pinned": false,
+                        "share_url": "https://genius.com/6941080",
+                        "source": null,
+                        "state": "accepted",
+                        "url": "https://genius.com/6941080/Sia/Sia",
+                        "verified": false,
+                        "votes_total": 245,
+                        "current_user_metadata": {
+                            "permissions": [],
+                            "excluded_permissions": [
+                                "vote",
+                                "edit",
+                                "cosign",
+                                "uncosign",
+                                "destroy",
+                                "accept",
+                                "reject",
+                                "see_unreviewed",
+                                "clear_votes",
+                                "propose_edit_to",
+                                "pin_to_profile",
+                                "unpin_from_profile",
+                                "update_source",
+                                "edit_custom_preview",
+                                "report_as_abusive",
+                                "create_comment"
+                            ],
+                            "interactions": {
+                                "cosign": false,
+                                "pyong": false,
+                                "vote": null
+                            },
+                            "iq_by_action": {}
+                        },
+                        "authors": [
+                            {
+                                "attribution": 0.26332288401253917,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/554585",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://images.genius.com/avatars/tiny/9e0f1c478eeea462f8ebc78939cc28b2",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://images.genius.com/avatars/thumb/9e0f1c478eeea462f8ebc78939cc28b2",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://images.genius.com/avatars/small/9e0f1c478eeea462f8ebc78939cc28b2",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://images.genius.com/avatars/medium/9e0f1c478eeea462f8ebc78939cc28b2",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://images.genius.com/9ff1f1de42863e6500317d72e88f48d1.500x270x22.gif",
+                                    "human_readable_role_for_display": "Editor",
+                                    "id": 554585,
+                                    "iq": 255897,
+                                    "login": "IThinkImAndrea",
+                                    "name": "IThinkImAndrea",
+                                    "role_for_display": "editor",
+                                    "url": "https://genius.com/IThinkImAndrea",
+                                    "current_user_metadata": {
+                                        "permissions": [],
+                                        "excluded_permissions": [
+                                            "follow"
+                                        ],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "attribution": 0.22570532915360503,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/2204204",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://images.genius.com/avatars/tiny/3da02db48690e05ae620858fb7b655c0",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://images.genius.com/avatars/thumb/3da02db48690e05ae620858fb7b655c0",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://images.genius.com/avatars/small/3da02db48690e05ae620858fb7b655c0",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://images.genius.com/avatars/medium/3da02db48690e05ae620858fb7b655c0",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://images.genius.com/1d3d0bbcebf5f87bdd166041b8e495d0.1000x625x1.jpg",
+                                    "human_readable_role_for_display": "Editor",
+                                    "id": 2204204,
+                                    "iq": 199104,
+                                    "login": "sincerelyaj",
+                                    "name": "AJ Jaffari",
+                                    "role_for_display": "editor",
+                                    "url": "https://genius.com/sincerelyaj",
+                                    "current_user_metadata": {
+                                        "permissions": [],
+                                        "excluded_permissions": [
+                                            "follow"
+                                        ],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "attribution": 0.1755485893416928,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/8901159",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://images.genius.com/avatars/tiny/b0318a7989e0baa362a5b05362c559f4",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://images.genius.com/avatars/thumb/b0318a7989e0baa362a5b05362c559f4",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://images.genius.com/avatars/small/b0318a7989e0baa362a5b05362c559f4",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://images.genius.com/avatars/medium/b0318a7989e0baa362a5b05362c559f4",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://filepicker-images.genius.com/lz0u9ytsjro",
+                                    "human_readable_role_for_display": "Contributor",
+                                    "id": 8901159,
+                                    "iq": 10508,
+                                    "login": "TYFNA",
+                                    "name": "TYFNA",
+                                    "role_for_display": "contributor",
+                                    "url": "https://genius.com/TYFNA",
+                                    "current_user_metadata": {
+                                        "permissions": [],
+                                        "excluded_permissions": [
+                                            "follow"
+                                        ],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "attribution": 0.1755485893416928,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/11081607",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://images.genius.com/avatars/tiny/b65387b8fb4f9c6d48d836d5b415ecbb",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://images.genius.com/avatars/thumb/b65387b8fb4f9c6d48d836d5b415ecbb",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://images.genius.com/avatars/small/b65387b8fb4f9c6d48d836d5b415ecbb",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://images.genius.com/avatars/medium/b65387b8fb4f9c6d48d836d5b415ecbb",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://images.genius.com/e3887de77ee0c0f8f6a75a5d8fcfa62f.500x400x38.gif",
+                                    "human_readable_role_for_display": "Editor",
+                                    "id": 11081607,
+                                    "iq": 169675,
+                                    "login": "Vony1956",
+                                    "name": "Vony",
+                                    "role_for_display": "editor",
+                                    "url": "https://genius.com/Vony1956",
+                                    "current_user_metadata": {
+                                        "permissions": [],
+                                        "excluded_permissions": [
+                                            "follow"
+                                        ],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "attribution": 0.10344827586206896,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/2557222",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://images.genius.com/d020642d61b7be22d6ecb60490f34536.800x600x101.gif",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://images.genius.com/d020642d61b7be22d6ecb60490f34536.800x600x101.gif",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://images.genius.com/d020642d61b7be22d6ecb60490f34536.800x600x101.gif",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://images.genius.com/d020642d61b7be22d6ecb60490f34536.800x600x101.gif",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://images.genius.com/67bd9e10032da0c0564736ad5b8f85a0.1000x333x1.jpg",
+                                    "human_readable_role_for_display": "Moderator",
+                                    "id": 2557222,
+                                    "iq": 539632,
+                                    "login": "ssaa10dec",
+                                    "name": "ssaa10dec",
+                                    "role_for_display": "moderator",
+                                    "url": "https://genius.com/ssaa10dec",
+                                    "current_user_metadata": {
+                                        "permissions": [],
+                                        "excluded_permissions": [
+                                            "follow"
+                                        ],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "attribution": 0.0219435736677116,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/2914474",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://assets.genius.com/images/default_avatar_16.png?1766160293",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://assets.genius.com/images/default_avatar_32.png?1766160293",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://assets.genius.com/images/default_avatar_100.png?1766160293",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "human_readable_role_for_display": null,
+                                    "id": 2914474,
+                                    "iq": 24,
+                                    "login": "JohnnyVanSnick",
+                                    "name": "JohnnyVanSnick",
+                                    "role_for_display": null,
+                                    "url": "https://genius.com/JohnnyVanSnick",
+                                    "current_user_metadata": {
+                                        "permissions": [],
+                                        "excluded_permissions": [
+                                            "follow"
+                                        ],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "attribution": 0.01567398119122257,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/173194",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://images.genius.com/avatars/tiny/9afe669951ef0a29def73ab9d3f384ec",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://images.genius.com/avatars/thumb/9afe669951ef0a29def73ab9d3f384ec",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://images.genius.com/avatars/small/9afe669951ef0a29def73ab9d3f384ec",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://images.genius.com/avatars/medium/9afe669951ef0a29def73ab9d3f384ec",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://filepicker-images.genius.com/CJRmBlbbSyGu4Qug2LjE_t3_2x7xqo.png",
+                                    "human_readable_role_for_display": "Contributor",
+                                    "id": 173194,
+                                    "iq": 60084,
+                                    "login": "ReadOnlyUser",
+                                    "name": "Somedamnname",
+                                    "role_for_display": "contributor",
+                                    "url": "https://genius.com/ReadOnlyUser",
+                                    "current_user_metadata": {
+                                        "permissions": [],
+                                        "excluded_permissions": [
+                                            "follow"
+                                        ],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "attribution": 0.006269592476489029,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/8315100",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://images.genius.com/avatars/tiny/f4dc1da1ccb558f844f078eb9cd0ff5d",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://images.genius.com/avatars/thumb/f4dc1da1ccb558f844f078eb9cd0ff5d",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://images.genius.com/avatars/small/f4dc1da1ccb558f844f078eb9cd0ff5d",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://images.genius.com/avatars/medium/f4dc1da1ccb558f844f078eb9cd0ff5d",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://images.genius.com/a60b7740774e4636062895d57d65c4c5.667x1000x1.jpg",
+                                    "human_readable_role_for_display": "Editor",
+                                    "id": 8315100,
+                                    "iq": 320128,
+                                    "login": "glitzy",
+                                    "name": "​glitzy",
+                                    "role_for_display": "editor",
+                                    "url": "https://genius.com/glitzy",
+                                    "current_user_metadata": {
+                                        "permissions": [],
+                                        "excluded_permissions": [
+                                            "follow"
+                                        ],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "attribution": 0.0031347962382445144,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/175962",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://images.rapgenius.com/avatars/tiny/e62386044fa7550117c32a1a86ea907e",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://images.rapgenius.com/avatars/thumb/e62386044fa7550117c32a1a86ea907e",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://images.rapgenius.com/avatars/small/e62386044fa7550117c32a1a86ea907e",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://images.rapgenius.com/avatars/medium/e62386044fa7550117c32a1a86ea907e",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://images.rapgenius.com/avatars/medium/e62386044fa7550117c32a1a86ea907e",
+                                    "human_readable_role_for_display": "Editor",
+                                    "id": 175962,
+                                    "iq": 80562,
+                                    "login": "MForMarlon",
+                                    "name": "MForMarlon",
+                                    "role_for_display": "editor",
+                                    "url": "https://genius.com/MForMarlon",
+                                    "current_user_metadata": {
+                                        "permissions": [],
+                                        "excluded_permissions": [
+                                            "follow"
+                                        ],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "attribution": 0.0031347962382445144,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/1931244",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://images.genius.com/avatars/tiny/3655b7947c455ad9378be8cd9dc63f62",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://images.genius.com/avatars/thumb/3655b7947c455ad9378be8cd9dc63f62",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://images.genius.com/avatars/small/3655b7947c455ad9378be8cd9dc63f62",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://images.genius.com/avatars/medium/3655b7947c455ad9378be8cd9dc63f62",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://images.genius.com/f45814fd26ee32464af77c72e7e0e3d0.1000x750x1.jpg",
+                                    "human_readable_role_for_display": "Editor",
+                                    "id": 1931244,
+                                    "iq": 355592,
+                                    "login": "eatthemooncake",
+                                    "name": "​eatthemooncake",
+                                    "role_for_display": "editor",
+                                    "url": "https://genius.com/eatthemooncake",
+                                    "current_user_metadata": {
+                                        "permissions": [],
+                                        "excluded_permissions": [
+                                            "follow"
+                                        ],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "attribution": 0.0031347962382445144,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/4212581",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://images.genius.com/avatars/tiny/8754e51ff7af5f9662a97a08d5804a8d",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://images.genius.com/avatars/thumb/8754e51ff7af5f9662a97a08d5804a8d",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://images.genius.com/avatars/small/8754e51ff7af5f9662a97a08d5804a8d",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://images.genius.com/avatars/medium/8754e51ff7af5f9662a97a08d5804a8d",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://images.genius.com/666c72aa8a73f6b15a1fc39224f601f0.636x362x12.gif",
+                                    "human_readable_role_for_display": "Moderator",
+                                    "id": 4212581,
+                                    "iq": 4670373,
+                                    "login": "Ferbinho",
+                                    "name": "Ferbinho",
+                                    "role_for_display": "moderator",
+                                    "url": "https://genius.com/Ferbinho",
+                                    "current_user_metadata": {
+                                        "permissions": [],
+                                        "excluded_permissions": [
+                                            "follow"
+                                        ],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "attribution": 0.0031347962382445144,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/6493210",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://images.genius.com/avatars/tiny/fba34488637c712c1113ca8013c861d2",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://images.genius.com/avatars/thumb/fba34488637c712c1113ca8013c861d2",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://images.genius.com/avatars/small/fba34488637c712c1113ca8013c861d2",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://images.genius.com/avatars/medium/fba34488637c712c1113ca8013c861d2",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://images.genius.com/92c330c64c28720045ae2e0df299c30b.1000x669x1.jpg",
+                                    "human_readable_role_for_display": "Editor",
+                                    "id": 6493210,
+                                    "iq": 152773,
+                                    "login": "TheReaderandWatcher",
+                                    "name": "TheReaderandWatcher",
+                                    "role_for_display": "editor",
+                                    "url": "https://genius.com/TheReaderandWatcher",
+                                    "current_user_metadata": {
+                                        "permissions": [],
+                                        "excluded_permissions": [
+                                            "follow"
+                                        ],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "cosigned_by": [],
+                        "rejection_comment": null,
+                        "verified_by": null
+                    }
+                ]
+            },
+            "user": {
+                "api_path": "/users/656681",
+                "avatar": {
+                    "tiny": {
+                        "url": "https://images.genius.com/avatars/tiny/676b6af6b2e1e96b83c5bbba8f0718b0",
+                        "bounding_box": {
+                            "width": 16,
+                            "height": 16
+                        }
+                    },
+                    "thumb": {
+                        "url": "https://images.genius.com/avatars/thumb/676b6af6b2e1e96b83c5bbba8f0718b0",
+                        "bounding_box": {
+                            "width": 32,
+                            "height": 32
+                        }
+                    },
+                    "small": {
+                        "url": "https://images.genius.com/avatars/small/676b6af6b2e1e96b83c5bbba8f0718b0",
+                        "bounding_box": {
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "medium": {
+                        "url": "https://images.genius.com/avatars/medium/676b6af6b2e1e96b83c5bbba8f0718b0",
+                        "bounding_box": {
+                            "width": 300,
+                            "height": 400
+                        }
+                    }
+                },
+                "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                "human_readable_role_for_display": "Verified Artist",
+                "id": 656681,
+                "iq": 9520,
+                "login": "siamusic",
+                "name": "Sia",
+                "role_for_display": "verified_artist",
+                "url": "https://genius.com/siamusic",
+                "current_user_metadata": {
+                    "permissions": [],
+                    "excluded_permissions": [
+                        "follow"
+                    ],
+                    "interactions": {
+                        "following": false
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "meta": {
+        "status": 200
+    },
+    "response": {
+        "user": {
+            "about_me": {
+                "dom": {
+                    "tag": "root"
+                }
+            },
+            "api_path": "/users/94273412",
+            "avatar": {
+                "tiny": {
+                    "url": "https://assets.genius.com/images/default_avatar_16.png?1766160293",
+                    "bounding_box": {
+                        "width": 16,
+                        "height": 16
+                    }
+                },
+                "thumb": {
+                    "url": "https://assets.genius.com/images/default_avatar_32.png?1766160293",
+                    "bounding_box": {
+                        "width": 32,
+                        "height": 32
+                    }
+                },
+                "small": {
+                    "url": "https://assets.genius.com/images/default_avatar_100.png?1766160293",
+                    "bounding_box": {
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "medium": {
+                    "url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                    "bounding_box": {
+                        "width": 300,
+                        "height": 400
+                    }
+                }
+            },
+            "custom_header_image_url": null,
+            "email": "Test@email.de",
+            "followed_users_count": 0,
+            "followers_count": 0,
+            "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+            "human_readable_role_for_display": null,
+            "id": 94273412,
+            "iq": 0,
+            "iq_for_display": "0",
+            "login": "test_user",
+            "name": "test_user",
+            "photo_url": null,
+            "role_for_display": null,
+            "roles_for_display": [],
+            "unread_groups_inbox_count": 0,
+            "unread_main_activity_inbox_count": 0,
+            "unread_newsfeed_inbox_count": 0,
+            "url": "https://genius.com/test_user",
+            "current_user_metadata": {
+                "permissions": [
+                    "edit",
+                    "change_login",
+                    "manage_identities",
+                    "manage_accomplishments",
+                    "see_messages"
+                ],
+                "excluded_permissions": [
+                    "follow",
+                    "view_admin_info",
+                    "view_activity_stream",
+                    "view_roles",
+                    "toggle_verification_status",
+                    "toggle_penalty_status",
+                    "mark_spam",
+                    "mark_ham",
+                    "mass_delete_unreviewed_activity",
+                    "mass_delete_votes",
+                    "view_tracked_errors",
+                    "toggle_moderator_status",
+                    "toggle_editor_status",
+                    "toggle_mediator_status",
+                    "toggle_transcriber_status",
+                    "see_short_id",
+                    "send_new_message",
+                    "send_message",
+                    "tweet_offsite_annotation",
+                    "see_unreviewed_referents",
+                    "view_spam_status"
+                ],
+                "interactions": {
+                    "following": false
+                },
+                "features": [
+                    "ios_spotify_auth"
+                ]
+            },
+            "unread_messages_count": 1,
+            "artist": null,
+            "stats": {
+                "annotations_count": 0,
+                "answers_count": 0,
+                "comments_count": 0,
+                "forum_posts_count": 0,
+                "pyongs_count": 0,
+                "questions_count": 0,
+                "transcriptions_count": 0
+            }
+        }
+    }
+}

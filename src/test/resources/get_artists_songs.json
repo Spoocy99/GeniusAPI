@@ -1,0 +1,1164 @@
+{
+    "meta": {
+        "status": 200
+    },
+    "response": {
+        "songs": [
+            {
+                "annotation_count": 4,
+                "api_path": "/songs/6374199",
+                "artist_names": "Sia",
+                "full_title": "1+1 by Sia",
+                "header_image_thumbnail_url": "https://images.genius.com/d2ba123f26df847c6485a9d4a217deb5.300x300x1.png",
+                "header_image_url": "https://images.genius.com/d2ba123f26df847c6485a9d4a217deb5.1000x1000x1.png",
+                "id": 6374199,
+                "lyrics_owner_id": 8901159,
+                "lyrics_state": "complete",
+                "path": "/Sia-1-1-lyrics",
+                "primary_artist_names": "Sia",
+                "pyongs_count": 1,
+                "relationships_index_url": "https://genius.com/Sia-1-1-sample",
+                "release_date_components": {
+                    "year": 2021,
+                    "month": 2,
+                    "day": 12
+                },
+                "release_date_for_display": "February 12, 2021",
+                "release_date_with_abbreviated_month_for_display": "Feb. 12, 2021",
+                "song_art_image_thumbnail_url": "https://images.genius.com/d2ba123f26df847c6485a9d4a217deb5.300x300x1.png",
+                "song_art_image_url": "https://images.genius.com/d2ba123f26df847c6485a9d4a217deb5.1000x1000x1.png",
+                "stats": {
+                    "unreviewed_annotations": 3,
+                    "hot": false,
+                    "pageviews": 30578
+                },
+                "title": "1+1",
+                "title_with_featured": "1+1",
+                "url": "https://genius.com/Sia-1-1-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                    "api_path": "/artists/16775",
+                    "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                    "id": 16775,
+                    "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": true,
+                    "name": "Sia",
+                    "url": "https://genius.com/artists/Sia",
+                    "iq": 9520
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/16775",
+                        "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                        "id": 16775,
+                        "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Sia",
+                        "url": "https://genius.com/artists/Sia",
+                        "iq": 9520
+                    }
+                ]
+            },
+            {
+                "annotation_count": 1,
+                "api_path": "/songs/6764765",
+                "artist_names": "Kate Hudson",
+                "full_title": "1+1 by Kate Hudson",
+                "header_image_thumbnail_url": "https://images.genius.com/1693989a73bf3c5913ea3aecfe7c895d.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/1693989a73bf3c5913ea3aecfe7c895d.1000x1000x1.jpg",
+                "id": 6764765,
+                "lyrics_owner_id": 9237470,
+                "lyrics_state": "complete",
+                "path": "/Kate-hudson-1-1-lyrics",
+                "primary_artist_names": "Kate Hudson",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Kate-hudson-1-1-sample",
+                "release_date_components": {
+                    "year": 2021,
+                    "month": 2,
+                    "day": 12
+                },
+                "release_date_for_display": "February 12, 2021",
+                "release_date_with_abbreviated_month_for_display": "Feb. 12, 2021",
+                "song_art_image_thumbnail_url": "https://images.genius.com/1693989a73bf3c5913ea3aecfe7c895d.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/1693989a73bf3c5913ea3aecfe7c895d.1000x1000x1.jpg",
+                "stats": {
+                    "unreviewed_annotations": 1,
+                    "hot": false
+                },
+                "title": "1+1",
+                "title_with_featured": "1+1",
+                "url": "https://genius.com/Kate-hudson-1-1-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                    "api_path": "/artists/348302",
+                    "header_image_url": "https://images.genius.com/924d125ff1023abd7454812bb5bad840.1000x1000x1.jpg",
+                    "id": 348302,
+                    "image_url": "https://images.genius.com/684308c28a720ddd9cb5a0d0afe082e3.1000x1000x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Kate Hudson",
+                    "url": "https://genius.com/artists/Kate-hudson"
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/348302",
+                        "header_image_url": "https://images.genius.com/924d125ff1023abd7454812bb5bad840.1000x1000x1.jpg",
+                        "id": 348302,
+                        "image_url": "https://images.genius.com/684308c28a720ddd9cb5a0d0afe082e3.1000x1000x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Kate Hudson",
+                        "url": "https://genius.com/artists/Kate-hudson"
+                    }
+                ]
+            },
+            {
+                "annotation_count": 0,
+                "api_path": "/songs/7001873",
+                "artist_names": "Sia",
+                "full_title": "1+1 (Banx & Ranx Remix) by Sia",
+                "header_image_thumbnail_url": "https://images.genius.com/cf34f2918d2d55fce33688f8cb9f6c6e.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/cf34f2918d2d55fce33688f8cb9f6c6e.544x544x1.jpg",
+                "id": 7001873,
+                "lyrics_owner_id": 9119022,
+                "lyrics_state": "complete",
+                "path": "/Sia-1-1-banx-and-ranx-remix-lyrics",
+                "primary_artist_names": "Sia",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Sia-1-1-banx-and-ranx-remix-sample",
+                "release_date_components": {
+                    "year": 2021,
+                    "month": 7,
+                    "day": 12
+                },
+                "release_date_for_display": "July 12, 2021",
+                "release_date_with_abbreviated_month_for_display": "Jul. 12, 2021",
+                "song_art_image_thumbnail_url": "https://images.genius.com/cf34f2918d2d55fce33688f8cb9f6c6e.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/cf34f2918d2d55fce33688f8cb9f6c6e.544x544x1.jpg",
+                "stats": {
+                    "unreviewed_annotations": 0,
+                    "hot": false
+                },
+                "title": "1+1 (Banx & Ranx Remix)",
+                "title_with_featured": "1+1 (Banx & Ranx Remix)",
+                "url": "https://genius.com/Sia-1-1-banx-and-ranx-remix-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                    "api_path": "/artists/16775",
+                    "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                    "id": 16775,
+                    "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": true,
+                    "name": "Sia",
+                    "url": "https://genius.com/artists/Sia",
+                    "iq": 9520
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/16775",
+                        "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                        "id": 16775,
+                        "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Sia",
+                        "url": "https://genius.com/artists/Sia",
+                        "iq": 9520
+                    }
+                ]
+            },
+            {
+                "annotation_count": 2,
+                "api_path": "/songs/7066840",
+                "artist_names": "Sia (Ft. Sofía Reyes & Yandel)",
+                "full_title": "1+1 (Banx & Ranx Remix 2) by Sia (Ft. Sofía Reyes & Yandel)",
+                "header_image_thumbnail_url": "https://images.genius.com/446545aba8a0c57f92bbe9a87c65cb8d.300x300x1.png",
+                "header_image_url": "https://images.genius.com/446545aba8a0c57f92bbe9a87c65cb8d.1000x1000x1.png",
+                "id": 7066840,
+                "lyrics_owner_id": 8674307,
+                "lyrics_state": "complete",
+                "path": "/Sia-1-1-banx-and-ranx-remix-2-lyrics",
+                "primary_artist_names": "Sia",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Sia-1-1-banx-and-ranx-remix-2-sample",
+                "release_date_components": {
+                    "year": 2021,
+                    "month": 8,
+                    "day": 6
+                },
+                "release_date_for_display": "August 6, 2021",
+                "release_date_with_abbreviated_month_for_display": "Aug. 6, 2021",
+                "song_art_image_thumbnail_url": "https://images.genius.com/446545aba8a0c57f92bbe9a87c65cb8d.300x300x1.png",
+                "song_art_image_url": "https://images.genius.com/446545aba8a0c57f92bbe9a87c65cb8d.1000x1000x1.png",
+                "stats": {
+                    "unreviewed_annotations": 0,
+                    "hot": false
+                },
+                "title": "1+1 (Banx & Ranx Remix 2)",
+                "title_with_featured": "1+1 (Banx & Ranx Remix 2) (Ft. Sofía Reyes & Yandel)",
+                "url": "https://genius.com/Sia-1-1-banx-and-ranx-remix-2-lyrics",
+                "featured_artists": [
+                    {
+                        "api_path": "/artists/406125",
+                        "header_image_url": "https://images.genius.com/40ddd9898e9ac10633c5cc55fc699b61.1000x563x1.jpg",
+                        "id": 406125,
+                        "image_url": "https://images.genius.com/7d7b5dbd278678a709ee80165f3d07ec.384x384x1.png",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Sofía Reyes",
+                        "url": "https://genius.com/artists/Sofia-reyes",
+                        "iq": 386
+                    },
+                    {
+                        "api_path": "/artists/32132",
+                        "header_image_url": "https://images.genius.com/3ca31cebb52caca37b914914fc61e9a0.1000x563x1.jpg",
+                        "id": 32132,
+                        "image_url": "https://images.genius.com/edce63a5dd5e2cca5f30a46fcb440230.1000x1000x1.png",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Yandel",
+                        "url": "https://genius.com/artists/Yandel"
+                    }
+                ],
+                "primary_artist": {
+                    "api_path": "/artists/16775",
+                    "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                    "id": 16775,
+                    "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": true,
+                    "name": "Sia",
+                    "url": "https://genius.com/artists/Sia",
+                    "iq": 9520
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/16775",
+                        "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                        "id": 16775,
+                        "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Sia",
+                        "url": "https://genius.com/artists/Sia",
+                        "iq": 9520
+                    }
+                ]
+            },
+            {
+                "annotation_count": 0,
+                "api_path": "/songs/7001007",
+                "artist_names": "Sia (Ft. Amir & Banx & Ranx)",
+                "full_title": "1+1 (Remix) by Sia (Ft. Amir & Banx & Ranx)",
+                "header_image_thumbnail_url": "https://images.genius.com/7d059eb0aa5092fe9d9e8f994cd32dc7.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/7d059eb0aa5092fe9d9e8f994cd32dc7.1000x1000x1.jpg",
+                "id": 7001007,
+                "lyrics_owner_id": 8901159,
+                "lyrics_state": "complete",
+                "path": "/Sia-1-1-remix-lyrics",
+                "primary_artist_names": "Sia",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Sia-1-1-remix-sample",
+                "release_date_components": {
+                    "year": 2021,
+                    "month": 7,
+                    "day": 13
+                },
+                "release_date_for_display": "July 13, 2021",
+                "release_date_with_abbreviated_month_for_display": "Jul. 13, 2021",
+                "song_art_image_thumbnail_url": "https://images.genius.com/7d059eb0aa5092fe9d9e8f994cd32dc7.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/7d059eb0aa5092fe9d9e8f994cd32dc7.1000x1000x1.jpg",
+                "stats": {
+                    "unreviewed_annotations": 0,
+                    "hot": false
+                },
+                "title": "1+1 (Remix)",
+                "title_with_featured": "1+1 (Remix) (Ft. Amir & Banx & Ranx)",
+                "url": "https://genius.com/Sia-1-1-remix-lyrics",
+                "featured_artists": [
+                    {
+                        "api_path": "/artists/1064623",
+                        "header_image_url": "https://images.genius.com/1848b173bf36b69ec90bf6baa359dab4.960x640x1.jpg",
+                        "id": 1064623,
+                        "image_url": "https://images.genius.com/2ae38c73d897df36706bd579cdb619a8.512x512x1.png",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Banx & Ranx",
+                        "url": "https://genius.com/artists/Banx-and-ranx"
+                    },
+                    {
+                        "api_path": "/artists/670738",
+                        "header_image_url": "https://images.genius.com/c447993210db892b57c5dc53ee738e0b.960x958x1.jpg",
+                        "id": 670738,
+                        "image_url": "https://images.genius.com/26b697aac5d0ac59a342df46868e3180.486x486x1.png",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Amir",
+                        "url": "https://genius.com/artists/Amir"
+                    }
+                ],
+                "primary_artist": {
+                    "api_path": "/artists/16775",
+                    "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                    "id": 16775,
+                    "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": true,
+                    "name": "Sia",
+                    "url": "https://genius.com/artists/Sia",
+                    "iq": 9520
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/16775",
+                        "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                        "id": 16775,
+                        "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Sia",
+                        "url": "https://genius.com/artists/Sia",
+                        "iq": 9520
+                    }
+                ]
+            },
+            {
+                "annotation_count": 0,
+                "api_path": "/songs/8542820",
+                "artist_names": "Sia",
+                "full_title": "12 Nights by Sia",
+                "header_image_thumbnail_url": "https://images.genius.com/2064cd33e8aa0c6ec29b26f05725f660.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/2064cd33e8aa0c6ec29b26f05725f660.598x598x1.jpg",
+                "id": 8542820,
+                "lyrics_owner_id": 6214403,
+                "lyrics_state": "complete",
+                "path": "/Sia-12-nights-lyrics",
+                "primary_artist_names": "Sia",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Sia-12-nights-sample",
+                "release_date_components": {
+                    "year": 2022,
+                    "month": 11,
+                    "day": 11
+                },
+                "release_date_for_display": "November 11, 2022",
+                "release_date_with_abbreviated_month_for_display": "Nov. 11, 2022",
+                "song_art_image_thumbnail_url": "https://images.genius.com/2064cd33e8aa0c6ec29b26f05725f660.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/2064cd33e8aa0c6ec29b26f05725f660.598x598x1.jpg",
+                "stats": {
+                    "unreviewed_annotations": 0,
+                    "hot": false
+                },
+                "title": "12 Nights",
+                "title_with_featured": "12 Nights",
+                "url": "https://genius.com/Sia-12-nights-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                    "api_path": "/artists/16775",
+                    "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                    "id": 16775,
+                    "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": true,
+                    "name": "Sia",
+                    "url": "https://genius.com/artists/Sia",
+                    "iq": 9520
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/16775",
+                        "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                        "id": 16775,
+                        "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Sia",
+                        "url": "https://genius.com/artists/Sia",
+                        "iq": 9520
+                    }
+                ]
+            },
+            {
+                "annotation_count": 0,
+                "api_path": "/songs/8683118",
+                "artist_names": "Sia",
+                "full_title": "2 Minutes ’Til New Years by Sia",
+                "header_image_thumbnail_url": "https://images.genius.com/2064cd33e8aa0c6ec29b26f05725f660.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/2064cd33e8aa0c6ec29b26f05725f660.598x598x1.jpg",
+                "id": 8683118,
+                "lyrics_owner_id": 13181075,
+                "lyrics_state": "complete",
+                "path": "/Sia-2-minutes-til-new-years-lyrics",
+                "primary_artist_names": "Sia",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Sia-2-minutes-til-new-years-sample",
+                "release_date_components": {
+                    "year": 2022,
+                    "month": 12,
+                    "day": 30
+                },
+                "release_date_for_display": "December 30, 2022",
+                "release_date_with_abbreviated_month_for_display": "Dec. 30, 2022",
+                "song_art_image_thumbnail_url": "https://images.genius.com/2064cd33e8aa0c6ec29b26f05725f660.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/2064cd33e8aa0c6ec29b26f05725f660.598x598x1.jpg",
+                "stats": {
+                    "unreviewed_annotations": 0,
+                    "hot": false
+                },
+                "title": "2 Minutes ’Til New Years",
+                "title_with_featured": "2 Minutes ’Til New Years",
+                "url": "https://genius.com/Sia-2-minutes-til-new-years-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                    "api_path": "/artists/16775",
+                    "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                    "id": 16775,
+                    "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": true,
+                    "name": "Sia",
+                    "url": "https://genius.com/artists/Sia",
+                    "iq": 9520
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/16775",
+                        "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                        "id": 16775,
+                        "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Sia",
+                        "url": "https://genius.com/artists/Sia",
+                        "iq": 9520
+                    }
+                ]
+            },
+            {
+                "annotation_count": 1,
+                "api_path": "/songs/8542824",
+                "artist_names": "Sia",
+                "full_title": "3 Minutes 'Til New Years by Sia",
+                "header_image_thumbnail_url": "https://images.genius.com/2064cd33e8aa0c6ec29b26f05725f660.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/2064cd33e8aa0c6ec29b26f05725f660.598x598x1.jpg",
+                "id": 8542824,
+                "lyrics_owner_id": 6214403,
+                "lyrics_state": "complete",
+                "path": "/Sia-3-minutes-til-new-years-lyrics",
+                "primary_artist_names": "Sia",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Sia-3-minutes-til-new-years-sample",
+                "release_date_components": {
+                    "year": 2022,
+                    "month": 11,
+                    "day": 11
+                },
+                "release_date_for_display": "November 11, 2022",
+                "release_date_with_abbreviated_month_for_display": "Nov. 11, 2022",
+                "song_art_image_thumbnail_url": "https://images.genius.com/2064cd33e8aa0c6ec29b26f05725f660.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/2064cd33e8aa0c6ec29b26f05725f660.598x598x1.jpg",
+                "stats": {
+                    "unreviewed_annotations": 0,
+                    "hot": false
+                },
+                "title": "3 Minutes ’Til New Years",
+                "title_with_featured": "3 Minutes 'Til New Years",
+                "url": "https://genius.com/Sia-3-minutes-til-new-years-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                    "api_path": "/artists/16775",
+                    "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                    "id": 16775,
+                    "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": true,
+                    "name": "Sia",
+                    "url": "https://genius.com/artists/Sia",
+                    "iq": 9520
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/16775",
+                        "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                        "id": 16775,
+                        "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Sia",
+                        "url": "https://genius.com/artists/Sia",
+                        "iq": 9520
+                    }
+                ]
+            },
+            {
+                "annotation_count": 0,
+                "api_path": "/songs/3864720",
+                "artist_names": "Hustle Roses",
+                "full_title": "85 Blocks by Hustle Roses",
+                "header_image_thumbnail_url": "https://images.genius.com/b2fc6931d2623674ab286706ff54a7ef.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/b2fc6931d2623674ab286706ff54a7ef.1000x1000x1.jpg",
+                "id": 3864720,
+                "lyrics_owner_id": 4473794,
+                "lyrics_state": "complete",
+                "path": "/Hustle-roses-85-blocks-lyrics",
+                "primary_artist_names": "Hustle Roses",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Hustle-roses-85-blocks-sample",
+                "release_date_components": {
+                    "year": 2012,
+                    "month": 2,
+                    "day": 1
+                },
+                "release_date_for_display": "February 1, 2012",
+                "release_date_with_abbreviated_month_for_display": "Feb. 1, 2012",
+                "song_art_image_thumbnail_url": "https://images.genius.com/b2fc6931d2623674ab286706ff54a7ef.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/b2fc6931d2623674ab286706ff54a7ef.1000x1000x1.jpg",
+                "stats": {
+                    "unreviewed_annotations": 0,
+                    "hot": false
+                },
+                "title": "85 Blocks",
+                "title_with_featured": "85 Blocks",
+                "url": "https://genius.com/Hustle-roses-85-blocks-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                    "api_path": "/artists/1538648",
+                    "header_image_url": "https://images.genius.com/232c30dec504f7a2f45e769a172d9fe1.942x942x1.jpg",
+                    "id": 1538648,
+                    "image_url": "https://images.genius.com/232c30dec504f7a2f45e769a172d9fe1.942x942x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Hustle Roses",
+                    "url": "https://genius.com/artists/Hustle-roses"
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/1538648",
+                        "header_image_url": "https://images.genius.com/232c30dec504f7a2f45e769a172d9fe1.942x942x1.jpg",
+                        "id": 1538648,
+                        "image_url": "https://images.genius.com/232c30dec504f7a2f45e769a172d9fe1.942x942x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Hustle Roses",
+                        "url": "https://genius.com/artists/Hustle-roses"
+                    }
+                ]
+            },
+            {
+                "annotation_count": 0,
+                "api_path": "/songs/9295659",
+                "artist_names": "Selene Delgado (Ft. Abby Ismo & cupcakKe)",
+                "full_title": "ABBYWOOD by Selene Delgado (Ft. Abby Ismo & cupcakKe)",
+                "header_image_thumbnail_url": "https://images.genius.com/6f09d7bc548ca279aab888571ce90152.300x300x1.png",
+                "header_image_url": "https://images.genius.com/6f09d7bc548ca279aab888571ce90152.1000x1000x1.png",
+                "id": 9295659,
+                "lyrics_owner_id": 13855639,
+                "lyrics_state": "complete",
+                "path": "/Selene-delgado-abbywood-lyrics",
+                "primary_artist_names": "Selene Delgado",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Selene-delgado-abbywood-sample",
+                "release_date_components": {
+                    "year": 2023,
+                    "month": 7,
+                    "day": 7
+                },
+                "release_date_for_display": "July 7, 2023",
+                "release_date_with_abbreviated_month_for_display": "Jul. 7, 2023",
+                "song_art_image_thumbnail_url": "https://images.genius.com/6f09d7bc548ca279aab888571ce90152.300x300x1.png",
+                "song_art_image_url": "https://images.genius.com/6f09d7bc548ca279aab888571ce90152.1000x1000x1.png",
+                "stats": {
+                    "unreviewed_annotations": 0,
+                    "hot": false
+                },
+                "title": "ABBYWOOD",
+                "title_with_featured": "ABBYWOOD (Ft. Abby Ismo & cupcakKe)",
+                "url": "https://genius.com/Selene-delgado-abbywood-lyrics",
+                "featured_artists": [
+                    {
+                        "api_path": "/artists/3307287",
+                        "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                        "id": 3307287,
+                        "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Abby Ismo",
+                        "url": "https://genius.com/artists/Abby-ismo"
+                    },
+                    {
+                        "api_path": "/artists/576538",
+                        "header_image_url": "https://images.genius.com/6fcdfa4d6f5dcbfd0c895f96123a916b.1000x1000x1.png",
+                        "id": 576538,
+                        "image_url": "https://images.genius.com/5b1418faa7f4c1c4c1cb0d50026989e2.640x640x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "cupcakKe",
+                        "url": "https://genius.com/artists/Cupcakke",
+                        "iq": 1652
+                    }
+                ],
+                "primary_artist": {
+                    "api_path": "/artists/3108430",
+                    "header_image_url": "https://images.genius.com/4be67157e5853d1b1e489e8a3c170216.1000x705x1.png",
+                    "id": 3108430,
+                    "image_url": "https://images.genius.com/712e43a1523492790865642b6c136efd.431x431x1.png",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Selene Delgado",
+                    "url": "https://genius.com/artists/Selene-delgado"
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/3108430",
+                        "header_image_url": "https://images.genius.com/4be67157e5853d1b1e489e8a3c170216.1000x705x1.png",
+                        "id": 3108430,
+                        "image_url": "https://images.genius.com/712e43a1523492790865642b6c136efd.431x431x1.png",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Selene Delgado",
+                        "url": "https://genius.com/artists/Selene-delgado"
+                    }
+                ]
+            },
+            {
+                "annotation_count": 3,
+                "api_path": "/songs/2898241",
+                "artist_names": "Lil Peep",
+                "full_title": "about u by Lil Peep",
+                "header_image_thumbnail_url": "https://images.genius.com/c9724b8bd1d2030a1421762e944067c1.300x300x1.png",
+                "header_image_url": "https://images.genius.com/c9724b8bd1d2030a1421762e944067c1.1000x1000x1.png",
+                "id": 2898241,
+                "lyrics_owner_id": 3894467,
+                "lyrics_state": "complete",
+                "path": "/Lil-peep-about-u-lyrics",
+                "primary_artist_names": "Lil Peep",
+                "pyongs_count": 80,
+                "relationships_index_url": "https://genius.com/Lil-peep-about-u-sample",
+                "release_date_components": {
+                    "year": 2016,
+                    "month": 11,
+                    "day": 2
+                },
+                "release_date_for_display": "November 2, 2016",
+                "release_date_with_abbreviated_month_for_display": "Nov. 2, 2016",
+                "song_art_image_thumbnail_url": "https://images.genius.com/c9724b8bd1d2030a1421762e944067c1.300x300x1.png",
+                "song_art_image_url": "https://images.genius.com/c9724b8bd1d2030a1421762e944067c1.1000x1000x1.png",
+                "stats": {
+                    "unreviewed_annotations": 2,
+                    "hot": false,
+                    "pageviews": 348072
+                },
+                "title": "about u",
+                "title_with_featured": "about u",
+                "url": "https://genius.com/Lil-peep-about-u-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                    "api_path": "/artists/569922",
+                    "header_image_url": "https://images.genius.com/e65e57771e17b0da38257d96b846f680.1000x563x1.jpg",
+                    "id": 569922,
+                    "image_url": "https://images.genius.com/94f4ef6331d369b32fff21db91f809c3.1000x1000x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": true,
+                    "name": "Lil Peep",
+                    "url": "https://genius.com/artists/Lil-peep",
+                    "iq": 2613
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/569922",
+                        "header_image_url": "https://images.genius.com/e65e57771e17b0da38257d96b846f680.1000x563x1.jpg",
+                        "id": 569922,
+                        "image_url": "https://images.genius.com/94f4ef6331d369b32fff21db91f809c3.1000x1000x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Lil Peep",
+                        "url": "https://genius.com/artists/Lil-peep",
+                        "iq": 2613
+                    }
+                ]
+            },
+            {
+                "annotation_count": 4,
+                "api_path": "/songs/511110",
+                "artist_names": "Sia",
+                "full_title": "Academia by Sia",
+                "header_image_thumbnail_url": "https://images.genius.com/cd22d4a16fa20af427f437fc806a43e2.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/cd22d4a16fa20af427f437fc806a43e2.640x640x1.jpg",
+                "id": 511110,
+                "lyrics_owner_id": 1130646,
+                "lyrics_state": "complete",
+                "path": "/Sia-academia-lyrics",
+                "primary_artist_names": "Sia",
+                "pyongs_count": 4,
+                "relationships_index_url": "https://genius.com/Sia-academia-sample",
+                "release_date_components": {
+                    "year": 2008,
+                    "month": 1,
+                    "day": 8
+                },
+                "release_date_for_display": "January 8, 2008",
+                "release_date_with_abbreviated_month_for_display": "Jan. 8, 2008",
+                "song_art_image_thumbnail_url": "https://images.genius.com/cd22d4a16fa20af427f437fc806a43e2.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/cd22d4a16fa20af427f437fc806a43e2.640x640x1.jpg",
+                "stats": {
+                    "unreviewed_annotations": 4,
+                    "hot": false,
+                    "pageviews": 10722
+                },
+                "title": "Academia",
+                "title_with_featured": "Academia",
+                "url": "https://genius.com/Sia-academia-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                    "api_path": "/artists/16775",
+                    "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                    "id": 16775,
+                    "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": true,
+                    "name": "Sia",
+                    "url": "https://genius.com/artists/Sia",
+                    "iq": 9520
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/16775",
+                        "header_image_url": "https://images.genius.com/570d01b6da3e0d9f5abc5ddaebdd6825.1000x989x1.jpg",
+                        "id": 16775,
+                        "image_url": "https://images.genius.com/00bbce98e16a5740dc234ef6e3e9bf9e.556x556x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Sia",
+                        "url": "https://genius.com/artists/Sia",
+                        "iq": 9520
+                    }
+                ]
+            },
+            {
+                "annotation_count": 0,
+                "api_path": "/songs/7407890",
+                "artist_names": "Félix Ferrà (Ft. Angélica Borges, Maria Fontenelle & Márcia Coutinho)",
+                "full_title": "Acho Que Vou Gostar Daqui by Félix Ferrà (Ft. Angélica Borges, Maria Fontenelle & Márcia Coutinho)",
+                "header_image_thumbnail_url": "https://images.genius.com/303ecab4c714e4739bb1b85e73c530e5.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/303ecab4c714e4739bb1b85e73c530e5.1000x1000x1.jpg",
+                "id": 7407890,
+                "lyrics_owner_id": 8016602,
+                "lyrics_state": "complete",
+                "path": "/Felix-ferra-acho-que-vou-gostar-daqui-lyrics",
+                "primary_artist_names": "Félix Ferrà",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Felix-ferra-acho-que-vou-gostar-daqui-sample",
+                "release_date_components": {
+                    "year": 2015,
+                    "month": 2,
+                    "day": 12
+                },
+                "release_date_for_display": "February 12, 2015",
+                "release_date_with_abbreviated_month_for_display": "Feb. 12, 2015",
+                "song_art_image_thumbnail_url": "https://images.genius.com/303ecab4c714e4739bb1b85e73c530e5.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/303ecab4c714e4739bb1b85e73c530e5.1000x1000x1.jpg",
+                "stats": {
+                    "unreviewed_annotations": 0,
+                    "hot": false
+                },
+                "title": "Acho Que Vou Gostar Daqui",
+                "title_with_featured": "Acho Que Vou Gostar Daqui (Ft. Angélica Borges, Maria Fontenelle & Márcia Coutinho)",
+                "url": "https://genius.com/Felix-ferra-acho-que-vou-gostar-daqui-lyrics",
+                "featured_artists": [
+                    {
+                        "api_path": "/artists/2959131",
+                        "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                        "id": 2959131,
+                        "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Angélica Borges",
+                        "url": "https://genius.com/artists/Angelica-borges"
+                    },
+                    {
+                        "api_path": "/artists/1672013",
+                        "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                        "id": 1672013,
+                        "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Márcia Coutinho",
+                        "url": "https://genius.com/artists/Marcia-coutinho"
+                    },
+                    {
+                        "api_path": "/artists/2958819",
+                        "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                        "id": 2958819,
+                        "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Maria Fontenelle",
+                        "url": "https://genius.com/artists/Maria-fontenelle"
+                    }
+                ],
+                "primary_artist": {
+                    "api_path": "/artists/1671977",
+                    "header_image_url": "https://images.genius.com/8eeeff85eb5233f95a254d565a16e15c.1000x563x1.png",
+                    "id": 1671977,
+                    "image_url": "https://images.genius.com/3ccc921d6dcef7712b0581ead4f04899.227x227x1.png",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Félix Ferrà",
+                    "url": "https://genius.com/artists/Felix-ferra"
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/1671977",
+                        "header_image_url": "https://images.genius.com/8eeeff85eb5233f95a254d565a16e15c.1000x563x1.png",
+                        "id": 1671977,
+                        "image_url": "https://images.genius.com/3ccc921d6dcef7712b0581ead4f04899.227x227x1.png",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Félix Ferrà",
+                        "url": "https://genius.com/artists/Felix-ferra"
+                    }
+                ]
+            },
+            {
+                "annotation_count": 0,
+                "api_path": "/songs/7948749",
+                "artist_names": "Alexis Jordan",
+                "full_title": "Acid Rain by Alexis Jordan",
+                "header_image_thumbnail_url": "https://images.genius.com/5526d60a7bba14c8e12e2f7c87c37a41.300x300x1.png",
+                "header_image_url": "https://images.genius.com/5526d60a7bba14c8e12e2f7c87c37a41.1000x1000x1.png",
+                "id": 7948749,
+                "lyrics_owner_id": 8723889,
+                "lyrics_state": "complete",
+                "path": "/Alexis-jordan-acid-rain-lyrics",
+                "primary_artist_names": "Alexis Jordan",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Alexis-jordan-acid-rain-sample",
+                "release_date_components": {
+                    "year": 2013,
+                    "month": 2,
+                    "day": 20
+                },
+                "release_date_for_display": "February 20, 2013",
+                "release_date_with_abbreviated_month_for_display": "Feb. 20, 2013",
+                "song_art_image_thumbnail_url": "https://images.genius.com/5526d60a7bba14c8e12e2f7c87c37a41.300x300x1.png",
+                "song_art_image_url": "https://images.genius.com/5526d60a7bba14c8e12e2f7c87c37a41.1000x1000x1.png",
+                "stats": {
+                    "unreviewed_annotations": 0,
+                    "hot": false
+                },
+                "title": "Acid Rain",
+                "title_with_featured": "Acid Rain",
+                "url": "https://genius.com/Alexis-jordan-acid-rain-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                    "api_path": "/artists/15103",
+                    "header_image_url": "https://images.genius.com/ec448b7e1d16ccd9f160e0522d6b7854.821x185x1.jpg",
+                    "id": 15103,
+                    "image_url": "https://images.genius.com/17b70b41a00be0e031a62b06d42cc554.648x648x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Alexis Jordan",
+                    "url": "https://genius.com/artists/Alexis-jordan"
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/15103",
+                        "header_image_url": "https://images.genius.com/ec448b7e1d16ccd9f160e0522d6b7854.821x185x1.jpg",
+                        "id": 15103,
+                        "image_url": "https://images.genius.com/17b70b41a00be0e031a62b06d42cc554.648x648x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Alexis Jordan",
+                        "url": "https://genius.com/artists/Alexis-jordan"
+                    }
+                ]
+            },
+            {
+                "annotation_count": 2,
+                "api_path": "/songs/309069",
+                "artist_names": "Alexis Jordan (Ft. J. Cole)",
+                "full_title": "Acid Rain (Remix) by Alexis Jordan (Ft. J. Cole)",
+                "header_image_thumbnail_url": "https://images.genius.com/a64e6de088107cdc54a22bb3da621cad.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/a64e6de088107cdc54a22bb3da621cad.640x640x1.jpg",
+                "id": 309069,
+                "lyrics_owner_id": 174558,
+                "lyrics_state": "complete",
+                "path": "/Alexis-jordan-acid-rain-remix-lyrics",
+                "primary_artist_names": "Alexis Jordan",
+                "pyongs_count": 3,
+                "relationships_index_url": "https://genius.com/Alexis-jordan-acid-rain-remix-sample",
+                "release_date_components": {
+                    "year": 2013,
+                    "month": 2,
+                    "day": 20
+                },
+                "release_date_for_display": "February 20, 2013",
+                "release_date_with_abbreviated_month_for_display": "Feb. 20, 2013",
+                "song_art_image_thumbnail_url": "https://images.genius.com/a64e6de088107cdc54a22bb3da621cad.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/a64e6de088107cdc54a22bb3da621cad.640x640x1.jpg",
+                "stats": {
+                    "unreviewed_annotations": 0,
+                    "hot": false
+                },
+                "title": "Acid Rain (Remix)",
+                "title_with_featured": "Acid Rain (Remix) (Ft. J. Cole)",
+                "url": "https://genius.com/Alexis-jordan-acid-rain-remix-lyrics",
+                "featured_artists": [
+                    {
+                        "api_path": "/artists/69",
+                        "header_image_url": "https://images.genius.com/b4ced5fc34166c4798ae3a0e23aaa13d.1000x261x1.jpg",
+                        "id": 69,
+                        "image_url": "https://images.genius.com/39189c212b61330e50a8d8404cdc1ac4.421x421x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "J. Cole",
+                        "url": "https://genius.com/artists/J-cole",
+                        "iq": 505
+                    }
+                ],
+                "primary_artist": {
+                    "api_path": "/artists/15103",
+                    "header_image_url": "https://images.genius.com/ec448b7e1d16ccd9f160e0522d6b7854.821x185x1.jpg",
+                    "id": 15103,
+                    "image_url": "https://images.genius.com/17b70b41a00be0e031a62b06d42cc554.648x648x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Alexis Jordan",
+                    "url": "https://genius.com/artists/Alexis-jordan"
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/15103",
+                        "header_image_url": "https://images.genius.com/ec448b7e1d16ccd9f160e0522d6b7854.821x185x1.jpg",
+                        "id": 15103,
+                        "image_url": "https://images.genius.com/17b70b41a00be0e031a62b06d42cc554.648x648x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Alexis Jordan",
+                        "url": "https://genius.com/artists/Alexis-jordan"
+                    }
+                ]
+            },
+            {
+                "annotation_count": 1,
+                "api_path": "/songs/2092833",
+                "artist_names": "Alexis Jordan",
+                "full_title": "Acid Rain [Steve Redant Mix] by Alexis Jordan",
+                "header_image_thumbnail_url": "https://images.genius.com/a64e6de088107cdc54a22bb3da621cad.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/a64e6de088107cdc54a22bb3da621cad.640x640x1.jpg",
+                "id": 2092833,
+                "lyrics_owner_id": 1549345,
+                "lyrics_state": "complete",
+                "path": "/Alexis-jordan-acid-rain-steve-redant-mix-lyrics",
+                "primary_artist_names": "Alexis Jordan",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Alexis-jordan-acid-rain-steve-redant-mix-sample",
+                "release_date_components": null,
+                "release_date_for_display": null,
+                "release_date_with_abbreviated_month_for_display": null,
+                "song_art_image_thumbnail_url": "https://images.genius.com/a64e6de088107cdc54a22bb3da621cad.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/a64e6de088107cdc54a22bb3da621cad.640x640x1.jpg",
+                "stats": {
+                    "unreviewed_annotations": 0,
+                    "hot": false
+                },
+                "title": "Acid Rain [Steve Redant Mix]",
+                "title_with_featured": "Acid Rain [Steve Redant Mix]",
+                "url": "https://genius.com/Alexis-jordan-acid-rain-steve-redant-mix-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                    "api_path": "/artists/15103",
+                    "header_image_url": "https://images.genius.com/ec448b7e1d16ccd9f160e0522d6b7854.821x185x1.jpg",
+                    "id": 15103,
+                    "image_url": "https://images.genius.com/17b70b41a00be0e031a62b06d42cc554.648x648x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Alexis Jordan",
+                    "url": "https://genius.com/artists/Alexis-jordan"
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/15103",
+                        "header_image_url": "https://images.genius.com/ec448b7e1d16ccd9f160e0522d6b7854.821x185x1.jpg",
+                        "id": 15103,
+                        "image_url": "https://images.genius.com/17b70b41a00be0e031a62b06d42cc554.648x648x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Alexis Jordan",
+                        "url": "https://genius.com/artists/Alexis-jordan"
+                    }
+                ]
+            },
+            {
+                "annotation_count": 3,
+                "api_path": "/songs/10688935",
+                "artist_names": "Paris Hilton",
+                "full_title": "ADHD by Paris Hilton",
+                "header_image_thumbnail_url": "https://images.genius.com/92654fae1370da1c785a5ba9f69400c3.300x300x1.png",
+                "header_image_url": "https://images.genius.com/92654fae1370da1c785a5ba9f69400c3.1000x1000x1.png",
+                "id": 10688935,
+                "lyrics_owner_id": 8280771,
+                "lyrics_state": "complete",
+                "path": "/Paris-hilton-adhd-lyrics",
+                "primary_artist_names": "Paris Hilton",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Paris-hilton-adhd-sample",
+                "release_date_components": {
+                    "year": 2024,
+                    "month": 9,
+                    "day": 6
+                },
+                "release_date_for_display": "September 6, 2024",
+                "release_date_with_abbreviated_month_for_display": "Sep. 6, 2024",
+                "song_art_image_thumbnail_url": "https://images.genius.com/92654fae1370da1c785a5ba9f69400c3.300x300x1.png",
+                "song_art_image_url": "https://images.genius.com/92654fae1370da1c785a5ba9f69400c3.1000x1000x1.png",
+                "stats": {
+                    "unreviewed_annotations": 3,
+                    "hot": false,
+                    "pageviews": 10320
+                },
+                "title": "ADHD",
+                "title_with_featured": "ADHD",
+                "url": "https://genius.com/Paris-hilton-adhd-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                    "api_path": "/artists/29297",
+                    "header_image_url": "https://images.genius.com/74742aeda7d4523d2a0465c6d4b49b32.1000x663x1.jpg",
+                    "id": 29297,
+                    "image_url": "https://images.genius.com/d31ec32c07d6c373016afa4e8a9e8b87.1000x1000x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": true,
+                    "name": "Paris Hilton",
+                    "url": "https://genius.com/artists/Paris-hilton",
+                    "iq": 100
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/29297",
+                        "header_image_url": "https://images.genius.com/74742aeda7d4523d2a0465c6d4b49b32.1000x663x1.jpg",
+                        "id": 29297,
+                        "image_url": "https://images.genius.com/d31ec32c07d6c373016afa4e8a9e8b87.1000x1000x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Paris Hilton",
+                        "url": "https://genius.com/artists/Paris-hilton",
+                        "iq": 100
+                    }
+                ]
+            },
+            {
+                "annotation_count": 0,
+                "api_path": "/songs/6333895",
+                "artist_names": "Janix Mendez",
+                "full_title": "Afraid by Janix Mendez",
+                "header_image_thumbnail_url": "https://images.genius.com/6bd7323d47d8a061a9685ae3d1c2ce63.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/6bd7323d47d8a061a9685ae3d1c2ce63.1000x1000x1.jpg",
+                "id": 6333895,
+                "lyrics_owner_id": 12522400,
+                "lyrics_state": "complete",
+                "path": "/Janix-mendez-afraid-lyrics",
+                "primary_artist_names": "Janix Mendez",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Janix-mendez-afraid-sample",
+                "release_date_components": {
+                    "year": 2020,
+                    "month": 2,
+                    "day": 7
+                },
+                "release_date_for_display": "February 7, 2020",
+                "release_date_with_abbreviated_month_for_display": "Feb. 7, 2020",
+                "song_art_image_thumbnail_url": "https://images.genius.com/6bd7323d47d8a061a9685ae3d1c2ce63.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/6bd7323d47d8a061a9685ae3d1c2ce63.1000x1000x1.jpg",
+                "stats": {
+                    "unreviewed_annotations": 0,
+                    "hot": false
+                },
+                "title": "Afraid",
+                "title_with_featured": "Afraid",
+                "url": "https://genius.com/Janix-mendez-afraid-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                    "api_path": "/artists/1950253",
+                    "header_image_url": "https://images.genius.com/dc817f95425833b88dc5667fd02c19d6.1000x1000x1.jpg",
+                    "id": 1950253,
+                    "image_url": "https://images.genius.com/6bd7323d47d8a061a9685ae3d1c2ce63.1000x1000x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Janix Mendez",
+                    "url": "https://genius.com/artists/Janix-mendez"
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/1950253",
+                        "header_image_url": "https://images.genius.com/dc817f95425833b88dc5667fd02c19d6.1000x1000x1.jpg",
+                        "id": 1950253,
+                        "image_url": "https://images.genius.com/6bd7323d47d8a061a9685ae3d1c2ce63.1000x1000x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Janix Mendez",
+                        "url": "https://genius.com/artists/Janix-mendez"
+                    }
+                ]
+            },
+            {
+                "annotation_count": 1,
+                "api_path": "/songs/918869",
+                "artist_names": "Taloula",
+                "full_title": "À l'infini by Taloula",
+                "header_image_thumbnail_url": "https://images.genius.com/b6bace2d426ac521f4f56daef81de8f9.300x300x1.jpg",
+                "header_image_url": "https://images.genius.com/b6bace2d426ac521f4f56daef81de8f9.1000x1000x1.jpg",
+                "id": 918869,
+                "lyrics_owner_id": 1549345,
+                "lyrics_state": "complete",
+                "path": "/Taloula-a-linfini-lyrics",
+                "primary_artist_names": "Taloula",
+                "pyongs_count": null,
+                "relationships_index_url": "https://genius.com/Taloula-a-linfini-sample",
+                "release_date_components": {
+                    "year": 2013,
+                    "month": 9,
+                    "day": 2
+                },
+                "release_date_for_display": "September 2, 2013",
+                "release_date_with_abbreviated_month_for_display": "Sep. 2, 2013",
+                "song_art_image_thumbnail_url": "https://images.genius.com/b6bace2d426ac521f4f56daef81de8f9.300x300x1.jpg",
+                "song_art_image_url": "https://images.genius.com/b6bace2d426ac521f4f56daef81de8f9.1000x1000x1.jpg",
+                "stats": {
+                    "unreviewed_annotations": 0,
+                    "hot": false
+                },
+                "title": "À l’infini",
+                "title_with_featured": "À l'infini",
+                "url": "https://genius.com/Taloula-a-linfini-lyrics",
+                "featured_artists": [],
+                "primary_artist": {
+                    "api_path": "/artists/22446",
+                    "header_image_url": "https://images.genius.com/d1366df5070ca54cccd4d25693044733.1000x563x1.jpg",
+                    "id": 22446,
+                    "image_url": "https://images.genius.com/ad3a2e871b44e99bcd8358f37c8c257c.933x933x1.jpg",
+                    "is_meme_verified": false,
+                    "is_verified": false,
+                    "name": "Taloula",
+                    "url": "https://genius.com/artists/Taloula"
+                },
+                "primary_artists": [
+                    {
+                        "api_path": "/artists/22446",
+                        "header_image_url": "https://images.genius.com/d1366df5070ca54cccd4d25693044733.1000x563x1.jpg",
+                        "id": 22446,
+                        "image_url": "https://images.genius.com/ad3a2e871b44e99bcd8358f37c8c257c.933x933x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Taloula",
+                        "url": "https://genius.com/artists/Taloula"
+                    }
+                ]
+            }
+        ],
+        "next_page": 2
+    }
+}

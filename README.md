@@ -1,8 +1,12 @@
-
-
 # Java Genius API Wrapper
 This is a java wrapper for the [Genius API](https://docs.genius.com). <br>
-This library requires Java 11 or newer.
+
+## Features
+* Supports: Songs & Artists, Annotations & Referents, Web Pages, Search
+* Lyrics searching
+* Uses [Reactor](https://projectreactor.io/)
+* Basic authentication (Client Access Token & Access Token)
+* Compiled for `Java 11`
 
 ## Download
 
@@ -25,200 +29,180 @@ Be sure to replace the **VERSION** key below with the version shown above!
 </dependency>
 ```
 
+## Gettings started
+- Please also check out the [Genius API Documentation](https://docs.genius.com).
+- Make sure you know how [Reactor](https://projectreactor.io/) works!
+- You will need to **authenticate** using one of the methods below before making any requests to the Genius API.
+
 ## Authentication
+
+Please see [Genius's Authentication Documentation](https://docs.genius.com/#/authentication-h1) for more information about Authentication.
 
 > [!IMPORTANT]
 > You will need to create a Genius API Client. You can do so at https://genius.com/api-clients <br>
 
-See https://docs.genius.com/#/authentication-h1 for more information about Authentication.
+There are two types of access tokens you can use to authenticate to the Genius API:
+* **Client Access Token**: Use this if your application doesn't include user-specific behavior (read-only endpoints that don't require scopes).
+* **User Access Token (OAuth Authorization Code flow)**: Use this if you need to make requests on behalf of individual users (requires scopes).
 
-___
+---
 
-### Authenticating to the Genius API by using your Client access token:
+### Authenticating using a Client Access Token
+
 * **client_id**: Your application's Client ID
 * **client_secret**: Your application's Client Secret
-* **client_access_token**: Your application's Client Access Token (can be found on the Genius API Client management page)
+* **client_access_token**: Your application's Client Access Token (You can get a client access token by clicking "Generate Access Token" on the API Client management page.)
 ```java
-GeniusClient client = new GeniusClientBuilder()
-        
-        // Set your Client ID
-        .setClientId("your_client_id")       
-        
-        // Set your Client Secret
-        .setClientSecret("your_client_secret")
-        
-        // Set the Auth Type you want to use. In this case by providing a Client Access Token
-        .setAuthType(GeniusClientBuilder.AuthType.CLIENT_ACCESS_TOKEN)
-        
-        // Set the User Agent
-        .setUserAgent("Mozilla/5.0")
-        
+GeniusClient client = GeniusClient.builder()
+        .clientId("your_client_id")                 // Your application's Client ID
+        .clientSecret("your_client_secret")         // Your application's Client Secret
+        .accessToken("your_client_access_token")    // Your application's Client Access Token
         .build();
 ```
-After building the Client, you will need to providing the client with the Client Access Token. <br>
-```java
-// Set the Client Access Token for the client to use. Before doing this, no requests can be made.
-client.setAuthorizationCode("your_client_access_token");
-```
-Implementation Example: [AccessTokenExample](src/test/java/AccessTokenExample.java)
 
-___
+You can find a basic implementation here: [AccessTokenExample.java](src/examples/java/AccessTokenExample.java).
 
-### Authenticating to the Genius API by getting and providing an Access Token:
+---
+
+### Authenticating using the Authorization Code (OAuth) flow
+
 `Used for making API calls on behalf of individual users.`
 * **client_id**: Your application's Client ID
 * **client_secret**: Your application's Client Secret
 * **redirect_uri**: The URI Genius will redirect the user to after they've authorized your application; it must be the same as the one set for the API Client on the management page
 * **state**: A value that will be returned with the code redirect for maintaining arbitrary state through the authorization process
+* **scopes**: A list of scopes of access to request from the user (see [Genius Scopes](https://docs.genius.com/#authentication) for more information)
+
+1) Create the GeniusClient with your client_id and client_secret:
 ```java
-GeniusClient client = new GeniusClientBuilder()
-        
-        // Set your Client ID
-        .setClientId("your_client_id")
-        
-        // Set your Client Secret
-        .setClientSecret("your_client_secret")
-        
-        // Set the Auth Type you want to use. In this case by getting an Access Token
-        .setAuthType(GeniusClientBuilder.AuthType.AUTHORIZATION_CODE)
-        
-        // Set your redirect URI
-        .setCallbackUrl("your_redirect_uri")
-        
-        // Set the User Agent
-        .setUserAgent("Mozilla/5.0")
-        
+GeniusClient client = GeniusClient.builder()
+        .clientId("your_client_id")                 // Your application's Client ID
+        .clientSecret("your_client_secret")         // Your application's Client Secret
         .build();
 ```
-After building the Client, you will need to authorize using the Authorization URL and providing the client with the code. <br>
-```java
-String SECRET_STATE = "100";                                // The state value to be returned with the code (see above)
-String url = client.buildAuthorizationUrl(SECRET_STATE);    // Builds the Authorization URL using the provided credentials and the state
 
-// Set the Authorization Code for the client to use. Before doing this, n qo requests can be made.
-client.setAuthorizationCode("code_received_from_the_authorization_url");
+2) Build the authorization URI and redirect the user to it:
+```java
+// Build the authorization URI for the user to authorize your application
+URI authorizationUri = client.authorizationCodeUri(
+        SECRET_STATE,                           // A secret state value
+        "http://your_redirect_uri.com",         // Your redirect URI
+        Scope.ME, Scope.VOTE                    // The scopes you are requesting
+)
+.block(); // Example only. Avoid blocking in production code.
 ```
-Implementation Example: [AuthorizationCodeExample](src/test/java/AuthorizationCodeExample.java)
+
+3) Request an Access Token using the Authorization Code received from the redirect:
+```java
+GeniusAccessToken token = client.accessToken(
+       code,                               // The Authorization Code received from the redirect
+       "http://your_redirect_uri.com",     // Set your Redirect URI (the same as above!!!)
+       Scope.ME, Scope.VOTE                // Set the required Scopes (the same as above!!!)
+).block();
+
+client.setAccessToken(token);               // Set the Authorization Code, otherwise no requests can be made
+```
+
+You can find a basic implementation here: [AuthorizationCodeExample.java](src/examples/java/AuthorizationCodeExample.java).
 
 ## Usage
 
-Getting a Lyrics of a song.
+Requests return [Mono](https://projectreactor.io/docs/core/release/api/reactor/core/publisher/Mono.html) instances from Reactor to wait for results.
+
+Getting a Song by id:
 ```java
-String url = "https://genius.com/Kendrick-lamar-humble-lyrics";
-client.lyrics()                             // Get the lyrics of a song
-    .setSongUrl(url)                        // Set the URL of the song
-    .setSongName("Kendrick Lamar Humble")   // OR set the name of the song (if url is set, this will be ignored)
-    .doOnError(e -> {
-        System.out.println("Error while getting lyrics: " + e.getMessage());
-    })
-        .subscribe(lyrics -> {
-            System.out.println(lyrics.getAsPlain());
+client.getSong(
+        378195L,                                    // song id
+        TextFormat.PLAIN, TextFormat.HTML           // optional description formats
+        )
+        .doOnError(e -> {
+            System.out.println("Error while searching for Song: " + e.getMessage());
+            e.printStackTrace();
+        })
+        .subscribe(song -> {
+            System.out.printf("Title: %s%n", song.getTitle());
+            System.out.printf("Description: %s%n", song.getDescription(TextFormat.PLAIN));
         });
 ```
-___
 
-Searching for a list of song by providing a query.
+Getting an Artist by id:
 ```java
-client.search()
-    
-    // Set the query
-    .setQuery("Kendrick Lamar")
-    
-    .subscribe(search -> {
-        
-        // Results might be empty if nothing is found
-        if(search.getResults().isEmpty()) {
-            System.out.println("No results found!");
-            return;
-        }
-        
-        // Search provides a list of results
-        SearchSong firstResult = search.getResults().get(0);
-        System.out.println(String.format("ID: %s", firstResult.getId()));
-        System.out.println(String.format("Artist: %s", firstResult.getArtist().getName()));
-        System.out.println(String.format("URL: %s", firstResult.getUrl()));
-    });
-```
-___
-
-Searching for a song by providing the id of a song.
-```java
-client.searchSong()
-    
-    // Set the id of the song
-    .setId("378195")
-    
-    .subscribe(song -> {
-        System.out.println(String.format("Title: %s", song.getTitle()));
-    });
-```
-___
-
-Searching for a artist by providing the id of the artist.
-```java
-client.searchArtist() 
-    
-    // Set the id of the song
-    .setId("16775")
-    
-    .subscribe(artist -> {
-        System.out.println(String.format("Name: %s", artist.getName()));
-    });
-```
-___
-
-Gettings Descriptions of Artists and Songs.
-```java
-//Artists and Songs may have descriptions. For those you need to provide how you want those to be formatted.
-client.searchSong()
-    .setId("378195")
-    
-    // Set the format of the description
-    .addFormat(DescriptionFormat.HTML)
-    
-    // You may add multiple formats
-    .addFormat(DescriptionFormat.PLAIN)
-    
-    .subscribe(song -> {
-         // You can only get Description if you provided the format, otherwise it will be null
-        System.out.println(String.format("Description: %s", song.getDescription().getPlain()));
-    });
+client.getArtist(
+        16775L,             // artist id
+        TextFormat.HTML     // optional description formats
+        )
+        .doOnError(e -> {
+            System.out.println("Error while searching for Artist: " + e.getMessage());
+            e.printStackTrace();
+        })
+        .subscribe(artist -> {
+            System.out.printf("Name: %s%n", artist.getName());
+            System.out.printf("Description: %s%n", artist.getDescription(TextFormat.PLAIN.HTML));
+        });
 ```
 
-## Calling Results
-
-Calling results in sync:
+Performing a search:
 ```java
-Search result = client.search().setQuery("Kendrick Lamar").execute();
+client.search("Kendrick Lamar")
+      .doOnError(e -> System.out.println("Error while searching: " + e.getMessage()))
+      .subscribe(search -> {
+          if (search.getHits().isEmpty()) {
+              System.out.println("No results found!");
+              return;
+          }
+
+          Search.Hit first = search.getHits().get(0);
+          System.out.printf("Title: %s%n", first.getResult().getTitle());
+          System.out.printf("Artist: %s%n", first.getResult().getArtistNames());
+      });
 ```
 
-Calling results in async:
+Searching for Lyrics:
 ```java
-client.search().setQuery("Kendrick Lamar").subscribe(search -> {
-    System.out.println(search.getResults().get(0).getTitle());
-});
+client.getLyricsByQuery("Kendrik Lamar Humble").
+        doOnError(e -> System.out.println("Error while getting lyrics: " + e.getMessage()))
+        .subscribe(lyrics -> System.out.println(lyrics.getPlain()));
+
+String url = "https://genius.com/Kendrick-lamar-humble-lyrics";
+client.getLyricsByUrl(url)
+      .doOnError(e -> System.out.println("Error while getting lyrics: " + e.getMessage()))
+      .subscribe(lyrics -> System.out.println(lyrics.getPlain()));
+
+// Or build the request manually:
+client.lyrics()
+        .url(url)       // e.g. "https://genius.com/Kendrick-lamar-humble-lyrics"   (query will be ignored if url is set)
+        .path(url)      // e.g. "Kendrick-lamar-humble-lyrics"                      (query will be ignored if url is set)
+        .query(url)     // e.g. "Kendrick Lamar Humble" (Search Query)
+        .build()
+        .doOnError(e -> System.out.println("Error while getting lyrics: " + e.getMessage()))
+        .subscribe(lyrics -> System.out.println(lyrics.getPlain()));
+
+
 ```
-
-## Examples
-
-The following examples are minimal implementations but show how the library works.
-  - Making Requests using a Client Access Token: [link](src/examples/java/AccessTokenExample.java)
-  - Making Requests using an Access Token: [link](src/examples/java/AuthorizationCodeExample.java)
-
-
-----
 
 ## Lyrics Errors
 - `GeniusException`: Could not find Lyrics Container. This happens when Genius changes their website. Report this to the developer and/or try to set the container ids directly via the LyricsScraper.
-- `GeniusException`: Could not find Lyrics Container. This happens when Genius changes their website. Report this to the developer and/or try to set the container ids directly via the LyricsScraper.
 
-This means that the library could not find the lyrics container on the website because Genius changed their names. 
-You can wait for an update or try to set the container ids directly via the LyricsScraper like this:
-    
+This means that the library could not find the lyrics container on the website because their names changed.
+
+Try using `unknownContainerNames()` in the lyrics request builder to attempt to find the correct lyrics:
 ```java
-LyricsScraper.setLyricsContainer("...");        // This is the container that contains all lyrics elements
-LyricsScraper.setLyricsContainerHeader("...");  // This is the header used for filtering the lyrics
-LyricsScraper.setTitleContainer("...");         // This is the container that contains the title of the song
+client.lyrics()
+      .url(url)
+      .unknownContainerNames() // try this
+      .build()
+      .doOnError(e -> System.out.println("Error while getting lyrics: " + e.getMessage()))
+      .subscribe(lyrics -> System.out.println(lyrics.getPlain()));
 ```
+This will scan the whole site and guess the container names. This does not guarantee successful extraction, but may work. 
+This will result in a slower extraction process so it should on be used when the lyrics extraction fails with the default Extractor.
 
+You can also try to create your own extractor implementing the 'LyricsExtractor' interface or set the container names directly:
+```java
+LyricsExtractor extractor = new DirectLyricsExtractor.Builder()
+        .lyrics_container("lyrics_container_name")
+        .lyrics_container_header("lyrics_container_header_name")
+        .lyrics_title_container("lyrics_title_container_name")
+        .build();
+```
 You will have to inspect the Genius website in order to find the new container ids.
