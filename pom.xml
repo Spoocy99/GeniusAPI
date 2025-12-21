@@ -6,7 +6,7 @@
 
     <groupId>dev.spoocy.genius</groupId>
     <artifactId>GeniusAPI</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -38,15 +38,21 @@
         </dependency>
 
         <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.42</version>
+        </dependency>
+
+        <dependency>
             <groupId>dev.spoocy.utils</groupId>
             <artifactId>common-utils</artifactId>
-            <version>1.0.9</version>
+            <version>1.0.11</version>
         </dependency>
 
         <dependency>
             <groupId>dev.spoocy.utils</groupId>
             <artifactId>config-utils</artifactId>
-            <version>1.0.9</version>
+            <version>1.0.11</version>
         </dependency>
 
         <dependency>
@@ -56,33 +62,15 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.scribejava</groupId>
-            <artifactId>scribejava-apis</artifactId>
-            <version>8.3.3</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.30</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.squareup.okhttp3</groupId>
-            <artifactId>okhttp</artifactId>
-            <version>4.12.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20240303</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
             <version>1.16.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents.client5</groupId>
+            <artifactId>httpclient5-cache</artifactId>
+            <version>5.1.3</version>
         </dependency>
 
         <!-- Tests -->
@@ -109,7 +97,7 @@
 
     </dependencies>
 
-        <build>
+    <build>
 
         <sourceDirectory>src/main/java</sourceDirectory>
 

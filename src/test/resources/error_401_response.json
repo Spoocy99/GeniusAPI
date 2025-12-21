@@ -1,0 +1,6 @@
+{
+    "meta": {
+        "status": 401,
+        "message": "This endpoint requires a valid user token."
+    }
+}

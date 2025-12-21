@@ -1,0 +1,867 @@
+{
+  "meta": {
+    "status": 200
+  },
+  "response": {
+    "sections": [
+      {
+        "type": "lyric",
+        "hits": [
+          {
+            "highlights": [
+              {
+                "property": "lyrics",
+                "value": "Ah, ah-ah\nOoh-woah\nOh-oh\nLast Christmas, I gave you my heart\nBut the very next day, you",
+                "snippet": true,
+                "ranges": [
+                  {
+                    "start": 25,
+                    "end": 29
+                  },
+                  {
+                    "start": 30,
+                    "end": 39
+                  }
+                ]
+              }
+            ],
+            "index": "lyric",
+            "type": "song",
+            "result": {
+              "_type": "song",
+              "annotation_count": 6,
+              "api_path": "/songs/1439197",
+              "artist_names": "Wham!",
+              "full_title": "Last Christmas by Wham!",
+              "header_image_thumbnail_url": "https://images.genius.com/e7c004d9c548b6266cd351ee9dd93e97.300x300x1.png",
+              "header_image_url": "https://images.genius.com/e7c004d9c548b6266cd351ee9dd93e97.1000x1000x1.png",
+              "id": 1439197,
+              "instrumental": false,
+              "lyrics_owner_id": 3292813,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1765746868,
+              "path": "/Wham-last-christmas-lyrics",
+              "primary_artist_names": "Wham!",
+              "pyongs_count": 31,
+              "relationships_index_url": "https://genius.com/Wham-last-christmas-sample",
+              "release_date_components": {
+                "year": 1984,
+                "month": 12,
+                "day": 3
+              },
+              "release_date_for_display": "December 3, 1984",
+              "release_date_with_abbreviated_month_for_display": "Dec. 3, 1984",
+              "song_art_image_thumbnail_url": "https://images.genius.com/e7c004d9c548b6266cd351ee9dd93e97.300x300x1.png",
+              "song_art_image_url": "https://images.genius.com/e7c004d9c548b6266cd351ee9dd93e97.1000x1000x1.png",
+              "stats": {
+                "unreviewed_annotations": 2,
+                "concurrents": 114,
+                "hot": true,
+                "pageviews": 4792118
+              },
+              "title": "Last Christmas",
+              "title_with_featured": "Last Christmas",
+              "updated_by_human_at": 1765746868,
+              "url": "https://genius.com/Wham-last-christmas-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/15441",
+                "header_image_url": "https://images.genius.com/8ed4f16cb5e7d57e96c308cc724ffc4b.1000x333x1.jpg",
+                "id": 15441,
+                "image_url": "https://images.genius.com/4575a22230a5db153e6b6b21a9a81bb9.1000x1000x1.jpg",
+                "index_character": "w",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "Wham!",
+                "slug": "Wham",
+                "url": "https://genius.com/artists/Wham"
+              },
+              "primary_artists": [
+                {
+                  "_type": "artist",
+                  "api_path": "/artists/15441",
+                  "header_image_url": "https://images.genius.com/8ed4f16cb5e7d57e96c308cc724ffc4b.1000x333x1.jpg",
+                  "id": 15441,
+                  "image_url": "https://images.genius.com/4575a22230a5db153e6b6b21a9a81bb9.1000x1000x1.jpg",
+                  "index_character": "w",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Wham!",
+                  "slug": "Wham",
+                  "url": "https://genius.com/artists/Wham"
+                }
+              ]
+            }
+          },
+          {
+            "highlights": [
+              {
+                "property": "lyrics",
+                "value": "caught a couple of bodies myself, slid my community\nMy last Christmas toy drive in Compton handed out eulogies (Hoo",
+                "snippet": true,
+                "ranges": [
+                  {
+                    "start": 55,
+                    "end": 59
+                  },
+                  {
+                    "start": 60,
+                    "end": 69
+                  }
+                ]
+              }
+            ],
+            "index": "lyric",
+            "type": "song",
+            "result": {
+              "_type": "song",
+              "annotation_count": 33,
+              "api_path": "/songs/7995424",
+              "artist_names": "Kendrick Lamar",
+              "full_title": "Worldwide Steppers by Kendrick Lamar",
+              "header_image_thumbnail_url": "https://images.genius.com/2f8cae9b56ed9c643520ef2fd62cd378.300x300x1.png",
+              "header_image_url": "https://images.genius.com/2f8cae9b56ed9c643520ef2fd62cd378.1000x1000x1.png",
+              "id": 7995424,
+              "instrumental": false,
+              "lyrics_owner_id": 7901068,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1765759962,
+              "path": "/Kendrick-lamar-worldwide-steppers-lyrics",
+              "primary_artist_names": "Kendrick Lamar",
+              "pyongs_count": 27,
+              "relationships_index_url": "https://genius.com/Kendrick-lamar-worldwide-steppers-sample",
+              "release_date_components": {
+                "year": 2022,
+                "month": 5,
+                "day": 13
+              },
+              "release_date_for_display": "May 13, 2022",
+              "release_date_with_abbreviated_month_for_display": "May 13, 2022",
+              "song_art_image_thumbnail_url": "https://images.genius.com/2f8cae9b56ed9c643520ef2fd62cd378.300x300x1.png",
+              "song_art_image_url": "https://images.genius.com/2f8cae9b56ed9c643520ef2fd62cd378.1000x1000x1.png",
+              "stats": {
+                "unreviewed_annotations": 12,
+                "hot": false,
+                "pageviews": 863242
+              },
+              "title": "Worldwide Steppers",
+              "title_with_featured": "Worldwide Steppers",
+              "updated_by_human_at": 1765759962,
+              "url": "https://genius.com/Kendrick-lamar-worldwide-steppers-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/1421",
+                "header_image_url": "https://images.genius.com/1d39f4a8c2906db0e696e5cc4427fa92.300x300x1.png",
+                "id": 1421,
+                "image_url": "https://images.genius.com/43c7fc30a6d9fd31b239bb47cf1533f4.1000x1000x1.png",
+                "index_character": "k",
+                "is_meme_verified": true,
+                "is_verified": true,
+                "name": "Kendrick Lamar",
+                "slug": "Kendrick-lamar",
+                "url": "https://genius.com/artists/Kendrick-lamar",
+                "iq": 68414
+              },
+              "primary_artists": [
+                {
+                  "_type": "artist",
+                  "api_path": "/artists/1421",
+                  "header_image_url": "https://images.genius.com/1d39f4a8c2906db0e696e5cc4427fa92.300x300x1.png",
+                  "id": 1421,
+                  "image_url": "https://images.genius.com/43c7fc30a6d9fd31b239bb47cf1533f4.1000x1000x1.png",
+                  "index_character": "k",
+                  "is_meme_verified": true,
+                  "is_verified": true,
+                  "name": "Kendrick Lamar",
+                  "slug": "Kendrick-lamar",
+                  "url": "https://genius.com/artists/Kendrick-lamar",
+                  "iq": 68414
+                }
+              ]
+            }
+          },
+          {
+            "highlights": [
+              {
+                "property": "lyrics",
+                "value": "a ja mam singla\nWyżej na Top 50 Spotify niż \"Last Christmas\"\nWow, \"Let it Snow\"\nAy, i Mariah Carey",
+                "snippet": true,
+                "ranges": [
+                  {
+                    "start": 45,
+                    "end": 49
+                  },
+                  {
+                    "start": 50,
+                    "end": 59
+                  }
+                ]
+              }
+            ],
+            "index": "lyric",
+            "type": "song",
+            "result": {
+              "_type": "song",
+              "annotation_count": 66,
+              "api_path": "/songs/6652096",
+              "artist_names": "Mata",
+              "full_title": "Patoreakcja by Mata",
+              "header_image_thumbnail_url": "https://images.genius.com/3ac038e91a814f59bee1553e33a15092.300x300x1.png",
+              "header_image_url": "https://images.genius.com/3ac038e91a814f59bee1553e33a15092.1000x1000x1.png",
+              "id": 6652096,
+              "instrumental": false,
+              "lyrics_owner_id": 3447119,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1730187443,
+              "path": "/Mata-patoreakcja-lyrics",
+              "primary_artist_names": "Mata",
+              "pyongs_count": 102,
+              "relationships_index_url": "https://genius.com/Mata-patoreakcja-sample",
+              "release_date_components": {
+                "year": 2021,
+                "month": 3,
+                "day": 30
+              },
+              "release_date_for_display": "March 30, 2021",
+              "release_date_with_abbreviated_month_for_display": "Mar. 30, 2021",
+              "song_art_image_thumbnail_url": "https://images.genius.com/3ac038e91a814f59bee1553e33a15092.300x300x1.png",
+              "song_art_image_url": "https://images.genius.com/3ac038e91a814f59bee1553e33a15092.1000x1000x1.png",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false,
+                "pageviews": 520749
+              },
+              "title": "Patoreakcja",
+              "title_with_featured": "Patoreakcja",
+              "updated_by_human_at": 1762874340,
+              "url": "https://genius.com/Mata-patoreakcja-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/51868",
+                "header_image_url": "https://images.genius.com/c7178dca5e70241e7c014df3c5166ff0.640x640x1.jpg",
+                "id": 51868,
+                "image_url": "https://images.genius.com/755a1f703e58ecdd1b9f72411916db39.640x640x1.jpg",
+                "index_character": "m",
+                "is_meme_verified": true,
+                "is_verified": true,
+                "name": "Mata",
+                "slug": "Mata",
+                "url": "https://genius.com/artists/Mata",
+                "iq": 182
+              },
+              "primary_artists": [
+                {
+                  "_type": "artist",
+                  "api_path": "/artists/51868",
+                  "header_image_url": "https://images.genius.com/c7178dca5e70241e7c014df3c5166ff0.640x640x1.jpg",
+                  "id": 51868,
+                  "image_url": "https://images.genius.com/755a1f703e58ecdd1b9f72411916db39.640x640x1.jpg",
+                  "index_character": "m",
+                  "is_meme_verified": true,
+                  "is_verified": true,
+                  "name": "Mata",
+                  "slug": "Mata",
+                  "url": "https://genius.com/artists/Mata",
+                  "iq": 182
+                }
+              ]
+            }
+          },
+          {
+            "highlights": [
+              {
+                "property": "lyrics",
+                "value": "you about this madman stuff that happened to me around last Christmas just before I got pretty run-down and",
+                "snippet": true,
+                "ranges": [
+                  {
+                    "start": 55,
+                    "end": 59
+                  },
+                  {
+                    "start": 60,
+                    "end": 69
+                  }
+                ]
+              }
+            ],
+            "index": "lyric",
+            "type": "song",
+            "result": {
+              "_type": "song",
+              "annotation_count": 53,
+              "api_path": "/songs/82674",
+              "artist_names": "J.D. Salinger",
+              "full_title": "The Catcher in the Rye (Chap. 1) by J.D. Salinger",
+              "header_image_thumbnail_url": "https://images.genius.com/bda18101b4f361edfa5f56bccf1b6ae9.300x300x1.png",
+              "header_image_url": "https://images.genius.com/bda18101b4f361edfa5f56bccf1b6ae9.849x849x1.png",
+              "id": 82674,
+              "instrumental": false,
+              "lyrics_owner_id": 17428,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1717719363,
+              "path": "/Jd-salinger-the-catcher-in-the-rye-chap-1-annotated",
+              "primary_artist_names": "J.D. Salinger",
+              "pyongs_count": 51,
+              "relationships_index_url": "https://genius.com/Jd-salinger-the-catcher-in-the-rye-chap-1-sample",
+              "release_date_components": {
+                "year": 1951,
+                "month": 7,
+                "day": 16
+              },
+              "release_date_for_display": "July 16, 1951",
+              "release_date_with_abbreviated_month_for_display": "Jul. 16, 1951",
+              "song_art_image_thumbnail_url": "https://images.genius.com/bda18101b4f361edfa5f56bccf1b6ae9.300x300x1.png",
+              "song_art_image_url": "https://images.genius.com/bda18101b4f361edfa5f56bccf1b6ae9.849x849x1.png",
+              "stats": {
+                "unreviewed_annotations": 15,
+                "hot": false,
+                "pageviews": 261153
+              },
+              "title": "The Catcher in the Rye (Chap. 1)",
+              "title_with_featured": "The Catcher in the Rye (Chap. 1)",
+              "updated_by_human_at": 1752014741,
+              "url": "https://genius.com/Jd-salinger-the-catcher-in-the-rye-chap-1-annotated",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/23036",
+                "header_image_url": "https://images.genius.com/a23e601ba03d83e0c9162118ca0b2130.663x1000x1.png",
+                "id": 23036,
+                "image_url": "https://images.genius.com/364e044ca01170a68eea33e266856b71.1000x1000x1.png",
+                "index_character": "j",
+                "is_meme_verified": false,
+                "is_verified": false,
+                "name": "J.D. Salinger",
+                "slug": "Jd-salinger",
+                "url": "https://genius.com/artists/Jd-salinger"
+              },
+              "primary_artists": [
+                {
+                  "_type": "artist",
+                  "api_path": "/artists/23036",
+                  "header_image_url": "https://images.genius.com/a23e601ba03d83e0c9162118ca0b2130.663x1000x1.png",
+                  "id": 23036,
+                  "image_url": "https://images.genius.com/364e044ca01170a68eea33e266856b71.1000x1000x1.png",
+                  "index_character": "j",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "J.D. Salinger",
+                  "slug": "Jd-salinger",
+                  "url": "https://genius.com/artists/Jd-salinger"
+                }
+              ]
+            }
+          },
+          {
+            "highlights": [
+              {
+                "property": "lyrics",
+                "value": "I'm not a big artist. I started the record last Christmas. Christmas always made me feel lonely, but it",
+                "snippet": true,
+                "ranges": [
+                  {
+                    "start": 43,
+                    "end": 47
+                  },
+                  {
+                    "start": 48,
+                    "end": 57
+                  },
+                  {
+                    "start": 59,
+                    "end": 68
+                  }
+                ]
+              }
+            ],
+            "index": "lyric",
+            "type": "song",
+            "result": {
+              "_type": "song",
+              "annotation_count": 39,
+              "api_path": "/songs/237901",
+              "artist_names": "Childish Gambino",
+              "full_title": "Open Letter on Instagram by Childish Gambino",
+              "header_image_thumbnail_url": "https://images.genius.com/40814aec06ca522c2ee3df743ff0e9be.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/40814aec06ca522c2ee3df743ff0e9be.640x640x1.jpg",
+              "id": 237901,
+              "instrumental": false,
+              "lyrics_owner_id": 47098,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1582141363,
+              "path": "/Childish-gambino-open-letter-on-instagram-lyrics",
+              "primary_artist_names": "Childish Gambino",
+              "pyongs_count": 172,
+              "relationships_index_url": "https://genius.com/Childish-gambino-open-letter-on-instagram-sample",
+              "release_date_components": {
+                "year": 2013,
+                "month": null,
+                "day": null
+              },
+              "release_date_for_display": "2013",
+              "release_date_with_abbreviated_month_for_display": "2013",
+              "song_art_image_thumbnail_url": "https://images.genius.com/40814aec06ca522c2ee3df743ff0e9be.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/40814aec06ca522c2ee3df743ff0e9be.640x640x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 3,
+                "hot": false,
+                "pageviews": 155338
+              },
+              "title": "Open Letter on Instagram",
+              "title_with_featured": "Open Letter on Instagram",
+              "updated_by_human_at": 1582141363,
+              "url": "https://genius.com/Childish-gambino-open-letter-on-instagram-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/1745",
+                "header_image_url": "https://images.genius.com/416282e45dfb263020a68afa6a6c7e36.1000x428x1.jpg",
+                "id": 1745,
+                "image_url": "https://images.genius.com/40814aec06ca522c2ee3df743ff0e9be.640x640x1.jpg",
+                "index_character": "c",
+                "is_meme_verified": false,
+                "is_verified": true,
+                "name": "Childish Gambino",
+                "slug": "Childish-gambino",
+                "url": "https://genius.com/artists/Childish-gambino",
+                "iq": 4960
+              },
+              "primary_artists": [
+                {
+                  "_type": "artist",
+                  "api_path": "/artists/1745",
+                  "header_image_url": "https://images.genius.com/416282e45dfb263020a68afa6a6c7e36.1000x428x1.jpg",
+                  "id": 1745,
+                  "image_url": "https://images.genius.com/40814aec06ca522c2ee3df743ff0e9be.640x640x1.jpg",
+                  "index_character": "c",
+                  "is_meme_verified": false,
+                  "is_verified": true,
+                  "name": "Childish Gambino",
+                  "slug": "Childish-gambino",
+                  "url": "https://genius.com/artists/Childish-gambino",
+                  "iq": 4960
+                }
+              ]
+            }
+          },
+          {
+            "highlights": [
+              {
+                "property": "lyrics",
+                "value": "to someone special\nThis is our (Last) last, (Last) last Christmas\nYou broke my heart\n(Last) Last, (Last) last Christmas",
+                "snippet": true,
+                "ranges": [
+                  {
+                    "start": 32,
+                    "end": 36
+                  },
+                  {
+                    "start": 38,
+                    "end": 42
+                  },
+                  {
+                    "start": 45,
+                    "end": 49
+                  },
+                  {
+                    "start": 51,
+                    "end": 55
+                  },
+                  {
+                    "start": 56,
+                    "end": 65
+                  },
+                  {
+                    "start": 86,
+                    "end": 90
+                  },
+                  {
+                    "start": 92,
+                    "end": 96
+                  },
+                  {
+                    "start": 99,
+                    "end": 103
+                  },
+                  {
+                    "start": 105,
+                    "end": 109
+                  },
+                  {
+                    "start": 110,
+                    "end": 119
+                  }
+                ]
+              }
+            ],
+            "index": "lyric",
+            "type": "song",
+            "result": {
+              "_type": "song",
+              "annotation_count": 2,
+              "api_path": "/songs/278161",
+              "artist_names": "Ariana Grande",
+              "full_title": "Last Christmas by Ariana Grande",
+              "header_image_thumbnail_url": "https://images.genius.com/e7ac12b3c0e173020930919b61a4275e.300x300x1.png",
+              "header_image_url": "https://images.genius.com/e7ac12b3c0e173020930919b61a4275e.1000x1000x1.png",
+              "id": 278161,
+              "instrumental": false,
+              "lyrics_owner_id": 109038,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1732213097,
+              "path": "/Ariana-grande-last-christmas-lyrics",
+              "primary_artist_names": "Ariana Grande",
+              "pyongs_count": 17,
+              "relationships_index_url": "https://genius.com/Ariana-grande-last-christmas-sample",
+              "release_date_components": {
+                "year": 2013,
+                "month": 11,
+                "day": 19
+              },
+              "release_date_for_display": "November 19, 2013",
+              "release_date_with_abbreviated_month_for_display": "Nov. 19, 2013",
+              "song_art_image_thumbnail_url": "https://images.genius.com/e7ac12b3c0e173020930919b61a4275e.300x300x1.png",
+              "song_art_image_url": "https://images.genius.com/e7ac12b3c0e173020930919b61a4275e.1000x1000x1.png",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false,
+                "pageviews": 150503
+              },
+              "title": "Last Christmas",
+              "title_with_featured": "Last Christmas",
+              "updated_by_human_at": 1732213097,
+              "url": "https://genius.com/Ariana-grande-last-christmas-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/26507",
+                "header_image_url": "https://images.genius.com/b3b6ab31f4002cd4556852d39e6920bd.1000x166x1.jpg",
+                "id": 26507,
+                "image_url": "https://images.genius.com/ead8178d387d404ca1facc98d2adf1ec.1000x1000x1.png",
+                "index_character": "a",
+                "is_meme_verified": false,
+                "is_verified": true,
+                "name": "Ariana Grande",
+                "slug": "Ariana-grande",
+                "url": "https://genius.com/artists/Ariana-grande",
+                "iq": 2931
+              },
+              "primary_artists": [
+                {
+                  "_type": "artist",
+                  "api_path": "/artists/26507",
+                  "header_image_url": "https://images.genius.com/b3b6ab31f4002cd4556852d39e6920bd.1000x166x1.jpg",
+                  "id": 26507,
+                  "image_url": "https://images.genius.com/ead8178d387d404ca1facc98d2adf1ec.1000x1000x1.png",
+                  "index_character": "a",
+                  "is_meme_verified": false,
+                  "is_verified": true,
+                  "name": "Ariana Grande",
+                  "slug": "Ariana-grande",
+                  "url": "https://genius.com/artists/Ariana-grande",
+                  "iq": 2931
+                }
+              ]
+            }
+          },
+          {
+            "highlights": [
+              {
+                "property": "lyrics",
+                "value": "booth\nNo lie, my life no be small thing\nRemember last Christmas\nSanta Claus give me the glizzy with the",
+                "snippet": true,
+                "ranges": [
+                  {
+                    "start": 49,
+                    "end": 53
+                  },
+                  {
+                    "start": 54,
+                    "end": 63
+                  }
+                ]
+              }
+            ],
+            "index": "lyric",
+            "type": "song",
+            "result": {
+              "_type": "song",
+              "annotation_count": 6,
+              "api_path": "/songs/9347150",
+              "artist_names": "Burna Boy & Byron Messia",
+              "full_title": "Talibans II by Burna Boy & Byron Messia",
+              "header_image_thumbnail_url": "https://images.genius.com/07a5ed1607357478c7c160c92c03249d.300x300x1.png",
+              "header_image_url": "https://images.genius.com/07a5ed1607357478c7c160c92c03249d.1000x1000x1.png",
+              "id": 9347150,
+              "instrumental": false,
+              "lyrics_owner_id": 14287967,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1760854418,
+              "path": "/Burna-boy-and-byron-messia-talibans-ii-lyrics",
+              "primary_artist_names": "Burna Boy & Byron Messia",
+              "pyongs_count": 1,
+              "relationships_index_url": "https://genius.com/Burna-boy-and-byron-messia-talibans-ii-sample",
+              "release_date_components": {
+                "year": 2023,
+                "month": 7,
+                "day": 21
+              },
+              "release_date_for_display": "July 21, 2023",
+              "release_date_with_abbreviated_month_for_display": "Jul. 21, 2023",
+              "song_art_image_thumbnail_url": "https://images.genius.com/07a5ed1607357478c7c160c92c03249d.300x300x1.png",
+              "song_art_image_url": "https://images.genius.com/07a5ed1607357478c7c160c92c03249d.1000x1000x1.png",
+              "stats": {
+                "unreviewed_annotations": 6,
+                "hot": false,
+                "pageviews": 84699
+              },
+              "title": "Talibans II",
+              "title_with_featured": "Talibans II",
+              "updated_by_human_at": 1760854419,
+              "url": "https://genius.com/Burna-boy-and-byron-messia-talibans-ii-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/39313",
+                "header_image_url": "https://images.genius.com/cef71f532763e70953a596e2bd5c2cac.1000x229x1.jpg",
+                "id": 39313,
+                "image_url": "https://images.genius.com/7af3374828b9ef22cc7373741880a597.1000x1000x1.jpg",
+                "index_character": "b",
+                "is_meme_verified": false,
+                "is_verified": true,
+                "name": "Burna Boy",
+                "slug": "Burna-boy",
+                "url": "https://genius.com/artists/Burna-boy",
+                "iq": 792
+              },
+              "primary_artists": [
+                {
+                  "_type": "artist",
+                  "api_path": "/artists/39313",
+                  "header_image_url": "https://images.genius.com/cef71f532763e70953a596e2bd5c2cac.1000x229x1.jpg",
+                  "id": 39313,
+                  "image_url": "https://images.genius.com/7af3374828b9ef22cc7373741880a597.1000x1000x1.jpg",
+                  "index_character": "b",
+                  "is_meme_verified": false,
+                  "is_verified": true,
+                  "name": "Burna Boy",
+                  "slug": "Burna-boy",
+                  "url": "https://genius.com/artists/Burna-boy",
+                  "iq": 792
+                },
+                {
+                  "_type": "artist",
+                  "api_path": "/artists/2827142",
+                  "header_image_url": "https://images.genius.com/c8f89cc9b9c2282f231d929c19e40a74.1000x998x1.jpg",
+                  "id": 2827142,
+                  "image_url": "https://images.genius.com/dad445484863e3bead8be328ad7acdfa.1000x1000x1.jpg",
+                  "index_character": "b",
+                  "is_meme_verified": false,
+                  "is_verified": false,
+                  "name": "Byron Messia",
+                  "slug": "Byron-messia",
+                  "url": "https://genius.com/artists/Byron-messia"
+                }
+              ]
+            }
+          },
+          {
+            "highlights": [
+              {
+                "property": "lyrics",
+                "value": "Arena - 11/11\nFKA twigs - MAGDALENE - 9/9\nGeorge Michael - Last Christmas (The Original Motion Picture Soundtrack) - 15/15\nGirl",
+                "snippet": true,
+                "ranges": [
+                  {
+                    "start": 59,
+                    "end": 63
+                  },
+                  {
+                    "start": 64,
+                    "end": 73
+                  }
+                ]
+              }
+            ],
+            "index": "lyric",
+            "type": "song",
+            "result": {
+              "_type": "song",
+              "annotation_count": 335,
+              "api_path": "/songs/3759195",
+              "artist_names": "Genius",
+              "full_title": "November 2019 Album Release Calendar by Genius",
+              "header_image_thumbnail_url": "https://images.genius.com/b25c9c45680507352c87fc81f84d1d32.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/b25c9c45680507352c87fc81f84d1d32.441x441x1.jpg",
+              "id": 3759195,
+              "instrumental": false,
+              "lyrics_owner_id": 498964,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1760113604,
+              "path": "/Genius-november-2019-album-release-calendar-annotated",
+              "primary_artist_names": "Genius",
+              "pyongs_count": 3,
+              "relationships_index_url": "https://genius.com/Genius-november-2019-album-release-calendar-sample",
+              "release_date_components": {
+                "year": 2019,
+                "month": 11,
+                "day": null
+              },
+              "release_date_for_display": "November 2019",
+              "release_date_with_abbreviated_month_for_display": "Nov. 2019",
+              "song_art_image_thumbnail_url": "https://images.genius.com/b25c9c45680507352c87fc81f84d1d32.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/b25c9c45680507352c87fc81f84d1d32.441x441x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 0,
+                "hot": false,
+                "pageviews": 84242
+              },
+              "title": "November 2019 Album Release Calendar",
+              "title_with_featured": "November 2019 Album Release Calendar",
+              "updated_by_human_at": 1762031500,
+              "url": "https://genius.com/Genius-november-2019-album-release-calendar-annotated",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/204611",
+                "header_image_url": "https://images.genius.com/822a5f872a1fcfe377695dc0046c6bc6.900x176x1.jpg",
+                "id": 204611,
+                "image_url": "https://images.genius.com/0ca83e3130e1303a7f78ba351e3091cd.1000x1000x1.png",
+                "index_character": "g",
+                "is_meme_verified": true,
+                "is_verified": true,
+                "name": "Genius",
+                "slug": "Genius",
+                "url": "https://genius.com/artists/Genius",
+                "iq": 80088
+              },
+              "primary_artists": [
+                {
+                  "_type": "artist",
+                  "api_path": "/artists/204611",
+                  "header_image_url": "https://images.genius.com/822a5f872a1fcfe377695dc0046c6bc6.900x176x1.jpg",
+                  "id": 204611,
+                  "image_url": "https://images.genius.com/0ca83e3130e1303a7f78ba351e3091cd.1000x1000x1.png",
+                  "index_character": "g",
+                  "is_meme_verified": true,
+                  "is_verified": true,
+                  "name": "Genius",
+                  "slug": "Genius",
+                  "url": "https://genius.com/artists/Genius",
+                  "iq": 80088
+                }
+              ]
+            }
+          },
+          {
+            "highlights": [
+              {
+                "property": "lyrics",
+                "value": "I'm just a man, that's all I am\nLast Christmas was a warzone, we should call it Wala",
+                "snippet": true,
+                "ranges": [
+                  {
+                    "start": 32,
+                    "end": 36
+                  },
+                  {
+                    "start": 37,
+                    "end": 46
+                  }
+                ]
+              }
+            ],
+            "index": "lyric",
+            "type": "song",
+            "result": {
+              "_type": "song",
+              "annotation_count": 10,
+              "api_path": "/songs/2937977",
+              "artist_names": "Chance the Rapper & Jeremih",
+              "full_title": "Stranger at the Table by Chance the Rapper & Jeremih",
+              "header_image_thumbnail_url": "https://images.genius.com/9d7a449ffdd43bb6afcbc998ad9f760a.300x300x1.jpg",
+              "header_image_url": "https://images.genius.com/9d7a449ffdd43bb6afcbc998ad9f760a.501x501x1.jpg",
+              "id": 2937977,
+              "instrumental": false,
+              "lyrics_owner_id": 3483553,
+              "lyrics_state": "complete",
+              "lyrics_updated_at": 1607663470,
+              "path": "/Chance-the-rapper-and-jeremih-stranger-at-the-table-lyrics",
+              "primary_artist_names": "Chance the Rapper & Jeremih",
+              "pyongs_count": 10,
+              "relationships_index_url": "https://genius.com/Chance-the-rapper-and-jeremih-stranger-at-the-table-sample",
+              "release_date_components": {
+                "year": 2016,
+                "month": 12,
+                "day": 22
+              },
+              "release_date_for_display": "December 22, 2016",
+              "release_date_with_abbreviated_month_for_display": "Dec. 22, 2016",
+              "song_art_image_thumbnail_url": "https://images.genius.com/9d7a449ffdd43bb6afcbc998ad9f760a.300x300x1.jpg",
+              "song_art_image_url": "https://images.genius.com/9d7a449ffdd43bb6afcbc998ad9f760a.501x501x1.jpg",
+              "stats": {
+                "unreviewed_annotations": 1,
+                "hot": false,
+                "pageviews": 78489
+              },
+              "title": "Stranger at the Table",
+              "title_with_featured": "Stranger at the Table",
+              "updated_by_human_at": 1734719213,
+              "url": "https://genius.com/Chance-the-rapper-and-jeremih-stranger-at-the-table-lyrics",
+              "featured_artists": [],
+              "primary_artist": {
+                "_type": "artist",
+                "api_path": "/artists/16751",
+                "header_image_url": "https://images.genius.com/27ac36b6f8cdba29f97d0a94834bbdb7.1000x563x1.jpg",
+                "id": 16751,
+                "image_url": "https://images.genius.com/9db1a9643a028d62543e44c90da3a6ad.1000x1000x1.jpg",
+                "index_character": "c",
+                "is_meme_verified": false,
+                "is_verified": true,
+                "name": "Chance the Rapper",
+                "slug": "Chance-the-rapper",
+                "url": "https://genius.com/artists/Chance-the-rapper",
+                "iq": 49748
+              },
+              "primary_artists": [
+                {
+                  "_type": "artist",
+                  "api_path": "/artists/16751",
+                  "header_image_url": "https://images.genius.com/27ac36b6f8cdba29f97d0a94834bbdb7.1000x563x1.jpg",
+                  "id": 16751,
+                  "image_url": "https://images.genius.com/9db1a9643a028d62543e44c90da3a6ad.1000x1000x1.jpg",
+                  "index_character": "c",
+                  "is_meme_verified": false,
+                  "is_verified": true,
+                  "name": "Chance the Rapper",
+                  "slug": "Chance-the-rapper",
+                  "url": "https://genius.com/artists/Chance-the-rapper",
+                  "iq": 49748
+                },
+                {
+                  "_type": "artist",
+                  "api_path": "/artists/278",
+                  "header_image_url": "https://images.genius.com/951bbb824c14042ab183d56c79ca3f7f.1000x679x1.png",
+                  "id": 278,
+                  "image_url": "https://images.genius.com/59567e4918671304d37eb021331d239d.550x550x1.jpg",
+                  "index_character": "j",
+                  "is_meme_verified": true,
+                  "is_verified": true,
+                  "name": "Jeremih",
+                  "slug": "Jeremih",
+                  "url": "https://genius.com/artists/Jeremih",
+                  "iq": 2487
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "next_page": 2
+  }
+}
