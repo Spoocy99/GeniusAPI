@@ -141,10 +141,7 @@ public class SongObject implements Song {
     @Nullable
     private final List<Media> media;
 
-    @Nullable
-    private final Artist primaryArtist;
-
-    @Nullable
+    @NotNull
     private final List<Artist> primaryArtists;
 
     @Nullable
@@ -208,8 +205,7 @@ public class SongObject implements Song {
             @Nullable User lyricsMarkedCompleteBy,
             @Nullable User lyricsMarkedByStaffApprovedBy,
             @Nullable List<Media> media,
-            @Nullable Artist primaryArtist,
-            @Nullable List<Artist> primaryArtists,
+            @NotNull List<Artist> primaryArtists,
             @Nullable List<Artist> producerArtists,
             @Nullable List<Song.SongRelationship> relationships,
             @Nullable List<Song.TranslationSong> translationSongs,
@@ -257,7 +253,6 @@ public class SongObject implements Song {
         this.lyricsMarkedCompleteBy = lyricsMarkedCompleteBy;
         this.lyricsMarkedByStaffApprovedBy = lyricsMarkedByStaffApprovedBy;
         this.media = media;
-        this.primaryArtist = primaryArtist;
         this.primaryArtists = primaryArtists;
         this.producerArtists = producerArtists;
         this.relationships = relationships;
@@ -466,12 +461,7 @@ public class SongObject implements Song {
     }
 
     @Override
-    public @Nullable Artist getPrimaryArtist() {
-        return this.primaryArtist;
-    }
-
-    @Override
-    public @Nullable List<Artist> getPrimaryArtists() {
+    public @NotNull List<Artist> getPrimaryArtists() {
         return this.primaryArtists;
     }
 
@@ -564,12 +554,6 @@ public class SongObject implements Song {
             if (data.isSet("lyrics_marked_by_staff_approved_by")) {
                 staffApprovedBy = UserObject.Parser.INSTANCE
                         .parse(data.getSection("lyrics_marked_by_staff_approved_by"));
-            }
-
-            Artist primaryArtist = null;
-            if (data.isSet("primary_artist")) {
-                primaryArtist = ArtistObject.Parser.INSTANCE
-                        .parse(data.getSection("primary_artist"));
             }
 
             List<Artist> primaryArtists = null;
@@ -668,7 +652,6 @@ public class SongObject implements Song {
                     lyricsCompleteBy,
                     staffApprovedBy,
                     MediaObject.Parser.INSTANCE.parseList(data.getSectionArray("media")),
-                    primaryArtist,
                     primaryArtists,
                     producers,
                     relationships,

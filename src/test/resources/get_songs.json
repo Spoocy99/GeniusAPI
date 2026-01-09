@@ -153,26 +153,31 @@
                 "transcribers": 8,
                 "unreviewed_annotations": 1,
                 "verified_annotations": 15,
-                "concurrents": 3,
+                "concurrents": 8,
                 "hot": false,
-                "pageviews": 3212921
+                "pageviews": 3245578
             },
             "title": "Chandelier",
             "title_with_featured": "Chandelier",
             "url": "https://genius.com/Sia-chandelier-lyrics",
             "current_user_metadata": {
                 "permissions": [
+                    "follow",
                     "see_pageviews",
+                    "pyong",
+                    "add_community_annotation_to",
                     "view_apple_music_player",
-                    "view_recommendations",
                     "view_relationships_page",
-                    "view_song_story_gallery"
+                    "view_mark_complete_explanatory_tooltip",
+                    "create_comment",
+                    "create_annotation",
+                    "view_song_story_gallery",
+                    "propose_lyrics_edit",
+                    "create_question"
                 ],
                 "excluded_permissions": [
-                    "follow",
                     "award_transcription_iq",
                     "remove_transcription_iq",
-                    "pyong",
                     "edit_lyrics",
                     "view_annotation_engagement_data",
                     "publish",
@@ -181,7 +186,6 @@
                     "hide",
                     "unhide",
                     "add_pinned_annotation_to",
-                    "add_community_annotation_to",
                     "destroy",
                     "mark_as_not_spam",
                     "edit_spotify_annotations_for",
@@ -213,20 +217,16 @@
                     "set_song_color_gradient",
                     "mark_as_hot",
                     "unmark_as_hot",
-                    "view_mark_complete_explanatory_tooltip",
+                    "view_recommendations",
                     "edit_youtube_url",
                     "edit_soundcloud_url",
                     "edit_spotify_uuid",
                     "edit_vevo_url",
-                    "create_comment",
                     "moderate_annotations",
-                    "create_annotation",
                     "see_short_id",
                     "manage_chart_item",
                     "create_tag",
-                    "propose_lyrics_edit",
                     "view_lyrics_edit_proposals_on_song",
-                    "create_question",
                     "answer_question_with_source",
                     "create_additional_role",
                     "add_qa",
@@ -236,8 +236,25 @@
                     "pyong": false,
                     "following": false
                 },
-                "relationships": {},
-                "iq_by_action": {}
+                "relationships": {
+                    "pinned_role": null
+                },
+                "iq_by_action": {
+                    "edit_metadata": {
+                        "primary": {
+                            "multiplier": 1,
+                            "base": 2.0,
+                            "applicable": true
+                        }
+                    },
+                    "answer_question": {
+                        "primary": {
+                            "multiplier": 1,
+                            "base": 5.0,
+                            "applicable": true
+                        }
+                    }
+                }
             },
             "song_art_primary_color": "#cda351",
             "song_art_secondary_color": "#d5caa5",
@@ -334,9 +351,9 @@
                         },
                         {
                             "api_path": "/artists/2202383",
-                            "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                            "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                             "id": 2202383,
-                            "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                            "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                             "is_meme_verified": false,
                             "is_verified": false,
                             "name": "Aidenjulius Music",
@@ -599,8 +616,8 @@
                 "annotatable": {
                     "api_path": "/songs/378195",
                     "client_timestamps": {
-                        "updated_by_human_at": 1765923271,
-                        "lyrics_updated_at": 1765923271
+                        "updated_by_human_at": 1767508776,
+                        "lyrics_updated_at": 1767508776
                     },
                     "context": "Sia",
                     "id": 378195,
@@ -745,9 +762,13 @@
                         "verified": false,
                         "votes_total": 248,
                         "current_user_metadata": {
-                            "permissions": [],
-                            "excluded_permissions": [
+                            "permissions": [
                                 "vote",
+                                "propose_edit_to",
+                                "report_as_abusive",
+                                "create_comment"
+                            ],
+                            "excluded_permissions": [
                                 "edit",
                                 "cosign",
                                 "uncosign",
@@ -756,20 +777,39 @@
                                 "reject",
                                 "see_unreviewed",
                                 "clear_votes",
-                                "propose_edit_to",
                                 "pin_to_profile",
                                 "unpin_from_profile",
                                 "update_source",
-                                "edit_custom_preview",
-                                "report_as_abusive",
-                                "create_comment"
+                                "edit_custom_preview"
                             ],
                             "interactions": {
                                 "cosign": false,
                                 "pyong": false,
                                 "vote": null
                             },
-                            "iq_by_action": {}
+                            "iq_by_action": {
+                                "accept": {
+                                    "primary": {
+                                        "multiplier": 1,
+                                        "base": 10.0,
+                                        "applicable": true
+                                    }
+                                },
+                                "reject": {
+                                    "primary": {
+                                        "multiplier": 1,
+                                        "base": 2.0,
+                                        "applicable": true
+                                    }
+                                },
+                                "delete": {
+                                    "primary": {
+                                        "multiplier": 1,
+                                        "base": 5.0,
+                                        "applicable": true
+                                    }
+                                }
+                            }
                         },
                         "authors": [
                             {
@@ -810,16 +850,16 @@
                                     "header_image_url": "https://images.genius.com/67bd9e10032da0c0564736ad5b8f85a0.1000x333x1.jpg",
                                     "human_readable_role_for_display": "Moderator",
                                     "id": 2557222,
-                                    "iq": 539632,
+                                    "iq": 540492,
                                     "login": "ssaa10dec",
                                     "name": "ssaa10dec",
                                     "role_for_display": "moderator",
                                     "url": "https://genius.com/ssaa10dec",
                                     "current_user_metadata": {
-                                        "permissions": [],
-                                        "excluded_permissions": [
+                                        "permissions": [
                                             "follow"
                                         ],
+                                        "excluded_permissions": [],
                                         "interactions": {
                                             "following": false
                                         }
@@ -864,16 +904,16 @@
                                     "header_image_url": "https://filepicker-images.genius.com/lz0u9ytsjro",
                                     "human_readable_role_for_display": "Contributor",
                                     "id": 8901159,
-                                    "iq": 10508,
+                                    "iq": 10512,
                                     "login": "TYFNA",
                                     "name": "TYFNA",
                                     "role_for_display": "contributor",
                                     "url": "https://genius.com/TYFNA",
                                     "current_user_metadata": {
-                                        "permissions": [],
-                                        "excluded_permissions": [
+                                        "permissions": [
                                             "follow"
                                         ],
+                                        "excluded_permissions": [],
                                         "interactions": {
                                             "following": false
                                         }
@@ -918,16 +958,16 @@
                                     "header_image_url": "https://s3.amazonaws.com/rapgenius/avatars/medium/zmkfqkztReGZ0zuiuLXp.png",
                                     "human_readable_role_for_display": "Editor",
                                     "id": 150910,
-                                    "iq": 165442,
+                                    "iq": 165575,
                                     "login": "Spinelli",
                                     "name": "Spinelli",
                                     "role_for_display": "editor",
                                     "url": "https://genius.com/Spinelli",
                                     "current_user_metadata": {
-                                        "permissions": [],
-                                        "excluded_permissions": [
+                                        "permissions": [
                                             "follow"
                                         ],
+                                        "excluded_permissions": [],
                                         "interactions": {
                                             "following": false
                                         }
@@ -972,16 +1012,16 @@
                                     "header_image_url": "https://images.genius.com/e8a303ab79861711fb6aa79f1e231f90.960x617x1.jpg",
                                     "human_readable_role_for_display": "Moderator",
                                     "id": 458792,
-                                    "iq": 496168,
+                                    "iq": 496540,
                                     "login": "Skhills",
                                     "name": "Skhills",
                                     "role_for_display": "moderator",
                                     "url": "https://genius.com/Skhills",
                                     "current_user_metadata": {
-                                        "permissions": [],
-                                        "excluded_permissions": [
+                                        "permissions": [
                                             "follow"
                                         ],
+                                        "excluded_permissions": [],
                                         "interactions": {
                                             "following": false
                                         }
@@ -1026,16 +1066,16 @@
                                     "header_image_url": "https://images.genius.com/avatars/medium/9fa6c2fb22fbd3b2e74ab0633abb9730",
                                     "human_readable_role_for_display": "Editor",
                                     "id": 930466,
-                                    "iq": 1517407,
+                                    "iq": 1524023,
                                     "login": "MCSMeister",
                                     "name": "MCSMeister",
                                     "role_for_display": "editor",
                                     "url": "https://genius.com/MCSMeister",
                                     "current_user_metadata": {
-                                        "permissions": [],
-                                        "excluded_permissions": [
+                                        "permissions": [
                                             "follow"
                                         ],
+                                        "excluded_permissions": [],
                                         "interactions": {
                                             "following": false
                                         }
@@ -1080,16 +1120,16 @@
                                     "header_image_url": "https://images.rapgenius.com/avatars/medium/b0afb1ccd43ff1285d5ec9cd111713a4",
                                     "human_readable_role_for_display": "Editor",
                                     "id": 12128,
-                                    "iq": 223681,
+                                    "iq": 223882,
                                     "login": "dalmo",
                                     "name": "Dalmo Mendonça",
                                     "role_for_display": "editor",
                                     "url": "https://genius.com/dalmo",
                                     "current_user_metadata": {
-                                        "permissions": [],
-                                        "excluded_permissions": [
+                                        "permissions": [
                                             "follow"
                                         ],
+                                        "excluded_permissions": [],
                                         "interactions": {
                                             "following": false
                                         }
@@ -1108,47 +1148,47 @@
                 "api_path": "/users/20012915",
                 "avatar": {
                     "tiny": {
-                        "url": "https://images.genius.com/avatars/tiny/a4473047a6187aec7b317855a61a9669",
+                        "url": "https://filepicker-images.genius.com/f2e52a800e2f5a405fae1000748177ee44c4723a0a4e906e50e3d7858d5ffa40%2F8hvm9tvhnxe",
                         "bounding_box": {
                             "width": 16,
                             "height": 16
                         }
                     },
                     "thumb": {
-                        "url": "https://images.genius.com/avatars/thumb/a4473047a6187aec7b317855a61a9669",
+                        "url": "https://filepicker-images.genius.com/f2e52a800e2f5a405fae1000748177ee44c4723a0a4e906e50e3d7858d5ffa40%2F8hvm9tvhnxe",
                         "bounding_box": {
                             "width": 32,
                             "height": 32
                         }
                     },
                     "small": {
-                        "url": "https://images.genius.com/avatars/small/a4473047a6187aec7b317855a61a9669",
+                        "url": "https://filepicker-images.genius.com/f2e52a800e2f5a405fae1000748177ee44c4723a0a4e906e50e3d7858d5ffa40%2F8hvm9tvhnxe",
                         "bounding_box": {
                             "width": 100,
                             "height": 100
                         }
                     },
                     "medium": {
-                        "url": "https://images.genius.com/avatars/medium/a4473047a6187aec7b317855a61a9669",
+                        "url": "https://filepicker-images.genius.com/f2e52a800e2f5a405fae1000748177ee44c4723a0a4e906e50e3d7858d5ffa40%2F8hvm9tvhnxe",
                         "bounding_box": {
                             "width": 300,
                             "height": 400
                         }
                     }
                 },
-                "header_image_url": "https://images.genius.com/avatars/medium/a4473047a6187aec7b317855a61a9669",
+                "header_image_url": "https://filepicker-images.genius.com/9a16ccae06168118fdbd67517f900a41ddbf4b7cff1ad0f710048351d09295d5%2F7ddljvxvzof",
                 "human_readable_role_for_display": "Transcriber",
                 "id": 20012915,
-                "iq": 45643,
+                "iq": 55486,
                 "login": "stupislupus",
                 "name": "stupislupus",
                 "role_for_display": "transcriber",
                 "url": "https://genius.com/stupislupus",
                 "current_user_metadata": {
-                    "permissions": [],
-                    "excluded_permissions": [
+                    "permissions": [
                         "follow"
                     ],
+                    "excluded_permissions": [],
                     "interactions": {
                         "following": false
                     }
@@ -1225,7 +1265,7 @@
                 {
                     "relationship_type": "samples",
                     "type": "samples",
-                    "url": "https://genius.com/Israel-kamakawiwoole-somewhere-over-the-rainbow-sample/samples",
+                    "url": null,
                     "songs": []
                 },
                 {
@@ -1320,9 +1360,9 @@
                             "featured_artists": [],
                             "primary_artist": {
                                 "api_path": "/artists/2411380",
-                                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                 "id": 2411380,
-                                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                 "is_meme_verified": false,
                                 "is_verified": false,
                                 "name": "SloofVif",
@@ -1331,9 +1371,9 @@
                             "primary_artists": [
                                 {
                                     "api_path": "/artists/2411380",
-                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                     "id": 2411380,
-                                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                     "is_meme_verified": false,
                                     "is_verified": false,
                                     "name": "SloofVif",
@@ -1346,8 +1386,8 @@
                             "api_path": "/songs/6644110",
                             "artist_names": "Дореволюцiонный Совѣтчикъ (DorSov)",
                             "full_title": "Подвѣсной Канделябръ (Hanging Candelabrum) by Дореволюцiонный Совѣтчикъ (DorSov)",
-                            "header_image_thumbnail_url": "https://assets.genius.com/images/default_cover_image.png?1766160293",
-                            "header_image_url": "https://assets.genius.com/images/default_cover_image.png?1766160293",
+                            "header_image_thumbnail_url": "https://assets.genius.com/images/default_cover_image.png?1767903442",
+                            "header_image_url": "https://assets.genius.com/images/default_cover_image.png?1767903442",
                             "id": 6644110,
                             "lyrics_owner_id": 4206222,
                             "lyrics_state": "unreleased",
@@ -1358,8 +1398,8 @@
                             "release_date_components": null,
                             "release_date_for_display": null,
                             "release_date_with_abbreviated_month_for_display": null,
-                            "song_art_image_thumbnail_url": "https://assets.genius.com/images/default_cover_image.png?1766160293",
-                            "song_art_image_url": "https://assets.genius.com/images/default_cover_image.png?1766160293",
+                            "song_art_image_thumbnail_url": "https://assets.genius.com/images/default_cover_image.png?1767903442",
+                            "song_art_image_url": "https://assets.genius.com/images/default_cover_image.png?1767903442",
                             "stats": {
                                 "unreviewed_annotations": 0,
                                 "hot": false
@@ -1394,8 +1434,8 @@
                         {
                             "annotation_count": 1,
                             "api_path": "/songs/5141865",
-                            "artist_names": "Nychow Moore (Ft. Nychow Moore)",
-                            "full_title": "Me Myself And I by Nychow Moore (Ft. Nychow Moore)",
+                            "artist_names": "Nychow Moore",
+                            "full_title": "Me Myself And I by Nychow Moore",
                             "header_image_thumbnail_url": "https://images.genius.com/ffcca02d089367dd79a242336855a707.300x300x1.png",
                             "header_image_url": "https://images.genius.com/ffcca02d089367dd79a242336855a707.1000x1000x1.png",
                             "id": 5141865,
@@ -1419,21 +1459,9 @@
                                 "hot": false
                             },
                             "title": "Me Myself And I",
-                            "title_with_featured": "Me Myself And I (Ft. Nychow Moore)",
+                            "title_with_featured": "Me Myself And I",
                             "url": "https://genius.com/Nychow-moore-me-myself-and-i-lyrics",
-                            "featured_artists": [
-                                {
-                                    "api_path": "/artists/1724838",
-                                    "header_image_url": "https://images.genius.com/c95f5c14068d029d0840f725532a5679.1000x800x1.jpg",
-                                    "id": 1724838,
-                                    "image_url": "https://images.genius.com/758bbce1b79af70ebbf251e8e11156e6.1000x1000x1.jpg",
-                                    "is_meme_verified": false,
-                                    "is_verified": false,
-                                    "name": "Nychow Moore",
-                                    "url": "https://genius.com/artists/Nychow-moore",
-                                    "iq": 1798
-                                }
-                            ],
+                            "featured_artists": [],
                             "primary_artist": {
                                 "api_path": "/artists/1724838",
                                 "header_image_url": "https://images.genius.com/c95f5c14068d029d0840f725532a5679.1000x800x1.jpg",
@@ -1718,9 +1746,9 @@
                             "featured_artists": [
                                 {
                                     "api_path": "/artists/1060832",
-                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                     "id": 1060832,
-                                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                     "is_meme_verified": false,
                                     "is_verified": false,
                                     "name": "AprilFoolChild",
@@ -1857,7 +1885,7 @@
                                 "is_verified": true,
                                 "name": "Patolino Jucelino",
                                 "url": "https://genius.com/artists/Patolino-jucelino",
-                                "iq": 7790
+                                "iq": 7937
                             },
                             "primary_artists": [
                                 {
@@ -1869,7 +1897,7 @@
                                     "is_verified": true,
                                     "name": "Patolino Jucelino",
                                     "url": "https://genius.com/artists/Patolino-jucelino",
-                                    "iq": 7790
+                                    "iq": 7937
                                 }
                             ]
                         }
@@ -1878,7 +1906,7 @@
                 {
                     "relationship_type": "interpolates",
                     "type": "interpolates",
-                    "url": "https://genius.com/Israel-kamakawiwoole-somewhere-over-the-rainbow-sample/interpolations",
+                    "url": null,
                     "songs": []
                 },
                 {
@@ -2184,7 +2212,7 @@
                             "stats": {
                                 "unreviewed_annotations": 4,
                                 "hot": false,
-                                "pageviews": 9973
+                                "pageviews": 10023
                             },
                             "title": "Chandelier",
                             "title_with_featured": "Chandelier",
@@ -2233,9 +2261,9 @@
                                 },
                                 {
                                     "api_path": "/artists/1936514",
-                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                     "id": 1936514,
-                                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                     "is_meme_verified": false,
                                     "is_verified": false,
                                     "name": "Sahr Ngaujah",
@@ -2243,9 +2271,9 @@
                                 },
                                 {
                                     "api_path": "/artists/1936537",
-                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                     "id": 1936537,
-                                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                     "is_meme_verified": false,
                                     "is_verified": false,
                                     "name": "Jacqueline B. Arnold",
@@ -2546,8 +2574,8 @@
                             "api_path": "/songs/7606514",
                             "artist_names": "Siobhán McAleese",
                             "full_title": "Chandelier by Siobhán McAleese",
-                            "header_image_thumbnail_url": "https://assets.genius.com/images/default_cover_image.png?1766160293",
-                            "header_image_url": "https://assets.genius.com/images/default_cover_image.png?1766160293",
+                            "header_image_thumbnail_url": "https://assets.genius.com/images/default_cover_image.png?1767903442",
+                            "header_image_url": "https://assets.genius.com/images/default_cover_image.png?1767903442",
                             "id": 7606514,
                             "lyrics_owner_id": 3920262,
                             "lyrics_state": "complete",
@@ -2558,8 +2586,8 @@
                             "release_date_components": null,
                             "release_date_for_display": null,
                             "release_date_with_abbreviated_month_for_display": null,
-                            "song_art_image_thumbnail_url": "https://assets.genius.com/images/default_cover_image.png?1766160293",
-                            "song_art_image_url": "https://assets.genius.com/images/default_cover_image.png?1766160293",
+                            "song_art_image_thumbnail_url": "https://assets.genius.com/images/default_cover_image.png?1767903442",
+                            "song_art_image_url": "https://assets.genius.com/images/default_cover_image.png?1767903442",
                             "stats": {
                                 "unreviewed_annotations": 0,
                                 "hot": false
@@ -2570,9 +2598,9 @@
                             "featured_artists": [],
                             "primary_artist": {
                                 "api_path": "/artists/3026107",
-                                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                 "id": 3026107,
-                                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                 "is_meme_verified": false,
                                 "is_verified": false,
                                 "name": "Siobhán McAleese",
@@ -2581,9 +2609,9 @@
                             "primary_artists": [
                                 {
                                     "api_path": "/artists/3026107",
-                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                     "id": 3026107,
-                                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                     "is_meme_verified": false,
                                     "is_verified": false,
                                     "name": "Siobhán McAleese",
@@ -2793,9 +2821,9 @@
                             "featured_artists": [],
                             "primary_artist": {
                                 "api_path": "/artists/395758",
-                                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                 "id": 395758,
-                                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                 "is_meme_verified": false,
                                 "is_verified": false,
                                 "name": "Until The Last",
@@ -2804,9 +2832,9 @@
                             "primary_artists": [
                                 {
                                     "api_path": "/artists/395758",
-                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                     "id": 395758,
-                                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                     "is_meme_verified": false,
                                     "is_verified": false,
                                     "name": "Until The Last",
@@ -2867,6 +2895,71 @@
                                     "name": "Vitamin String Quartet",
                                     "url": "https://genius.com/artists/Vitamin-string-quartet",
                                     "iq": 104
+                                }
+                            ]
+                        },
+                        {
+                            "annotation_count": 0,
+                            "api_path": "/songs/6701765",
+                            "artist_names": "Alex Blue (Ft. MAX)",
+                            "full_title": "Chandelier by Alex Blue (Ft. MAX)",
+                            "header_image_thumbnail_url": "https://images.genius.com/e8fbb61954e33f8be3ab0de410f02a02.300x300x1.jpg",
+                            "header_image_url": "https://images.genius.com/e8fbb61954e33f8be3ab0de410f02a02.500x500x1.jpg",
+                            "id": 6701765,
+                            "lyrics_owner_id": 2956979,
+                            "lyrics_state": "incomplete",
+                            "path": "/Alex-blue-chandelier-lyrics",
+                            "primary_artist_names": "Alex Blue",
+                            "pyongs_count": null,
+                            "relationships_index_url": "https://genius.com/Alex-blue-chandelier-sample",
+                            "release_date_components": {
+                                "year": 2014,
+                                "month": 8,
+                                "day": 14
+                            },
+                            "release_date_for_display": "August 14, 2014",
+                            "release_date_with_abbreviated_month_for_display": "Aug. 14, 2014",
+                            "song_art_image_thumbnail_url": "https://images.genius.com/e8fbb61954e33f8be3ab0de410f02a02.300x300x1.jpg",
+                            "song_art_image_url": "https://images.genius.com/e8fbb61954e33f8be3ab0de410f02a02.500x500x1.jpg",
+                            "stats": {
+                                "unreviewed_annotations": 0,
+                                "hot": false
+                            },
+                            "title": "Chandelier",
+                            "title_with_featured": "Chandelier (Ft. MAX)",
+                            "url": "https://genius.com/Alex-blue-chandelier-lyrics",
+                            "featured_artists": [
+                                {
+                                    "api_path": "/artists/15071",
+                                    "header_image_url": "https://images.genius.com/37e8339061e2b2e248b151a861bd9503.1000x714x1.jpg",
+                                    "id": 15071,
+                                    "image_url": "https://images.genius.com/6bfc0a725d727abc252f794986176c6c.640x640x1.jpg",
+                                    "is_meme_verified": false,
+                                    "is_verified": false,
+                                    "name": "MAX",
+                                    "url": "https://genius.com/artists/Max"
+                                }
+                            ],
+                            "primary_artist": {
+                                "api_path": "/artists/2229124",
+                                "header_image_url": "https://images.genius.com/7d856e5c3205158090a8ddbc1c969637.1000x1000x1.jpg",
+                                "id": 2229124,
+                                "image_url": "https://images.genius.com/7d856e5c3205158090a8ddbc1c969637.1000x1000x1.jpg",
+                                "is_meme_verified": false,
+                                "is_verified": false,
+                                "name": "Alex Blue",
+                                "url": "https://genius.com/artists/Alex-blue"
+                            },
+                            "primary_artists": [
+                                {
+                                    "api_path": "/artists/2229124",
+                                    "header_image_url": "https://images.genius.com/7d856e5c3205158090a8ddbc1c969637.1000x1000x1.jpg",
+                                    "id": 2229124,
+                                    "image_url": "https://images.genius.com/7d856e5c3205158090a8ddbc1c969637.1000x1000x1.jpg",
+                                    "is_meme_verified": false,
+                                    "is_verified": false,
+                                    "name": "Alex Blue",
+                                    "url": "https://genius.com/artists/Alex-blue"
                                 }
                             ]
                         },
@@ -3406,9 +3499,9 @@
                             ],
                             "primary_artist": {
                                 "api_path": "/artists/604859",
-                                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                 "id": 604859,
-                                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                 "is_meme_verified": false,
                                 "is_verified": false,
                                 "name": "Dani Armstrong",
@@ -3417,9 +3510,9 @@
                             "primary_artists": [
                                 {
                                     "api_path": "/artists/604859",
-                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                     "id": 604859,
-                                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                     "is_meme_verified": false,
                                     "is_verified": false,
                                     "name": "Dani Armstrong",
@@ -4422,7 +4515,7 @@
                             "stats": {
                                 "unreviewed_annotations": 0,
                                 "hot": false,
-                                "pageviews": 6357
+                                "pageviews": 6359
                             },
                             "title": "Chandelier",
                             "title_with_featured": "Chandelier",
@@ -4927,7 +5020,7 @@
                             "stats": {
                                 "unreviewed_annotations": 3,
                                 "hot": false,
-                                "pageviews": 48102
+                                "pageviews": 48221
                             },
                             "title": "SING OFF vs. Pixie Loot",
                             "title_with_featured": "SING OFF vs. Pixie Loot",
@@ -5045,9 +5138,9 @@
                             "featured_artists": [],
                             "primary_artist": {
                                 "api_path": "/artists/4448324",
-                                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                 "id": 4448324,
-                                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                 "is_meme_verified": false,
                                 "is_verified": false,
                                 "name": "Holler (Rock)",
@@ -5056,9 +5149,9 @@
                             "primary_artists": [
                                 {
                                     "api_path": "/artists/4448324",
-                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                     "id": 4448324,
-                                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                                    "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                                     "is_meme_verified": false,
                                     "is_verified": false,
                                     "name": "Holler (Rock)",
@@ -5619,7 +5712,7 @@
                                 "is_verified": false,
                                 "name": "Abu Nailah",
                                 "url": "https://genius.com/artists/Abu-nailah",
-                                "iq": 16180
+                                "iq": 16182
                             },
                             "primary_artists": [
                                 {
@@ -5631,7 +5724,7 @@
                                     "is_verified": false,
                                     "name": "Abu Nailah",
                                     "url": "https://genius.com/artists/Abu-nailah",
-                                    "iq": 16180
+                                    "iq": 16182
                                 }
                             ]
                         }
@@ -5652,7 +5745,7 @@
                 {
                     "relationship_type": "translation_of",
                     "type": "translation_of",
-                    "url": null,
+                    "url": "https://genius.com/Twice-1-3-2-sample/translations",
                     "songs": []
                 },
                 {
@@ -5686,7 +5779,7 @@
                             "stats": {
                                 "unreviewed_annotations": 0,
                                 "hot": false,
-                                "pageviews": 19514
+                                "pageviews": 19742
                             },
                             "title": "Sia - Chandelier (Traducción al Español)",
                             "title_with_featured": "Sia - Chandelier (Traducción al Español)",
@@ -6212,10 +6305,10 @@
                     "role_for_display": "verified_artist",
                     "url": "https://genius.com/siamusic",
                     "current_user_metadata": {
-                        "permissions": [],
-                        "excluded_permissions": [
+                        "permissions": [
                             "follow"
                         ],
+                        "excluded_permissions": [],
                         "interactions": {
                             "following": false
                         }
@@ -6279,10 +6372,10 @@
                         "role_for_display": "verified_artist",
                         "url": "https://genius.com/siamusic",
                         "current_user_metadata": {
-                            "permissions": [],
-                            "excluded_permissions": [
+                            "permissions": [
                                 "follow"
                             ],
+                            "excluded_permissions": [],
                             "interactions": {
                                 "following": false
                             }

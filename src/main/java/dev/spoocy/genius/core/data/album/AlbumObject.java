@@ -5,10 +5,8 @@ import dev.spoocy.genius.core.data.artists.ArtistObject;
 import dev.spoocy.genius.model.Album;
 import dev.spoocy.genius.model.Artist;
 import dev.spoocy.utils.config.Config;
-import dev.spoocy.utils.config.SectionArray;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -44,10 +42,7 @@ public class AlbumObject implements Album {
     private final String url;
 
     @NotNull
-    private final Artist artist;
-
-    @NotNull
-    private final Artist[] primaryArtists;
+    private final List<Artist> primaryArtists;
 
     public AlbumObject(
             @NotNull String apiPath,
@@ -58,8 +53,7 @@ public class AlbumObject implements Album {
             @NotNull String primaryArtistName,
             @NotNull String releaseDateForDisplay,
             @NotNull String url,
-            @NotNull Artist artist,
-            @NotNull Artist[] primaryArtists
+            @NotNull List<Artist> primaryArtists
     ) {
         this.apiPath = apiPath;
         this.coverArtUrl = coverArtUrl;
@@ -69,7 +63,6 @@ public class AlbumObject implements Album {
         this.primaryArtistName = primaryArtistName;
         this.releaseDateForDisplay = releaseDateForDisplay;
         this.url = url;
-        this.artist = artist;
         this.primaryArtists = primaryArtists;
     }
 
@@ -98,10 +91,9 @@ public class AlbumObject implements Album {
     public @NotNull String getUrl() { return this.url; }
 
     @Override
-    public @NotNull Artist getArtist() { return this.artist; }
-
-    @Override
-    public @NotNull Artist[] getPrimaryArtists() { return this.primaryArtists; }
+    public @NotNull List<Artist> getPrimaryArtists() {
+        return this.primaryArtists;
+    }
 
     public static final class Parser extends AbstractModelParser<Album> {
 
@@ -111,13 +103,6 @@ public class AlbumObject implements Album {
 
         @Override
         public Album parse0(@NotNull Config data) {
-            SectionArray<? extends Config> primaryArray = data.getSectionArray("primary_artists");
-            List<Artist> primaryList = new ArrayList<>();
-            for(int i = 0; i < primaryArray.length(); i++) {
-                primaryList.add(ArtistObject.Parser.INSTANCE.parse(primaryArray.get(i)));
-            }
-            Artist[] primaryArtists = primaryList.toArray(new Artist[0]);
-
             return new AlbumObject(
                     data.getString("api_path", ""),
                     data.getString("cover_art_url", ""),
@@ -127,8 +112,7 @@ public class AlbumObject implements Album {
                     data.getString("primary_artist_name", ""),
                     data.getString("release_date_for_display", ""),
                     data.getString("url", ""),
-                    ArtistObject.Parser.INSTANCE.parse(data.getSection("artist")),
-                    primaryArtists
+                    ArtistObject.Parser.INSTANCE.parseList(data.getSectionArray("primary_artists"))
             );
         }
     }

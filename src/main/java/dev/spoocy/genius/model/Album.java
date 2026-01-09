@@ -1,6 +1,9 @@
 package dev.spoocy.genius.model;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 /**
  * @author Spoocy99 | GitHub: Spoocy99
@@ -32,10 +35,27 @@ public interface Album {
     @NotNull
     String getUrl();
 
-    @NotNull
-    Artist getArtist();
+    /**
+     * @deprecated Use {@link #getPrimaryArtists()} instead.
+     */
+    @Nullable
+    @Deprecated(since = "1.0.7")
+    default Artist getArtist() {
+        return getPrimaryArtist();
+    }
+
+    /**
+     * @deprecated Use {@link #getPrimaryArtists()} instead.
+     */
+    @Nullable
+    @Deprecated(since = "1.0.7")
+    default Artist getPrimaryArtist() {
+        return !getPrimaryArtists().isEmpty()
+                ? getPrimaryArtists().get(0)
+                : null;
+    }
 
     @NotNull
-    Artist[] getPrimaryArtists();
+    List<Artist> getPrimaryArtists();
 
 }

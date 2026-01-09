@@ -30,7 +30,7 @@
                 "stats": {
                     "unreviewed_annotations": 3,
                     "hot": false,
-                    "pageviews": 30578
+                    "pageviews": 30621
                 },
                 "title": "1+1",
                 "title_with_featured": "1+1",
@@ -581,9 +581,9 @@
                 "featured_artists": [
                     {
                         "api_path": "/artists/3307287",
-                        "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                        "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                         "id": 3307287,
-                        "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                        "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                         "is_meme_verified": false,
                         "is_verified": false,
                         "name": "Abby Ismo",
@@ -598,7 +598,7 @@
                         "is_verified": true,
                         "name": "cupcakKe",
                         "url": "https://genius.com/artists/Cupcakke",
-                        "iq": 1652
+                        "iq": 1656
                     }
                 ],
                 "primary_artist": {
@@ -650,7 +650,7 @@
                 "stats": {
                     "unreviewed_annotations": 2,
                     "hot": false,
-                    "pageviews": 348072
+                    "pageviews": 348339
                 },
                 "title": "about u",
                 "title_with_featured": "about u",
@@ -707,7 +707,7 @@
                 "stats": {
                     "unreviewed_annotations": 4,
                     "hot": false,
-                    "pageviews": 10722
+                    "pageviews": 10747
                 },
                 "title": "Academia",
                 "title_with_featured": "Academia",
@@ -771,9 +771,9 @@
                 "featured_artists": [
                     {
                         "api_path": "/artists/2959131",
-                        "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                        "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                         "id": 2959131,
-                        "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                        "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                         "is_meme_verified": false,
                         "is_verified": false,
                         "name": "Angélica Borges",
@@ -781,9 +781,9 @@
                     },
                     {
                         "api_path": "/artists/1672013",
-                        "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                        "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                         "id": 1672013,
-                        "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                        "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                         "is_meme_verified": false,
                         "is_verified": false,
                         "name": "Márcia Coutinho",
@@ -791,9 +791,9 @@
                     },
                     {
                         "api_path": "/artists/2958819",
-                        "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                        "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                         "id": 2958819,
-                        "image_url": "https://assets.genius.com/images/default_avatar_300.png?1766160293",
+                        "image_url": "https://assets.genius.com/images/default_avatar_300.png?1767903442",
                         "is_meme_verified": false,
                         "is_verified": false,
                         "name": "Maria Fontenelle",
@@ -1019,7 +1019,7 @@
                 "stats": {
                     "unreviewed_annotations": 3,
                     "hot": false,
-                    "pageviews": 10320
+                    "pageviews": 10344
                 },
                 "title": "ADHD",
                 "title_with_featured": "ADHD",
@@ -1139,7 +1139,7 @@
                     "api_path": "/artists/22446",
                     "header_image_url": "https://images.genius.com/d1366df5070ca54cccd4d25693044733.1000x563x1.jpg",
                     "id": 22446,
-                    "image_url": "https://images.genius.com/ad3a2e871b44e99bcd8358f37c8c257c.933x933x1.jpg",
+                    "image_url": "https://images.genius.com/71bdb87c0051f72ac0d99c9f6dc622a3.1000x1000x1.jpg",
                     "is_meme_verified": false,
                     "is_verified": false,
                     "name": "Taloula",
@@ -1150,7 +1150,7 @@
                         "api_path": "/artists/22446",
                         "header_image_url": "https://images.genius.com/d1366df5070ca54cccd4d25693044733.1000x563x1.jpg",
                         "id": 22446,
-                        "image_url": "https://images.genius.com/ad3a2e871b44e99bcd8358f37c8c257c.933x933x1.jpg",
+                        "image_url": "https://images.genius.com/71bdb87c0051f72ac0d99c9f6dc622a3.1000x1000x1.jpg",
                         "is_meme_verified": false,
                         "is_verified": false,
                         "name": "Taloula",

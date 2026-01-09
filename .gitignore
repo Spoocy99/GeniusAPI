@@ -39,4 +39,4 @@ build/
 .DS_Store
 
 ### Project ###
-/src/main/java/dev/spoocy/genius/Main.java
+/src/test/java/Main.java

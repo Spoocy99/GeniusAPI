@@ -139,10 +139,18 @@ public interface Song extends GeniusApiDataObject {
     @Nullable
     List<Media> getMedia();
 
+    /**
+     * @deprecated Use {@link #getPrimaryArtists()} instead.
+     */
     @Nullable
-    Artist getPrimaryArtist();
+    @Deprecated(since = "1.0.7")
+    default Artist getPrimaryArtist() {
+        return !getPrimaryArtists().isEmpty()
+                ? getPrimaryArtists().get(0)
+                : null;
+    }
 
-    @Nullable
+    @NotNull
     List<Artist> getPrimaryArtists();
 
     @Nullable

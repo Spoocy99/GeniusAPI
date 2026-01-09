@@ -38,6 +38,7 @@ public abstract class AbstractModelParser<T> {
 
     protected abstract T parse0(@NotNull Config data);
 
+    @NotNull
     public List<T> parseList(@NotNull SectionArray<? extends Config> config) {
         List<T> list = new ArrayList<>();
 
