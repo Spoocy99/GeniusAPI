@@ -1,6 +1,5 @@
 package dev.spoocy.genius.core.data;
 
-import dev.spoocy.genius.GeniusClient;
 import dev.spoocy.genius.core.TextFormat;
 import dev.spoocy.utils.common.text.StringUtils;
 import dev.spoocy.utils.config.Config;

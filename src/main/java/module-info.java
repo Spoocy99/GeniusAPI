@@ -9,14 +9,12 @@ module GeniusAPI {
     requires reactor.core;
     requires reactor.netty.http;
     requires reactor.netty.core;
-    requires org.json;
     requires org.reactivestreams;
-    requires java.desktop;
+    requires org.json;
     requires org.jsoup;
+    requires io.netty.buffer;
     requires io.netty.transport;
     requires io.netty.codec.http;
-    requires io.netty.codec.http2;
-    requires io.netty.buffer;
 
     exports dev.spoocy.genius;
     exports dev.spoocy.genius.core;

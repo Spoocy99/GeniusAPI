@@ -1,7 +1,6 @@
 package dev.spoocy.genius.core.data.webpages;
 
 import dev.spoocy.genius.core.data.AbstractModelParser;
-import dev.spoocy.genius.model.Song;
 import dev.spoocy.genius.model.WebPage;
 import dev.spoocy.utils.config.Config;
 import org.jetbrains.annotations.NotNull;

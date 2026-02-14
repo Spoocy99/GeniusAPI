@@ -2,13 +2,9 @@ package dev.spoocy.genius.core.http;
 
 import dev.spoocy.genius.core.http.internal.Header;
 import dev.spoocy.genius.core.http.internal.NettyEntity;
-import dev.spoocy.genius.exception.GeniusApiException;
-import io.netty.buffer.ByteBuf;
 import org.jetbrains.annotations.NotNull;
-import org.reactivestreams.Publisher;
 import reactor.core.publisher.Mono;
 
-import java.io.IOException;
 import java.net.URI;
 
 /**
