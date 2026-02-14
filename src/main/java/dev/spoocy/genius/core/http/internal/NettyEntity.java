@@ -200,7 +200,7 @@ public abstract class NettyEntity {
                     "contentType=" + contentType +
                     ", contentLength=" + contentLength +
                     ", contentEncoding=" + contentEncoding +
-                    "parameters=" + parameters +
+                    ", parameters=" + parameters +
                     '}';
         }
     }

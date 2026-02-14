@@ -256,7 +256,7 @@ Request Builder: ```client.lyrics()```
 
 ---
 ## Lyrics Errors
-- `GeniusException`: Could not find Lyrics Container. This happens when Genius changes their website. Report this to the developer and/or try to set the container ids directly via the LyricsScraper.
+- `LyricsParseException`: Could not find Lyrics Container. This happens when the wrong container ids are provided to the DirectLyricsExtractor.
 
 This means that the library could not find the lyrics container on the website because their names changed.
 
