@@ -183,10 +183,7 @@ public abstract class NettyEntity {
                 }
                 String name = param.getName() == null ? "" : param.getName();
                 String value = param.getValue() == null ? "" : param.getValue();
-                String encodedValue = URLEncoder.encode(value, StandardCharsets.UTF_8);
-                bodyBuilder.append(name)
-                        .append("=")
-                        .append(encodedValue);
+                bodyBuilder.append(name).append("=").append(value);
             }
 
             String body = bodyBuilder.toString();

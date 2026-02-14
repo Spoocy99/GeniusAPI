@@ -5,8 +5,6 @@ import org.jetbrains.annotations.Nullable;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Objects;
 import java.util.StringJoiner;
@@ -96,14 +94,7 @@ public final class URIBuilder {
         for (Parameter p : params) {
             String name = p.getName() == null ? "" : p.getName();
             String value = p.getValue() == null ? "" : p.getValue();
-
-            try {
-                String encodedValue = URLEncoder.encode(value, StandardCharsets.UTF_8);
-                joiner.add(name + "=" + value);
-            } catch (Exception e) {
-                // Should not happen; fallback to raw values
-                joiner.add(name + "=" + value);
-            }
+            joiner.add(name + "=" + value);
         }
 
         return joiner.toString();
