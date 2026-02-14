@@ -3,19 +3,20 @@
  */
 
 module GeniusAPI {
-    requires static lombok;
-
     requires org.jetbrains.annotations;
     requires dev.spoocy.utils.common;
     requires dev.spoocy.utils.config;
     requires reactor.core;
+    requires reactor.netty.http;
+    requires reactor.netty.core;
     requires org.json;
     requires org.reactivestreams;
-    requires org.apache.httpcomponents.client5.httpclient5;
-    requires org.apache.httpcomponents.client5.httpclient5.cache;
-    requires org.apache.httpcomponents.core5.httpcore5;
     requires java.desktop;
     requires org.jsoup;
+    requires io.netty.transport;
+    requires io.netty.codec.http;
+    requires io.netty.codec.http2;
+    requires io.netty.buffer;
 
     exports dev.spoocy.genius;
     exports dev.spoocy.genius.core;
@@ -27,4 +28,5 @@ module GeniusAPI {
     exports dev.spoocy.genius.core.lyrics;
     exports dev.spoocy.genius.exception;
     exports dev.spoocy.genius.model;
+    exports dev.spoocy.genius.core.http.internal;
 }

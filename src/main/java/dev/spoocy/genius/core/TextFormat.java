@@ -1,7 +1,5 @@
 package dev.spoocy.genius.core;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
 import org.jetbrains.annotations.NotNull;
 
 /**

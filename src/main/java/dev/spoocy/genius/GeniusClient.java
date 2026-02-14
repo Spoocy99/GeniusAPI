@@ -7,8 +7,8 @@ import dev.spoocy.genius.core.auth.AccessTokenRequest;
 import dev.spoocy.genius.core.auth.AuthorizationCodeUriRequest;
 import dev.spoocy.genius.core.auth.GeniusAccessToken;
 import dev.spoocy.genius.core.auth.Scope;
-import dev.spoocy.genius.core.http.GeniusHttpManager;
-import dev.spoocy.genius.core.http.IHttpManager;
+import dev.spoocy.genius.core.http.internal.GeniusHttpClient;
+import dev.spoocy.genius.core.http.NettyHttpManager;
 import dev.spoocy.genius.core.http.requests.*;
 import dev.spoocy.genius.core.http.u_requests.SectionsSearchRequest;
 import dev.spoocy.genius.model.Referents;
@@ -54,7 +54,7 @@ public interface GeniusClient {
 
     /*
      * The default http manager used for requests.
-     */ IHttpManager DEFAULT_HTTP_MANAGER = new GeniusHttpManager.Builder().build();
+     */ NettyHttpManager DEFAULT_HTTP_MANAGER = new GeniusHttpClient.Builder().build();
 
     /*
      * The default scheme used for requests.
@@ -70,11 +70,11 @@ public interface GeniusClient {
 
 
     /**
-     * Get the {@link IHttpManager} used for API calls.
+     * Get the {@link NettyHttpManager} used for API calls.
      *
      * @return The HTTP Manager.
      */
-    @NotNull IHttpManager getHttpManager();
+    @NotNull NettyHttpManager getHttpManager();
 
     /**
      * Get the scheme used for API calls.
@@ -98,32 +98,11 @@ public interface GeniusClient {
     int getPort();
 
     /**
-     * Get the proxy URL if one is set.
+     * Check if the client is configured to use a proxy for API calls.
      *
-     * @return The proxy URL.
+     * @return {@code true} if a proxy is configured, {@code false} otherwise.
      */
-    @Nullable String getProxyUrl();
-
-    /**
-     * Get the proxy port if one is set.
-     *
-     * @return The proxy port.
-     */
-    @Nullable Integer getProxyPort();
-
-    /**
-     * Get the proxy username if one is set.
-     *
-     * @return The proxy username.
-     */
-    @Nullable String getProxyUsername();
-
-    /**
-     * Get the proxy password if one is set.
-     *
-     * @return The proxy password.
-     */
-    char[] getProxyPassword();
+    boolean isProxy();
 
     /**
      * Get the User Agent used for API calls.

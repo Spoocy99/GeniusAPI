@@ -2,8 +2,8 @@ package dev.spoocy.genius.core.http.requests;
 
 import dev.spoocy.genius.core.TextFormat;
 import dev.spoocy.genius.core.data.account.AccountObject;
+import dev.spoocy.genius.core.http.internal.ContentType;
 import dev.spoocy.genius.model.Account;
-import org.apache.hc.core5.http.ContentType;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

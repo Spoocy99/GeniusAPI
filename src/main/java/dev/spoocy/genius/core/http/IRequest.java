@@ -1,8 +1,8 @@
 package dev.spoocy.genius.core.http;
 
-import org.apache.hc.core5.http.ContentType;
-import org.apache.hc.core5.http.Header;
-import org.apache.hc.core5.http.HttpEntity;
+import dev.spoocy.genius.core.http.internal.ContentType;
+import dev.spoocy.genius.core.http.internal.Header;
+import dev.spoocy.genius.core.http.internal.NettyEntity;
 import org.jetbrains.annotations.NotNull;
 import org.reactivestreams.Publisher;
 import org.reactivestreams.Subscriber;
@@ -27,11 +27,11 @@ import java.util.function.Function;
 public interface IRequest<T> extends CorePublisher<T> {
 
     /**
-     * Gets the {@link IHttpManager} used for this request.
+     * Gets the {@link NettyHttpManager} used for this request.
      *
      * @return the HTTP manager
      */
-    IHttpManager getHttpManager();
+    NettyHttpManager getHttpManager();
 
     /**
      * Gets the HTTP method of the request.
@@ -48,18 +48,18 @@ public interface IRequest<T> extends CorePublisher<T> {
     List<Header> getHeaders();
 
     /**
-     * Gets the body of the request.
-     *
-     * @return the HTTP entity representing the body
-     */
-    HttpEntity getBody();
-
-    /**
      * Gets the content type of the request.
      *
      * @return the content type
      */
     ContentType getContentType();
+
+    /**
+     * Gets the body of the request.
+     *
+     * @return the HTTP entity representing the body
+     */
+    NettyEntity getBody();
 
     /**
      * Executes the request and returns the raw JSON response as a String.

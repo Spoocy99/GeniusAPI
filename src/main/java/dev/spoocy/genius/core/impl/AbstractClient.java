@@ -32,6 +32,7 @@ public abstract class AbstractClient implements GeniusClient {
             @NotNull Scope... scopes
     ) {
         return authorizationCodeUriRequest()
+                .clientId(this.getClientId())
                 .state(state)
                 .redirectUri(redirectUri)
                 .scope(scope, scopes)
@@ -51,7 +52,7 @@ public abstract class AbstractClient implements GeniusClient {
             @NotNull Scope... scopes
     ) {
         return accessTokenRequest()
-                .authorizationCode(authorizationCode)
+                .code(authorizationCode)
                 .redirectUri(redirectUri)
                 .scope(scope, scopes)
                 .build();

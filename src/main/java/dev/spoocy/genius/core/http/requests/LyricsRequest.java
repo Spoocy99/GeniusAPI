@@ -1,24 +1,28 @@
 package dev.spoocy.genius.core.http.requests;
 
 import dev.spoocy.genius.GeniusClient;
+import dev.spoocy.genius.core.data.lyrics.LyricsObject;
 import dev.spoocy.genius.core.http.GeniusApiRequest;
+import dev.spoocy.genius.core.http.internal.Header;
 import dev.spoocy.genius.core.lyrics.AdvancedExtractor;
 import dev.spoocy.genius.core.lyrics.DirectLyricsExtractor;
 import dev.spoocy.genius.core.lyrics.LyricsExtractor;
 import dev.spoocy.genius.exception.GeniusApiException;
 import dev.spoocy.genius.exception.LyricsParseException;
 import dev.spoocy.genius.model.Lyrics;
-import dev.spoocy.genius.model.Search;
 import dev.spoocy.genius.model.Song;
 import dev.spoocy.utils.common.log.ILogger;
 import dev.spoocy.utils.common.text.StringUtils;
-import org.apache.hc.core5.http.ParseException;
+import dev.spoocy.utils.config.Config;
+import dev.spoocy.utils.config.documents.JsonConfig;
 import org.jetbrains.annotations.NotNull;
+import org.json.JSONObject;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import reactor.core.publisher.Mono;
 import reactor.util.annotation.Nullable;
 
-import java.io.IOException;
+import java.net.URI;
 
 /**
  * @author Spoocy99 | GitHub: Spoocy99
@@ -45,65 +49,63 @@ public class LyricsRequest extends GeniusApiRequest<Lyrics> {
         this.query = builder.query;
     }
 
-    private String retrieveSongLyricsUrl() throws GeniusApiException, IOException, ParseException {
+    private Mono<URI> uriProvider() {
         if (!this.allowQuery || StringUtils.isNullOrEmpty(this.query)) {
-            return this.getUri()
-                    .toString();
+            return Mono.just(this.getUri());
         }
 
-        Search request = queryURI(this.query).executeAndParse();
-
-        if (request.getHits()
-                .isEmpty()) {
-            LOGGER.debug("No search results found for query '{}', falling back to provided URL.", this.query);
-            return this.getUri()
-                    .toString();
-        }
-
-        Song firstQuery = request.getHits()
-                .get(0)
-                .getResult();
-
-        this.cachedTitle = firstQuery.getTitle();
-        String uri = firstQuery.getUrl();
-
-        if (StringUtils.isNullOrEmpty(uri) || !uri.startsWith("https://genius.com/")) {
-            LOGGER.debug("Lyrics URL not found in search result, falling back to provided URL.");
-            return this.getUri()
-                    .toString();
-        }
-
-        return uri;
-    }
-
-    @Override
-    protected String execute() throws GeniusApiException, IOException, ParseException {
-        Lyrics lyrics = this.executeAndParse();
-        return "{\"response\": {\"title\": \"" + lyrics.getTitle() + "\",\"lyrics\": " + lyrics.getPlain() + "}}";
-    }
-
-    @Override
-    protected Lyrics executeAndParse() throws GeniusApiException, IOException, ParseException {
-        Document document;
-        String lyricsUrl = retrieveSongLyricsUrl();
-
-        try {
-            document = Jsoup.connect(lyricsUrl)
-                    .userAgent(this.getHttpManager().getUserAgent())
-                    .get();
-        } catch (IOException e) {
-            throw new LyricsParseException("Failed to fetch lyrics page.", e);
-        }
-
-        return extractor.extract(document, this.cachedTitle);
-    }
-
-    @NotNull
-    private SearchRequest queryURI(@NotNull String query) {
         return this.getExecutingClient()
                 .search()
-                .query(query)
-                .build();
+                .query(this.query)
+                .build()
+                .map(search -> {
+                    if (search.getHits().isEmpty()) {
+                        LOGGER.debug("No search results found for query '{}', falling back to provided URL.", this.query);
+                        return this.getUri();
+                    }
+
+                    Song firstQuery = search.getHits().get(0).getResult();
+                    this.cachedTitle = firstQuery.getTitle();
+                    String uri = firstQuery.getUrl();
+
+                    if (StringUtils.isNullOrEmpty(uri) || !uri.startsWith("https://genius.com/")) {
+                        LOGGER.debug("Lyrics URL not found in search result, falling back to provided URL.");
+                        return this.getUri();
+                    }
+
+                    return URI.create(uri);
+                });
+    }
+
+    @Override
+    protected @NotNull Mono<String> execute0() {
+        return uriProvider()
+                .flatMap(lyricsUrl -> this.getHttpManager().get(lyricsUrl, this.getHeaders().toArray(Header[]::new)))
+                .flatMap(html -> {
+                    try {
+                        Document document = Jsoup.parse(html);
+                        Lyrics lyrics = extractor.extract(document, this.cachedTitle);
+
+                        JSONObject inner = new JSONObject();
+                        inner.put("title", lyrics.getTitle());
+                        inner.put("lyrics", lyrics.getPlain());
+
+                        JSONObject jsonResponse = new JSONObject();
+                        jsonResponse.put("response", inner);
+
+                        return Mono.just(jsonResponse.toString());
+                    } catch (LyricsParseException e) {
+                        return Mono.error(e);
+                    }
+                });
+    }
+
+    @Override
+    protected @NotNull Lyrics parseResponse(@NotNull String response) throws GeniusApiException {
+        Config config = new JsonConfig(response).getSection("response");
+        String title = config.getString("title", "Unknown Title");
+        String lyricsText = config.getString("lyrics", "Lyrics not found.");
+        return new LyricsObject(title, lyricsText);
     }
 
     public static class Builder

@@ -7,10 +7,8 @@ import dev.spoocy.genius.core.data.referents.ReferentsObject;
 import dev.spoocy.genius.exception.GeniusApiException;
 import dev.spoocy.genius.model.Referents;
 import dev.spoocy.utils.common.misc.Args;
-import org.apache.hc.core5.http.ParseException;
 import org.jetbrains.annotations.NotNull;
-
-import java.io.IOException;
+import reactor.core.publisher.Mono;
 
 /**
  * Referents by content item or user responsible for an included annotation.
@@ -29,13 +27,13 @@ public class GetReferentsRequest extends GeniusApiRequest<Referents> implements 
     }
 
     @Override
-    protected String execute() throws GeniusApiException, IOException, ParseException {
+    protected @NotNull Mono<String> execute0() {
         return this.executeGET();
     }
 
     @Override
-    protected Referents executeAndParse() throws GeniusApiException, IOException, ParseException {
-        return ReferentsObject.Parser.INSTANCE.parseResponse(execute());
+    protected @NotNull Referents parseResponse(@NotNull String response) throws GeniusApiException {
+        return ReferentsObject.Parser.INSTANCE.parseResponse(response);
     }
 
     @Override

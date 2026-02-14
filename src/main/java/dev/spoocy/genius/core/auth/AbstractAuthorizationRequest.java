@@ -21,12 +21,12 @@ public abstract class AbstractAuthorizationRequest<T> extends AbstractRequest<T>
         protected final String clientId;
         protected final String clientSecret;
 
-        public Builder(@NotNull String clientId, @NotNull String clientSecret) {
+        public Builder(final @NotNull String clientId, final @NotNull String clientSecret) {
             this.clientId = Args.notNullOrEmpty(clientId, "clientId");
             this.clientSecret = Args.notNullOrEmpty(clientSecret, "clientSecret");
 
-            this.queryParameter("client_id", clientId);
-            this.queryParameter("client_secret", clientSecret);
+            this.bodyParameter("client_id", clientId);
+            this.bodyParameter("client_secret", clientSecret);
         }
 
     }

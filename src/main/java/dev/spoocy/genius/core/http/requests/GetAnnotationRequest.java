@@ -7,11 +7,8 @@ import dev.spoocy.genius.core.data.annotations.AnnotationDataObject;
 import dev.spoocy.genius.exception.GeniusApiException;
 import dev.spoocy.genius.model.AnnotationData;
 import dev.spoocy.utils.common.misc.Args;
-import dev.spoocy.utils.common.misc.NumberConversion;
-import org.apache.hc.core5.http.ParseException;
 import org.jetbrains.annotations.NotNull;
-
-import java.io.IOException;
+import reactor.core.publisher.Mono;
 
 /**
  * Data for a specific annotation.
@@ -30,13 +27,13 @@ public class GetAnnotationRequest extends GeniusApiRequest<AnnotationData> imple
     }
 
     @Override
-    protected String execute() throws GeniusApiException, IOException, ParseException {
+    protected @NotNull Mono<String> execute0() {
         return this.executeGET();
     }
 
     @Override
-    protected AnnotationData executeAndParse() throws GeniusApiException, IOException, ParseException {
-        return AnnotationDataObject.Parser.INSTANCE.parseResponse(execute());
+    protected @NotNull AnnotationData parseResponse(@NotNull String response) throws GeniusApiException {
+        return AnnotationDataObject.Parser.INSTANCE.parseResponse(response);
     }
 
     @Override

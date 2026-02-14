@@ -6,10 +6,8 @@ import dev.spoocy.genius.core.http.GeniusApiRequest;
 import dev.spoocy.genius.core.data.account.AccountObject;
 import dev.spoocy.genius.exception.GeniusApiException;
 import dev.spoocy.genius.model.Account;
-import org.apache.hc.core5.http.ParseException;
 import org.jetbrains.annotations.NotNull;
-
-import java.io.IOException;
+import reactor.core.publisher.Mono;
 
 /**
  * Data for a specific artist.
@@ -28,13 +26,13 @@ public class GetAccountRequest extends GeniusApiRequest<Account> implements Form
     }
 
     @Override
-    protected String execute() throws GeniusApiException, IOException, ParseException {
+    protected @NotNull Mono<String> execute0() {
         return this.executeGET();
     }
 
     @Override
-    protected Account executeAndParse() throws GeniusApiException, IOException, ParseException {
-        return AccountObject.Parser.INSTANCE.parseResponse(execute());
+    protected @NotNull Account parseResponse(@NotNull String response) throws GeniusApiException {
+        return AccountObject.Parser.INSTANCE.parseResponse(response);
     }
 
     @Override

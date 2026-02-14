@@ -1,10 +1,9 @@
 package dev.spoocy.genius;
 
 import dev.spoocy.genius.core.auth.GeniusAccessToken;
-import dev.spoocy.genius.core.http.IHttpManager;
+import dev.spoocy.genius.core.http.NettyHttpManager;
 import dev.spoocy.genius.core.impl.GeniusClientImpl;
 import dev.spoocy.utils.common.misc.Args;
-import lombok.Getter;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -15,7 +14,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class GeniusClientBuilder {
 
-    protected IHttpManager httpManager = GeniusClient.DEFAULT_HTTP_MANAGER;
+    protected NettyHttpManager httpManager = GeniusClient.DEFAULT_HTTP_MANAGER;
     protected String scheme = GeniusClient.DEFAULT_REQUEST_SCHEME;
     protected String host = GeniusClient.DEFAULT_API_BASE;
     protected int port = GeniusClient.DEFAULT_REQUEST_PORT;
@@ -28,7 +27,7 @@ public class GeniusClientBuilder {
 
     }
 
-    public GeniusClientBuilder httpManager(@NotNull IHttpManager httpManager) {
+    public GeniusClientBuilder httpManager(@NotNull NettyHttpManager httpManager) {
         this.httpManager = httpManager;
         return this;
     }

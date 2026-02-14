@@ -7,10 +7,8 @@ import dev.spoocy.genius.core.http.GeniusApiRequest;
 import dev.spoocy.genius.exception.GeniusApiException;
 import dev.spoocy.genius.model.Song;
 import dev.spoocy.utils.common.misc.Args;
-import org.apache.hc.core5.http.ParseException;
 import org.jetbrains.annotations.NotNull;
-
-import java.io.IOException;
+import reactor.core.publisher.Mono;
 
 /**
  * Data for a specific song.
@@ -33,13 +31,13 @@ public class GetSongRequest extends GeniusApiRequest<Song> implements Formatable
     }
 
     @Override
-    protected String execute() throws GeniusApiException, IOException, ParseException {
+    protected @NotNull Mono<String> execute0() {
         return this.executeGET();
     }
 
     @Override
-    protected Song executeAndParse() throws GeniusApiException, IOException, ParseException {
-        return SongObject.Parser.INSTANCE.parseResponse(this.execute());
+    protected @NotNull Song parseResponse(@NotNull String response) throws GeniusApiException {
+        return SongObject.Parser.INSTANCE.parseResponse(response);
     }
 
     public static class Builder

@@ -6,10 +6,8 @@ import dev.spoocy.genius.core.data.webpages.WebPageObject;
 import dev.spoocy.genius.exception.GeniusApiException;
 import dev.spoocy.genius.model.WebPage;
 import dev.spoocy.utils.common.misc.Args;
-import org.apache.hc.core5.http.ParseException;
 import org.jetbrains.annotations.NotNull;
-
-import java.io.IOException;
+import reactor.core.publisher.Mono;
 
 /**
  * Information about a web page retrieved by the page’s full URL (including protocol).
@@ -28,13 +26,13 @@ public class GetWebPagesLookupRequest extends GeniusApiRequest<WebPage> {
     }
 
     @Override
-    protected String execute() throws GeniusApiException, IOException, ParseException {
+    protected @NotNull Mono<String> execute0() {
         return this.executeGET();
     }
 
     @Override
-    protected WebPage executeAndParse() throws GeniusApiException, IOException, ParseException {
-        return WebPageObject.Parser.INSTANCE.parseResponse(execute());
+    protected @NotNull WebPage parseResponse(@NotNull String response) throws GeniusApiException {
+        return WebPageObject.Parser.INSTANCE.parseResponse(response);
     }
 
     public static class Builder

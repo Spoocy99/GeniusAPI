@@ -6,10 +6,8 @@ import dev.spoocy.genius.core.data.search.SearchObject;
 import dev.spoocy.genius.exception.GeniusApiException;
 import dev.spoocy.genius.model.Search;
 import dev.spoocy.utils.common.misc.Args;
-import org.apache.hc.core5.http.ParseException;
 import org.jetbrains.annotations.NotNull;
-
-import java.io.IOException;
+import reactor.core.publisher.Mono;
 
 /**
  * Information about a web page retrieved by the page’s full URL (including protocol).
@@ -28,13 +26,13 @@ public class SearchRequest extends GeniusApiRequest<Search> {
     }
 
     @Override
-    protected String execute() throws GeniusApiException, IOException, ParseException {
+    protected @NotNull Mono<String> execute0() {
         return this.executeGET();
     }
 
     @Override
-    protected Search executeAndParse() throws GeniusApiException, IOException, ParseException {
-        return SearchObject.Parser.INSTANCE.parseResponse(execute());
+    protected @NotNull Search parseResponse(@NotNull String response) throws GeniusApiException {
+        return SearchObject.Parser.INSTANCE.parseResponse(response);
     }
 
     public static class Builder

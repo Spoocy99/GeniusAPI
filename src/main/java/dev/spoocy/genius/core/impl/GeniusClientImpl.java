@@ -1,8 +1,7 @@
 package dev.spoocy.genius.core.impl;
 
-import dev.spoocy.genius.GeniusClient;
 import dev.spoocy.genius.core.auth.GeniusAccessToken;
-import dev.spoocy.genius.core.http.IHttpManager;
+import dev.spoocy.genius.core.http.NettyHttpManager;
 import dev.spoocy.utils.common.misc.Args;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -13,7 +12,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class GeniusClientImpl extends AbstractClient {
 
-    private final IHttpManager httpManager;
+    private final NettyHttpManager httpManager;
     private final String scheme;
     private final String host;
     private final int port;
@@ -22,7 +21,7 @@ public class GeniusClientImpl extends AbstractClient {
     private GeniusAccessToken accessToken;
 
     public GeniusClientImpl(
-            @NotNull IHttpManager httpManager,
+            @NotNull NettyHttpManager httpManager,
             @NotNull String scheme,
             @NotNull String host,
             int port,
@@ -40,7 +39,7 @@ public class GeniusClientImpl extends AbstractClient {
     }
 
     @Override
-    public @NotNull IHttpManager getHttpManager() {
+    public @NotNull NettyHttpManager getHttpManager() {
         return this.httpManager;
     }
 
@@ -60,23 +59,8 @@ public class GeniusClientImpl extends AbstractClient {
     }
 
     @Override
-    public @Nullable String getProxyUrl() {
-        return this.httpManager.getProxy().getHostName();
-    }
-
-    @Override
-    public @Nullable Integer getProxyPort() {
-        return this.httpManager.getProxy().getPort();
-    }
-
-    @Override
-    public @Nullable String getProxyUsername() {
-        return this.httpManager.getProxyCredentials().getUserName();
-    }
-
-    @Override
-    public char[] getProxyPassword() {
-        return this.httpManager.getProxyCredentials().getPassword();
+    public boolean isProxy() {
+        return this.httpManager.isProxy();
     }
 
     @Override

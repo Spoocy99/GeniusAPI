@@ -7,10 +7,8 @@ import dev.spoocy.genius.core.http.GeniusApiRequest;
 import dev.spoocy.genius.exception.GeniusApiException;
 import dev.spoocy.genius.model.ArtistSongs;
 import dev.spoocy.utils.common.misc.Args;
-import org.apache.hc.core5.http.ParseException;
 import org.jetbrains.annotations.NotNull;
-
-import java.io.IOException;
+import reactor.core.publisher.Mono;
 
 /**
  * Documents (songs) for the artist specified. By default, 20 items are returned for each request.
@@ -25,13 +23,13 @@ public class GetArtistSongsRequest extends GeniusApiRequest<ArtistSongs> {
     }
 
     @Override
-    protected String execute() throws GeniusApiException, IOException, ParseException {
+    protected @NotNull Mono<String> execute0() {
         return this.executeGET();
     }
 
     @Override
-    protected ArtistSongs executeAndParse() throws GeniusApiException, IOException, ParseException {
-        return ArtistSongsObject.Parser.INSTANCE.parseResponse(execute());
+    protected @NotNull ArtistSongs parseResponse(@NotNull String response) throws GeniusApiException {
+        return ArtistSongsObject.Parser.INSTANCE.parseResponse(response);
     }
 
     public static class Builder

@@ -4,10 +4,8 @@ import dev.spoocy.genius.GeniusClient;
 import dev.spoocy.genius.core.http.GeniusApiRequest;
 import dev.spoocy.genius.exception.GeniusApiException;
 import dev.spoocy.genius.model.AnnotationData;
-import org.apache.hc.core5.http.ParseException;
 import org.jetbrains.annotations.NotNull;
-
-import java.io.IOException;
+import reactor.core.publisher.Mono;
 
 /**
  * Data for a specific annotation.
@@ -22,12 +20,12 @@ public class PostAnnotationRequest extends GeniusApiRequest<AnnotationData> {
     }
 
     @Override
-    protected String execute() throws GeniusApiException, IOException, ParseException {
+    protected @NotNull Mono<String> execute0() {
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
     @Override
-    protected AnnotationData executeAndParse() throws GeniusApiException, IOException, ParseException {
+    protected @NotNull AnnotationData parseResponse(@NotNull String response) throws GeniusApiException {
         throw new UnsupportedOperationException("Not implemented yet");
     }
 

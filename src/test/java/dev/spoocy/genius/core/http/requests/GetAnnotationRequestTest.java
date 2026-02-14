@@ -1,8 +1,8 @@
 package dev.spoocy.genius.core.http.requests;
 
 import dev.spoocy.genius.core.data.annotations.AnnotationDataObject;
+import dev.spoocy.genius.core.http.internal.ContentType;
 import dev.spoocy.genius.model.AnnotationData;
-import org.apache.hc.core5.http.ContentType;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

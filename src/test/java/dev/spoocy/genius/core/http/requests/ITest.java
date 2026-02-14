@@ -1,10 +1,9 @@
 package dev.spoocy.genius.core.http.requests;
 
 import dev.spoocy.genius.GeniusClient;
-import dev.spoocy.genius.core.http.IHttpManager;
-import dev.spoocy.genius.exception.GeniusApiException;
-import org.apache.hc.core5.http.ParseException;
+import dev.spoocy.genius.core.http.NettyHttpManager;
 import org.mockito.Mockito;
+import reactor.core.publisher.Mono;
 
 import java.io.IOException;
 import java.net.URI;
@@ -34,10 +33,21 @@ public interface ITest<T> {
         return new String(is.readAllBytes(), StandardCharsets.UTF_8);
     }
 
-    default IHttpManager mockHttpManager() throws IOException, GeniusApiException, ParseException {
+    default NettyHttpManager mockHttpManager() throws IOException {
         String json = mockJsonRequest();
-        IHttpManager http = Mockito.mock(IHttpManager.class);
-        when(http.get(any(URI.class), any())).thenReturn(json);
+        NettyHttpManager http = Mockito.mock(NettyHttpManager.class);
+
+        when(http.get(any(URI.class), any()))
+                .thenReturn(Mono.just(json));
+
+        when(http.post(any(URI.class), any(), any()))
+                .thenReturn(Mono.just(json));
+
+        when(http.put(any(URI.class), any(), any()))
+                .thenReturn(Mono.just(json));
+
+        when(http.delete(any(URI.class), any()))
+                .thenReturn(Mono.just(json));
 
         return http;
     }

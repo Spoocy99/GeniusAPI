@@ -1,19 +1,11 @@
 package dev.spoocy.genius.core.http.requests;
 
 import dev.spoocy.genius.core.data.search.SearchObject;
-import dev.spoocy.genius.core.http.IHttpManager;
+import dev.spoocy.genius.core.http.internal.ContentType;
 import dev.spoocy.genius.model.Search;
-import org.apache.hc.core5.http.ContentType;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
-
-import java.io.IOException;
-import java.net.URI;
-import java.nio.charset.StandardCharsets;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.when;
 
 public class SearchRequestTest implements ITest<Search> {
 

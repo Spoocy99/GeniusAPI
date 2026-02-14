@@ -2,13 +2,12 @@ package dev.spoocy.genius.core.auth;
 
 import dev.spoocy.genius.GeniusClient;
 import dev.spoocy.genius.core.http.AbstractRequest;
-import dev.spoocy.genius.core.http.IRequest;
+import dev.spoocy.genius.core.http.internal.ContentType;
 import dev.spoocy.genius.exception.GeniusApiException;
 import dev.spoocy.utils.common.misc.Args;
-import org.apache.hc.core5.http.ParseException;
 import org.jetbrains.annotations.NotNull;
+import reactor.core.publisher.Mono;
 
-import java.io.IOException;
 import java.net.URI;
 
 /**
@@ -29,23 +28,26 @@ public class AuthorizationCodeUriRequest extends AbstractRequest<URI> {
     }
 
     @Override
-    protected String execute() throws GeniusApiException, IOException, ParseException {
-        return this.getUri().toString();
+    protected @NotNull Mono<String> execute0() {
+        return Mono.just(this.getUri().toString());
     }
 
     @Override
-    protected URI executeAndParse() throws GeniusApiException, IOException, ParseException {
-        return this.getUri();
+    protected @NotNull URI parseResponse(@NotNull String response) throws GeniusApiException {
+        try {
+            return new URI(response);
+        } catch (Exception e) {
+            throw new GeniusApiException("Failed to parse authorization code URI", e);
+        }
     }
 
     public static class Builder
             extends AbstractRequest.Builder<URI, Builder> {
 
-
         public Builder() {
             super();
-
-            this.host(GeniusClient.DEFAULT_URL_BASE);
+            this.contentType(ContentType.APPLICATION_FORM_URLENCODED);
+            this.host(GeniusClient.DEFAULT_API_BASE);
             this.port(GeniusClient.DEFAULT_AUTH_PORT);
             this.scheme(GeniusClient.DEFAULT_AUTH_SCHEME);
             this.path("/oauth/authorize");

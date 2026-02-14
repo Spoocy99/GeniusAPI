@@ -14,9 +14,9 @@ public interface LyricsExtractor {
 
     String DEFAULT_LYRICS_CONTAINER = "Lyrics__Container-sc-68a46031-1 ibbPVY";
 
-    String DEFAULT_LYRICS_CONTAINER_HEADER = "LyricsHeader__Container-sc-6f4ef545-1 cORuWd";
+    String DEFAULT_LYRICS_CONTAINER_HEADER = "LyricsHeader__Container-sc-2ca6447a-1 cgxMBK";
 
-    String DEFAULT_TITLE_CONTAINER = "SongHeader-desktop__HiddenMask-sc-7a07005e-13 WOypk";
+    String DEFAULT_TITLE_CONTAINER = "SongHeader-desktop__HiddenMask-sc-908aafe9-13 NwWzO";
 
     /**
      * Extracts lyrics from the provided HTML document.

@@ -8,10 +8,8 @@ import dev.spoocy.genius.core.http.requests.SearchRequest;
 import dev.spoocy.genius.exception.GeniusApiException;
 import dev.spoocy.genius.model.Sections;
 import dev.spoocy.utils.common.misc.Args;
-import org.apache.hc.core5.http.ParseException;
 import org.jetbrains.annotations.NotNull;
-
-import java.io.IOException;
+import reactor.core.publisher.Mono;
 
 /**
  * @author Spoocy99 | GitHub: Spoocy99
@@ -24,13 +22,13 @@ public class SectionsSearchRequest extends GeniusApiRequest<Sections> {
     }
 
     @Override
-    protected String execute() throws GeniusApiException, IOException, ParseException {
+    protected @NotNull Mono<String> execute0() {
         return this.executeGET();
     }
 
     @Override
-    protected Sections executeAndParse() throws GeniusApiException, IOException, ParseException {
-        return SectionsObject.Parser.INSTANCE.parseResponse(execute());
+    protected @NotNull Sections parseResponse(@NotNull String response) throws GeniusApiException {
+        return SectionsObject.Parser.INSTANCE.parseResponse(response);
     }
 
     public static class Builder

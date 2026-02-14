@@ -1,13 +1,14 @@
 package dev.spoocy.genius.exception;
 
-import org.apache.hc.core5.http.HttpException;
 import org.jetbrains.annotations.NotNull;
+
+import java.io.IOException;
 
 /**
  * @author Spoocy99 | GitHub: Spoocy99
  */
 
-public class GeniusApiException extends HttpException {
+public class GeniusApiException extends IOException {
 
     public GeniusApiException() {
         super();
